@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<gpx version="1.0" creator="Viking -- http://viking.sf.net/"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://www.topografix.com/GPX/1/0"
+xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+  <name>driveway.gpx</name>
+  <time>2020-10-17T14:19:35Z</time>
+<trk>
+  <name>Driveway</name>
+  <trkseg>
+  <trkpt lat="43.20393" lon="-72.029556999999997">
+    <ele>336.84286100000003</ele>
+    <time>2020-10-17T14:19:35Z</time>
+    <hdop>2</hdop>
+    <vdop>2.3999999999999999</vdop>
+  </trkpt>
+  <trkpt lat="43.203882" lon="-72.029570000000007">
+    <ele>337.70040499999999</ele>
+    <time>2020-10-17T14:19:38Z</time>
+    <hdop>2</hdop>
+    <vdop>2.3999999999999999</vdop>
+  </trkpt>
+  <trkpt lat="43.203831999999998" lon="-72.029578999999998">
+    <ele>339.21865500000001</ele>
+    <time>2020-10-17T14:19:41Z</time>
+    <hdop>2</hdop>
+    <vdop>2.7999999999999998</vdop>
+  </trkpt>
+  <trkpt lat="43.203772999999998" lon="-72.029593000000006">
+    <ele>341.62099799999999</ele>
+    <time>2020-10-17T14:19:44Z</time>
+    <hdop>1</hdop>
+    <vdop>1.6000000000000001</vdop>
+  </trkpt>
+  <trkpt lat="43.20373" lon="-72.029612">
+    <ele>342.20858399999997</ele>
+    <time>2020-10-17T14:19:47Z</time>
+    <hdop>1</hdop>
+    <vdop>1.2</vdop>
+  </trkpt>
+  <trkpt lat="43.203688999999997" lon="-72.029636999999994">
+    <ele>341.20516600000002</ele>
+    <time>2020-10-17T14:19:51Z</time>
+    <hdop>1</hdop>
+    <vdop>1.2</vdop>
+  </trkpt>
+  <trkpt lat="43.203648999999999" lon="-72.029672000000005">
+    <ele>342.04598600000003</ele>
+    <time>2020-10-17T14:19:56Z</time>
+    <hdop>1</hdop>
+    <vdop>1.2</vdop>
+  </trkpt>
+  <trkpt lat="43.203611000000002" lon="-72.029715999999993">
+    <ele>338.35262699999998</ele>
+    <time>2020-10-17T14:20:02Z</time>
+    <hdop>1</hdop>
+    <vdop>1.2</vdop>
+  </trkpt>
+  <trkpt lat="43.203570999999997" lon="-72.029759999999996">
+    <ele>337.78597600000001</ele>
+    <time>2020-10-17T14:20:06Z</time>
+    <hdop>1</hdop>
+    <vdop>1.2</vdop>
+  </trkpt>
+  <trkpt lat="43.203524000000002" lon="-72.029803000000001">
+    <ele>337.25399099999998</ele>
+    <time>2020-10-17T14:20:10Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  <trkpt lat="43.203479999999999" lon="-72.029838999999996">
+    <ele>336.164266</ele>
+    <time>2020-10-17T14:20:14Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  <trkpt lat="43.203434000000001" lon="-72.029877999999997">
+    <ele>335.35849300000001</ele>
+    <time>2020-10-17T14:20:19Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  <trkpt lat="43.203386000000002" lon="-72.029919000000007">
+    <ele>334.30457100000001</ele>
+    <time>2020-10-17T14:20:24Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  <trkpt lat="43.203341000000002" lon="-72.029942000000005">
+    <ele>333.50485500000002</ele>
+    <time>2020-10-17T14:20:28Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  <trkpt lat="43.203293000000002" lon="-72.029956999999996">
+    <ele>332.63696099999999</ele>
+    <time>2020-10-17T14:20:32Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  <trkpt lat="43.203240000000001" lon="-72.029956999999996">
+    <ele>331.87235800000002</ele>
+    <time>2020-10-17T14:20:36Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  <trkpt lat="43.203190999999997" lon="-72.029984999999996">
+    <ele>331.07284600000003</ele>
+    <time>2020-10-17T14:20:41Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  <trkpt lat="43.203147999999999" lon="-72.030000000000001">
+    <ele>330.36254500000001</ele>
+    <time>2020-10-17T14:20:46Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  <trkpt lat="43.203094" lon="-72.030019999999993">
+    <ele>329.61476599999997</ele>
+    <time>2020-10-17T14:20:51Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  <trkpt lat="43.203045000000003" lon="-72.030036999999993">
+    <ele>329.18989699999997</ele>
+    <time>2020-10-17T14:20:55Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  <trkpt lat="43.202958926112089" lon="-72.030112522159584">
+    <ele>328.834542</ele>
+    <time>2020-10-17T14:20:59Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  <trkpt lat="43.20286116846377" lon="-72.030233221565254">
+    <ele>328.491963</ele>
+    <time>2020-10-17T14:21:04Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  </trkseg>
+</trk>
+</gpx>

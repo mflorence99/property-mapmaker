@@ -4,7 +4,10 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xmlns="http://www.topografix.com/GPX/1/0"
 xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
   <name>culverts.gpx</name>
+  <author></author>
+  <desc></desc>
   <time>2020-10-08T18:36:10Z</time>
+  <keywords></keywords>
 <wpt lat="43.203243999999998" lon="-72.030124999999998">
   <name>Culvert 12-1</name>
   <ele>323</ele>
@@ -45,7 +48,7 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
   <ele>346</ele>
   <time>2020-10-08T19:00:52Z</time>
 </wpt>
-<wpt lat="43.205128000000002" lon="-72.029077000000001">
+<wpt lat="43.205107283016879" lon="-72.029150797781">
   <name>Culvert 12-18</name>
   <ele>344</ele>
   <time>2020-10-08T19:03:47Z</time>
@@ -55,7 +58,7 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
   <ele>339</ele>
   <time>2020-10-08T19:04:23Z</time>
 </wpt>
-<wpt lat="43.203029000000001" lon="-72.030061000000003">
+<wpt lat="43.203017580625882" lon="-72.030057536874779">
   <name>Culvert 12-2</name>
   <ele>320</ele>
   <time>2020-10-08T18:38:03Z</time>
@@ -110,7 +113,7 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
   <ele>360</ele>
   <time>2020-10-09T14:08:05Z</time>
 </wpt>
-<wpt lat="43.202914999999997" lon="-72.030072000000004">
+<wpt lat="43.202904181848332" lon="-72.030238585983284">
   <name>Culvert 12-3</name>
   <ele>321</ele>
   <time>2020-10-08T18:38:32Z</time>
@@ -175,17 +178,17 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
   <ele>312</ele>
   <time>2020-10-08T18:45:02Z</time>
 </wpt>
-<wpt lat="43.203367" lon="-72.029578999999998">
+<wpt lat="43.203466285790626" lon="-72.029513048444755">
   <name>Culvert 12-9</name>
   <ele>322</ele>
   <time>2020-10-08T18:48:04Z</time>
 </wpt>
-<wpt lat="43.204112000000002" lon="-72.030021000000005">
+<wpt lat="43.204093880942366" lon="-72.029970365081795">
   <name>Culvert 12&#x2013;13</name>
   <ele>330</ele>
   <time>2020-10-08T18:53:45Z</time>
 </wpt>
-<wpt lat="43.202703" lon="-72.028802999999996">
+<wpt lat="43.202814244736935" lon="-72.02877007654763">
   <name>Culvert 24-1</name>
   <ele>311</ele>
   <time>2020-10-08T18:45:38Z</time>
@@ -295,12 +298,12 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
   <ele>341</ele>
   <time>2020-10-08T18:59:42Z</time>
 </wpt>
-<wpt lat="43.205840000000002" lon="-72.028734">
+<wpt lat="43.205835546919062" lon="-72.028721644338617">
   <name>Culvert 6-8</name>
   <ele>347</ele>
   <time>2020-10-08T19:02:12Z</time>
 </wpt>
-<wpt lat="43.205491000000002" lon="-72.028861000000006">
+<wpt lat="43.205501230878362" lon="-72.028926833328256">
   <name>Culvert 6-9</name>
   <ele>345</ele>
   <time>2020-10-08T19:02:55Z</time>

@@ -3,6 +3,8 @@
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xmlns="http://www.topografix.com/GPX/1/0"
 xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+  <name>mow.gpx</name>
+  <time>2020-10-15T18:39:43Z</time>
 <trk>
   <name>Mow 1</name>
   <trkseg>
@@ -24,37 +26,37 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
     <hdop>1</hdop>
     <vdop>1.2</vdop>
   </trkpt>
-  <trkpt lat="43.203152000000003" lon="-72.030086999999995">
+  <trkpt lat="43.203132617684027" lon="-72.030147238430033">
     <ele>315.99666999999999</ele>
     <time>2020-10-15T18:40:14Z</time>
     <hdop>1</hdop>
     <vdop>1.3999999999999999</vdop>
   </trkpt>
-  <trkpt lat="43.203189999999999" lon="-72.030051">
+  <trkpt lat="43.203148258848692" lon="-72.030152602848062">
     <ele>316.63994600000001</ele>
     <time>2020-10-15T18:40:19Z</time>
     <hdop>1</hdop>
     <vdop>1.3999999999999999</vdop>
   </trkpt>
-  <trkpt lat="43.203228000000003" lon="-72.030011999999999">
+  <trkpt lat="43.203186384170756" lon="-72.030178083833704">
     <ele>317.03661799999998</ele>
     <time>2020-10-15T18:40:25Z</time>
     <hdop>1</hdop>
     <vdop>1.3999999999999999</vdop>
   </trkpt>
-  <trkpt lat="43.203273000000003" lon="-72.030034000000001">
+  <trkpt lat="43.203209845895564" lon="-72.030195518192301">
     <ele>317.04319900000002</ele>
     <time>2020-10-15T18:40:34Z</time>
     <hdop>1</hdop>
     <vdop>1.3999999999999999</vdop>
   </trkpt>
-  <trkpt lat="43.203276000000002" lon="-72.030096">
+  <trkpt lat="43.20322939732602" lon="-72.030207588132868">
     <ele>316.65671300000002</ele>
     <time>2020-10-15T18:40:38Z</time>
     <hdop>1</hdop>
     <vdop>1.3999999999999999</vdop>
   </trkpt>
-  <trkpt lat="43.203262000000002" lon="-72.030161000000007">
+  <trkpt lat="43.203236240325189" lon="-72.030212952550897">
     <ele>316.912443</ele>
     <time>2020-10-15T18:40:43Z</time>
     <hdop>1</hdop>
@@ -780,13 +782,13 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
     <hdop>1</hdop>
     <vdop>1.3999999999999999</vdop>
   </trkpt>
-  <trkpt lat="43.203046999999998" lon="-72.029053000000005">
+  <trkpt lat="43.203054110063441" lon="-72.029094071094505">
     <ele>326.30725699999999</ele>
     <time>2020-10-15T18:54:21Z</time>
     <hdop>1</hdop>
     <vdop>1.3999999999999999</vdop>
   </trkpt>
-  <trkpt lat="43.203006999999999" lon="-72.029083">
+  <trkpt lat="43.203025760405779" lon="-72.02910211772155">
     <ele>325.94873899999999</ele>
     <time>2020-10-15T18:54:29Z</time>
     <hdop>1</hdop>
@@ -834,7 +836,7 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
     <hdop>1</hdop>
     <vdop>1.3999999999999999</vdop>
   </trkpt>
-  <trkpt lat="43.202691999999999" lon="-72.029047000000006">
+  <trkpt lat="43.202678720425446" lon="-72.029064566795341">
     <ele>321.32223699999997</ele>
     <time>2020-10-15T18:55:16Z</time>
     <hdop>1</hdop>
