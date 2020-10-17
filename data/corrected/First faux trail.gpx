@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<gpx version="1.0" creator="Viking -- http://viking.sf.net/"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://www.topografix.com/GPX/1/0"
+xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+<trk>
+  <name>First faux trail</name>
+  <trkseg>
+  <trkpt lat="43.208386810086999" lon="-72.027781240753171">
+    <ele>346.60264999999998</ele>
+    <time>2020-10-09T18:14:12Z</time>
+    <hdop>1</hdop>
+    <vdop>1.2</vdop>
+  </trkpt>
+  <trkpt lat="43.2084298195755" lon="-72.027757100872037">
+    <ele>347.11812400000002</ele>
+    <time>2020-10-09T18:14:20Z</time>
+    <hdop>1</hdop>
+    <vdop>1.2</vdop>
+  </trkpt>
+  <trkpt lat="43.208449369332989" lon="-72.027732960990903">
+    <ele>347.30461300000002</ele>
+    <time>2020-10-09T18:14:25Z</time>
+    <hdop>1</hdop>
+    <vdop>1.2</vdop>
+  </trkpt>
+  <trkpt lat="43.208468000000003" lon="-72.027717999999993">
+    <ele>348.19754499999999</ele>
+    <time>2020-10-09T18:14:31Z</time>
+    <hdop>1</hdop>
+    <vdop>1.2</vdop>
+  </trkpt>
+  <trkpt lat="43.208509999999997" lon="-72.027692999999999">
+    <ele>348.46987100000001</ele>
+    <time>2020-10-09T18:14:35Z</time>
+    <hdop>1</hdop>
+    <vdop>1.2</vdop>
+  </trkpt>
+  <trkpt lat="43.208559999999999" lon="-72.027668000000006">
+    <ele>349.07385900000003</ele>
+    <time>2020-10-09T18:14:41Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  <trkpt lat="43.208610999999998" lon="-72.027647999999999">
+    <ele>349.70420999999999</ele>
+    <time>2020-10-09T18:14:47Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  <trkpt lat="43.208655" lon="-72.027626999999995">
+    <ele>350.50225399999999</ele>
+    <time>2020-10-09T18:14:52Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  <trkpt lat="43.208969390581842" lon="-72.027577392868039">
+    <ele>350.711411</ele>
+    <time>2020-10-09T18:14:57Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  <trkpt lat="43.208959615787222" lon="-72.027574710659025">
+    <ele>351.04405200000002</ele>
+    <time>2020-10-09T18:15:03Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  <trkpt lat="43.209127742036443" lon="-72.02756666403198">
+    <ele>351.780483</ele>
+    <time>2020-10-09T18:15:10Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  </trkseg>
+</trk>
+</gpx>

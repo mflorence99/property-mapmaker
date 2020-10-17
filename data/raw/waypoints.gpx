@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" creator="EasyTrails" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+	<wpt lat="43.203244" lon="-72.030125">
+		<ele>323.000000</ele>
+		<time>2020-10-08T18:36:10Z</time>
+		<name><![CDATA[Culvert 12-1]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[12” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.203209" lon="-72.030013">
+		<ele>322.000000</ele>
+		<time>2020-10-08T18:37:03Z</time>
+		<name><![CDATA[Culvert 6-1]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[6” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.203029" lon="-72.030061">
+		<ele>320.000000</ele>
+		<time>2020-10-08T18:38:03Z</time>
+		<name><![CDATA[Culvert 12-2]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[12” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.202915" lon="-72.030072">
+		<ele>321.000000</ele>
+		<time>2020-10-08T18:38:32Z</time>
+		<name><![CDATA[Culvert 12-3]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[12” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.202947" lon="-72.030018">
+		<ele>320.000000</ele>
+		<time>2020-10-08T18:39:04Z</time>
+		<name><![CDATA[Culvert 6-2]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[6” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.202461" lon="-72.029470">
+		<ele>312.000000</ele>
+		<time>2020-10-08T18:41:48Z</time>
+		<name><![CDATA[Culvert 12-4]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[12” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.202820" lon="-72.029263">
+		<ele>311.000000</ele>
+		<time>2020-10-08T18:42:59Z</time>
+		<name><![CDATA[Culvert 12-5]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[12” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.202766" lon="-72.029320">
+		<ele>312.000000</ele>
+		<time>2020-10-08T18:43:44Z</time>
+		<name><![CDATA[Culvert 12-6]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[12” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.202665" lon="-72.028908">
+		<ele>312.000000</ele>
+		<time>2020-10-08T18:44:41Z</time>
+		<name><![CDATA[Culvert 12-7]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[12” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.202695" lon="-72.028941">
+		<ele>312.000000</ele>
+		<time>2020-10-08T18:45:02Z</time>
+		<name><![CDATA[Culvert 12-8]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[12” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.202703" lon="-72.028803">
+		<ele>311.000000</ele>
+		<time>2020-10-08T18:45:38Z</time>
+		<name><![CDATA[Culvert 24-1]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[24” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.203367" lon="-72.029579">
+		<ele>322.000000</ele>
+		<time>2020-10-08T18:48:04Z</time>
+		<name><![CDATA[Culvert 12-9]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[12” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.203543" lon="-72.029019">
+		<ele>319.000000</ele>
+		<time>2020-10-08T18:48:54Z</time>
+		<name><![CDATA[Culvert 6-3]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[6” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.203660" lon="-72.029105">
+		<ele>322.000000</ele>
+		<time>2020-10-08T18:49:30Z</time>
+		<name><![CDATA[Culvert 6-4]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[6” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.203708" lon="-72.029102">
+		<ele>324.000000</ele>
+		<time>2020-10-08T18:49:50Z</time>
+		<name><![CDATA[Culvert  6-5]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[6” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.204072" lon="-72.028795">
+		<ele>323.000000</ele>
+		<time>2020-10-08T18:50:42Z</time>
+		<name><![CDATA[Culvert 12-10]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[12” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.204288" lon="-72.028943">
+		<ele>327.000000</ele>
+		<time>2020-10-08T18:51:34Z</time>
+		<name><![CDATA[Culvert  12-11]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[12” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.204259" lon="-72.029166">
+		<ele>329.000000</ele>
+		<time>2020-10-08T18:52:08Z</time>
+		<name><![CDATA[Culvert  12-12]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[12” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.204112" lon="-72.030021">
+		<ele>330.000000</ele>
+		<time>2020-10-08T18:53:45Z</time>
+		<name><![CDATA[Culvert  12–13]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[12” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.203782" lon="-72.029775">
+		<ele>329.000000</ele>
+		<time>2020-10-08T18:54:57Z</time>
+		<name><![CDATA[Culvert  12-14]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[12” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.205214" lon="-72.029390">
+		<ele>341.000000</ele>
+		<time>2020-10-08T18:57:52Z</time>
+		<name><![CDATA[Culvert  12-15]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[12” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.205483" lon="-72.029165">
+		<ele>340.000000</ele>
+		<time>2020-10-08T18:58:35Z</time>
+		<name><![CDATA[Culvert  6-6]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[6” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.205635" lon="-72.028987">
+		<ele>341.000000</ele>
+		<time>2020-10-08T18:59:04Z</time>
+		<name><![CDATA[Culvert  12-16]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[12” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.205839" lon="-72.028913">
+		<ele>341.000000</ele>
+		<time>2020-10-08T18:59:42Z</time>
+		<name><![CDATA[Culvert  6-7]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[6” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.206425" lon="-72.028860">
+		<ele>346.000000</ele>
+		<time>2020-10-08T19:00:52Z</time>
+		<name><![CDATA[Culvert  12-17]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[12” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.205840" lon="-72.028734">
+		<ele>347.000000</ele>
+		<time>2020-10-08T19:02:12Z</time>
+		<name><![CDATA[Culvert  6-8]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[6” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.205491" lon="-72.028861">
+		<ele>345.000000</ele>
+		<time>2020-10-08T19:02:55Z</time>
+		<name><![CDATA[Culvert 6-9]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[6” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.205128" lon="-72.029077">
+		<ele>344.000000</ele>
+		<time>2020-10-08T19:03:47Z</time>
+		<name><![CDATA[Culvert  12-18]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[12” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.205110" lon="-72.028958">
+		<ele>339.000000</ele>
+		<time>2020-10-08T19:04:23Z</time>
+		<name><![CDATA[Culvert  12-19]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[12” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.205444" lon="-72.028289">
+		<ele>344.000000</ele>
+		<time>2020-10-09T13:39:02Z</time>
+		<name><![CDATA[Bridge 1]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[Bridge]]></type>
+	</wpt>
+	
+	<wpt lat="43.206698" lon="-72.028992">
+		<ele>341.000000</ele>
+		<time>2020-10-09T13:41:56Z</time>
+		<name><![CDATA[Culvert 4-1]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[4” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.206764" lon="-72.028942">
+		<ele>341.000000</ele>
+		<time>2020-10-09T13:42:25Z</time>
+		<name><![CDATA[Bridge 2]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[Bridge]]></type>
+	</wpt>
+	
+	<wpt lat="43.206801" lon="-72.028829">
+		<ele>341.000000</ele>
+		<time>2020-10-09T13:42:57Z</time>
+		<name><![CDATA[Isle O’ Pie]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[Island]]></type>
+	</wpt>
+	
+	<wpt lat="43.206850" lon="-72.028886">
+		<ele>341.000000</ele>
+		<time>2020-10-09T13:43:58Z</time>
+		<name><![CDATA[Culvert  12-20]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[12” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.206921" lon="-72.028506">
+		<ele>345.000000</ele>
+		<time>2020-10-09T13:44:49Z</time>
+		<name><![CDATA[Culvert 24-2]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[24” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.207336" lon="-72.028694">
+		<ele>344.000000</ele>
+		<time>2020-10-09T13:45:48Z</time>
+		<name><![CDATA[Flower Island]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[Island]]></type>
+	</wpt>
+	
+	<wpt lat="43.208064" lon="-72.028267">
+		<ele>338.000000</ele>
+		<time>2020-10-09T13:47:37Z</time>
+		<name><![CDATA[Bridge 3]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[Bridge]]></type>
+	</wpt>
+	
+	<wpt lat="43.207828" lon="-72.028401">
+		<ele>337.000000</ele>
+		<time>2020-10-09T13:48:21Z</time>
+		<name><![CDATA[Culvert  12-21]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[12” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.207858" lon="-72.028637">
+		<ele>338.000000</ele>
+		<time>2020-10-09T13:48:46Z</time>
+		<name><![CDATA[Culvert  12-22]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[12” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.207779" lon="-72.028720">
+		<ele>338.000000</ele>
+		<time>2020-10-09T13:49:08Z</time>
+		<name><![CDATA[Culvert  12-23]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[12” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.207654" lon="-72.028787">
+		<ele>338.000000</ele>
+		<time>2020-10-09T13:49:35Z</time>
+		<name><![CDATA[Frog Pond]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[Landmark]]></type>
+	</wpt>
+	
+	<wpt lat="43.207895" lon="-72.028751">
+		<ele>338.000000</ele>
+		<time>2020-10-09T13:50:25Z</time>
+		<name><![CDATA[Culvert  12-24]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[12” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.208247" lon="-72.027182">
+		<ele>342.000000</ele>
+		<time>2020-10-09T13:52:35Z</time>
+		<name><![CDATA[Moose Junction]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[Landmark]]></type>
+	</wpt>
+	
+	<wpt lat="43.208587" lon="-72.027124">
+		<ele>345.000000</ele>
+		<time>2020-10-09T13:53:33Z</time>
+		<name><![CDATA[Culvert  12-25]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[12” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.208737" lon="-72.026752">
+		<ele>344.000000</ele>
+		<time>2020-10-09T13:54:29Z</time>
+		<name><![CDATA[Culvert  12-26]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[12” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.208749" lon="-72.026487">
+		<ele>345.000000</ele>
+		<time>2020-10-09T13:55:00Z</time>
+		<name><![CDATA[Culvert  12-27]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[12” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.209101" lon="-72.024487">
+		<ele>375.000000</ele>
+		<time>2020-10-09T13:58:21Z</time>
+		<name><![CDATA[Moss Rock]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[Landmark]]></type>
+	</wpt>
+	
+	<wpt lat="43.208787" lon="-72.024589">
+		<ele>377.000000</ele>
+		<time>2020-10-09T13:59:41Z</time>
+		<name><![CDATA[Bear’s  Picnic Table]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[Landmark]]></type>
+	</wpt>
+	
+	<wpt lat="43.208691" lon="-72.024405">
+		<ele>378.000000</ele>
+		<time>2020-10-09T14:01:12Z</time>
+		<name><![CDATA[Causeway1]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[Landmark]]></type>
+	</wpt>
+	
+	<wpt lat="43.207925" lon="-72.024394">
+		<ele>375.000000</ele>
+		<time>2020-10-09T14:03:05Z</time>
+		<name><![CDATA[Gorge]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[Landmark]]></type>
+	</wpt>
+	
+	<wpt lat="43.207745" lon="-72.022839">
+		<ele>366.000000</ele>
+		<time>2020-10-09T14:06:05Z</time>
+		<name><![CDATA[Culvert  12-28]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[12” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.206568" lon="-72.023407">
+		<ele>360.000000</ele>
+		<time>2020-10-09T14:08:05Z</time>
+		<name><![CDATA[Culvert 12-29]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[12” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.206533" lon="-72.023427">
+		<ele>360.000000</ele>
+		<time>2020-10-09T14:08:30Z</time>
+		<name><![CDATA[Causeway2]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[Landmark]]></type>
+	</wpt>
+	
+	<wpt lat="43.204138" lon="-72.024316">
+		<ele>343.000000</ele>
+		<time>2020-10-09T14:13:53Z</time>
+		<name><![CDATA[Culvert 6-10]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[6” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.203666" lon="-72.024573">
+		<ele>332.000000</ele>
+		<time>2020-10-09T14:14:41Z</time>
+		<name><![CDATA[Culvert 6-11]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[6” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.203631" lon="-72.024708">
+		<ele>331.000000</ele>
+		<time>2020-10-09T14:15:05Z</time>
+		<name><![CDATA[Culvert  12-30]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[12” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.203651" lon="-72.024811">
+		<ele>331.000000</ele>
+		<time>2020-10-09T14:15:23Z</time>
+		<name><![CDATA[Culvert 6-12]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[6” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.203644" lon="-72.025123">
+		<ele>329.000000</ele>
+		<time>2020-10-09T14:15:56Z</time>
+		<name><![CDATA[Culvert 12-31]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[12” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.203753" lon="-72.025379">
+		<ele>332.000000</ele>
+		<time>2020-10-09T14:16:29Z</time>
+		<name><![CDATA[Culvert 12-32]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[12” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.203717" lon="-72.026491">
+		<ele>333.000000</ele>
+		<time>2020-10-09T14:18:15Z</time>
+		<name><![CDATA[Culvert 6-13]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[6” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.203671" lon="-72.027503">
+		<ele>334.000000</ele>
+		<time>2020-10-09T14:19:44Z</time>
+		<name><![CDATA[Culvert 4-2]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[4” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.204321" lon="-72.027528">
+		<ele>338.000000</ele>
+		<time>2020-10-09T14:21:36Z</time>
+		<name><![CDATA[Culvert 6-14]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[6” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.204494" lon="-72.027406">
+		<ele>340.000000</ele>
+		<time>2020-10-09T14:22:10Z</time>
+		<name><![CDATA[Culvert 6-15]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[6” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.204898" lon="-72.027195">
+		<ele>343.000000</ele>
+		<time>2020-10-09T14:23:12Z</time>
+		<name><![CDATA[Culvert 6-16]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[6” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.204924" lon="-72.027241">
+		<ele>343.000000</ele>
+		<time>2020-10-09T14:23:32Z</time>
+		<name><![CDATA[Culvert 4-3]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[4” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.205097" lon="-72.026795">
+		<ele>343.000000</ele>
+		<time>2020-10-09T14:24:42Z</time>
+		<name><![CDATA[Culvert 6-17]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[6” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.204843" lon="-72.026205">
+		<ele>344.000000</ele>
+		<time>2020-10-09T14:25:51Z</time>
+		<name><![CDATA[Big Rock Junction ]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[Landmark]]></type>
+	</wpt>
+	
+	<wpt lat="43.205227" lon="-72.025680">
+		<ele>338.000000</ele>
+		<time>2020-10-09T14:27:06Z</time>
+		<name><![CDATA[Culvert 12-33]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[12” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.205202" lon="-72.025690">
+		<ele>338.000000</ele>
+		<time>2020-10-09T14:27:23Z</time>
+		<name><![CDATA[Big Oak  Causeway ]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[Landmark]]></type>
+	</wpt>
+	
+	<wpt lat="43.205665" lon="-72.026469">
+		<ele>348.000000</ele>
+		<time>2020-10-09T14:30:22Z</time>
+		<name><![CDATA[Swamp Causeway ]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[Landmark]]></type>
+	</wpt>
+	
+	<wpt lat="43.206447" lon="-72.026080">
+		<ele>350.000000</ele>
+		<time>2020-10-09T14:31:32Z</time>
+		<name><![CDATA[Narrow Causeway]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[Landmark]]></type>
+	</wpt>
+	
+	<wpt lat="43.206539" lon="-72.025981">
+		<ele>350.000000</ele>
+		<time>2020-10-09T14:32:03Z</time>
+		<name><![CDATA[Culvert 12-34]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[12” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.206665" lon="-72.027747">
+		<ele>345.000000</ele>
+		<time>2020-10-09T14:34:38Z</time>
+		<name><![CDATA[Culvert 4-4]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[4” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.206400" lon="-72.027561">
+		<ele>348.000000</ele>
+		<time>2020-10-09T14:35:30Z</time>
+		<name><![CDATA[Culvert 12-35]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[12” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.205571" lon="-72.027479">
+		<ele>345.000000</ele>
+		<time>2020-10-09T14:37:10Z</time>
+		<name><![CDATA[First Causeway ]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[Landmark]]></type>
+	</wpt>
+	
+	<wpt lat="43.205481" lon="-72.027452">
+		<ele>345.000000</ele>
+		<time>2020-10-09T14:37:43Z</time>
+		<name><![CDATA[Culvert 12-36]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[12” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.205327" lon="-72.027359">
+		<ele>345.000000</ele>
+		<time>2020-10-09T14:38:19Z</time>
+		<name><![CDATA[Culvert 4-5]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[4” pipe]]></type>
+	</wpt>
+	
+	<wpt lat="43.206722" lon="-72.028827">
+		<ele>351.000000</ele>
+		<time>2020-10-09T18:31:35Z</time>
+		<name><![CDATA[Wildlife camera]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[Landmark]]></type>
+	</wpt>
+	
+	<wpt lat="43.204221" lon="-72.029814">
+		<ele>338.000000</ele>
+		<time>2020-10-09T18:38:09Z</time>
+		<name><![CDATA[Water Temple]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[Building]]></type>
+	</wpt>
+	
+	<wpt lat="43.204032" lon="-72.029493">
+		<ele>333.000000</ele>
+		<time>2020-10-09T18:39:07Z</time>
+		<name><![CDATA[Barn]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[Building]]></type>
+	</wpt>
+	
+	<wpt lat="43.203888" lon="-72.029601">
+		<ele>331.000000</ele>
+		<time>2020-10-09T18:39:46Z</time>
+		<name><![CDATA[House]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[Building]]></type>
+	</wpt>
+	
+	<wpt lat="43.203903" lon="-72.029376">
+		<ele>331.000000</ele>
+		<time>2020-10-09T18:40:17Z</time>
+		<name><![CDATA[Garage]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[Building]]></type>
+	</wpt>
+	
+	<wpt lat="43.203674" lon="-72.029426">
+		<ele>329.000000</ele>
+		<time>2020-10-09T18:41:00Z</time>
+		<name><![CDATA[Gazebo]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[Building]]></type>
+	</wpt>
+	
+	<wpt lat="43.203857" lon="-72.029471">
+		<ele>330.251537</ele>
+		<time>2020-10-09T19:41:22Z</time>
+		<name><![CDATA[Waypoint 84]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[Not specified]]></type>
+	</wpt>
+	
+	<wpt lat="43.203857" lon="-72.029471">
+		<ele>330.140801</ele>
+		<time>2020-10-09T19:41:24Z</time>
+		<name><![CDATA[Waypoint 85]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[Not specified]]></type>
+	</wpt>
+	
+	<wpt lat="43.203857" lon="-72.029471">
+		<ele>330.440948</ele>
+		<time>2020-10-09T19:41:26Z</time>
+		<name><![CDATA[Waypoint 86]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[Not specified]]></type>
+	</wpt>
+	
+</gpx>

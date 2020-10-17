@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" creator="EasyTrails" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+	<trk>
+		<name><![CDATA[Hemlock rock trail]]></name>
+		<desc><![CDATA[]]></desc>
+		<trkseg>
+			<trkpt lat="43.208188" lon="-72.027195">
+				<ele>345.642725</ele>
+				<time>2020-10-09T18:17:31Z</time>
+				<hdop>1.000000</hdop>
+				<vdop>1.400000</vdop>
+			</trkpt>
+			<trkpt lat="43.208139" lon="-72.027166">
+				<ele>344.382319</ele>
+				<time>2020-10-09T18:17:38Z</time>
+				<hdop>1.000000</hdop>
+				<vdop>1.400000</vdop>
+			</trkpt>
+			<trkpt lat="43.208091" lon="-72.027142">
+				<ele>343.626494</ele>
+				<time>2020-10-09T18:17:45Z</time>
+				<hdop>1.000000</hdop>
+				<vdop>1.400000</vdop>
+			</trkpt>
+			<trkpt lat="43.208042" lon="-72.027136">
+				<ele>343.339066</ele>
+				<time>2020-10-09T18:17:52Z</time>
+				<hdop>1.000000</hdop>
+				<vdop>1.400000</vdop>
+			</trkpt>
+			<trkpt lat="43.208011" lon="-72.027186">
+				<ele>343.471608</ele>
+				<time>2020-10-09T18:17:59Z</time>
+				<hdop>1.000000</hdop>
+				<vdop>1.400000</vdop>
+			</trkpt>
+			<trkpt lat="43.207988" lon="-72.027242">
+				<ele>344.021093</ele>
+				<time>2020-10-09T18:18:05Z</time>
+				<hdop>1.000000</hdop>
+				<vdop>1.400000</vdop>
+			</trkpt>
+			<trkpt lat="43.207960" lon="-72.027298">
+				<ele>343.884811</ele>
+				<time>2020-10-09T18:18:11Z</time>
+				<hdop>1.000000</hdop>
+				<vdop>1.400000</vdop>
+			</trkpt>
+			<trkpt lat="43.207936" lon="-72.027358">
+				<ele>343.466640</ele>
+				<time>2020-10-09T18:18:17Z</time>
+				<hdop>1.000000</hdop>
+				<vdop>1.400000</vdop>
+			</trkpt>
+			<trkpt lat="43.207908" lon="-72.027407">
+				<ele>343.096134</ele>
+				<time>2020-10-09T18:18:22Z</time>
+				<hdop>1.000000</hdop>
+				<vdop>1.400000</vdop>
+			</trkpt>
+			<trkpt lat="43.207874" lon="-72.027461">
+				<ele>342.588946</ele>
+				<time>2020-10-09T18:18:27Z</time>
+				<hdop>1.000000</hdop>
+				<vdop>1.400000</vdop>
+			</trkpt>
+			<trkpt lat="43.207852" lon="-72.027523">
+				<ele>342.699068</ele>
+				<time>2020-10-09T18:18:33Z</time>
+				<hdop>1.000000</hdop>
+				<vdop>1.400000</vdop>
+			</trkpt>
+			<trkpt lat="43.207816" lon="-72.027562">
+				<ele>343.014222</ele>
+				<time>2020-10-09T18:18:38Z</time>
+				<hdop>1.000000</hdop>
+				<vdop>1.400000</vdop>
+			</trkpt>
+			<trkpt lat="43.207795" lon="-72.027626">
+				<ele>342.964103</ele>
+				<time>2020-10-09T18:18:45Z</time>
+				<hdop>1.000000</hdop>
+				<vdop>1.400000</vdop>
+			</trkpt>
+			<trkpt lat="43.207764" lon="-72.027686">
+				<ele>342.717937</ele>
+				<time>2020-10-09T18:18:50Z</time>
+				<hdop>1.000000</hdop>
+				<vdop>1.400000</vdop>
+			</trkpt>
+			<trkpt lat="43.207711" lon="-72.027719">
+				<ele>342.279337</ele>
+				<time>2020-10-09T18:18:56Z</time>
+				<hdop>1.000000</hdop>
+				<vdop>1.400000</vdop>
+			</trkpt>
+			<trkpt lat="43.207698" lon="-72.027792">
+				<ele>341.444830</ele>
+				<time>2020-10-09T18:19:01Z</time>
+				<hdop>1.000000</hdop>
+				<vdop>1.400000</vdop>
+			</trkpt>
+			<trkpt lat="43.207712" lon="-72.027857">
+				<ele>340.944503</ele>
+				<time>2020-10-09T18:19:05Z</time>
+				<hdop>1.000000</hdop>
+				<vdop>1.400000</vdop>
+			</trkpt>
+			<trkpt lat="43.207729" lon="-72.027918">
+				<ele>340.409902</ele>
+				<time>2020-10-09T18:19:11Z</time>
+				<hdop>1.000000</hdop>
+				<vdop>1.400000</vdop>
+			</trkpt>
+			<trkpt lat="43.207754" lon="-72.027971">
+				<ele>340.182689</ele>
+				<time>2020-10-09T18:19:15Z</time>
+				<hdop>1.000000</hdop>
+				<vdop>1.400000</vdop>
+			</trkpt>
+			<trkpt lat="43.207789" lon="-72.028028">
+				<ele>340.036084</ele>
+				<time>2020-10-09T18:19:20Z</time>
+				<hdop>1.000000</hdop>
+				<vdop>1.400000</vdop>
+			</trkpt>
+			<trkpt lat="43.207798" lon="-72.028094">
+				<ele>339.728451</ele>
+				<time>2020-10-09T18:19:25Z</time>
+				<hdop>1.000000</hdop>
+				<vdop>1.400000</vdop>
+			</trkpt>
+		</trkseg>
+	</trk>
+</gpx>

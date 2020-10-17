@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" creator="EasyTrails" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+	
+	<wpt lat="43.206801" lon="-72.028829">
+		<ele>341.000000</ele>
+		<time>2020-10-09T13:42:57Z</time>
+		<name><![CDATA[Isle O’ Pie]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[Island]]></type>
+	</wpt>
+	
+	<wpt lat="43.207336" lon="-72.028694">
+		<ele>344.000000</ele>
+		<time>2020-10-09T13:45:48Z</time>
+		<name><![CDATA[Flower Island]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[Island]]></type>
+	</wpt>
+	
+</gpx>

@@ -1,0 +1,1467 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert 12-1",
+        "desc": "",
+        "type": "12” pipe",
+        "time": "2020-10-08T18:36:10Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.030125,
+          43.203244,
+          323
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert 6-1",
+        "desc": "",
+        "type": "6” pipe",
+        "time": "2020-10-08T18:37:03Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.030013,
+          43.203209,
+          322
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert 12-2",
+        "desc": "",
+        "type": "12” pipe",
+        "time": "2020-10-08T18:38:03Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.030061,
+          43.203029,
+          320
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert 12-3",
+        "desc": "",
+        "type": "12” pipe",
+        "time": "2020-10-08T18:38:32Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.030072,
+          43.202915,
+          321
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert 6-2",
+        "desc": "",
+        "type": "6” pipe",
+        "time": "2020-10-08T18:39:04Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.030018,
+          43.202947,
+          320
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert 12-4",
+        "desc": "",
+        "type": "12” pipe",
+        "time": "2020-10-08T18:41:48Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.02947,
+          43.202461,
+          312
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert 12-5",
+        "desc": "",
+        "type": "12” pipe",
+        "time": "2020-10-08T18:42:59Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.029263,
+          43.20282,
+          311
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert 12-6",
+        "desc": "",
+        "type": "12” pipe",
+        "time": "2020-10-08T18:43:44Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.02932,
+          43.202766,
+          312
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert 12-7",
+        "desc": "",
+        "type": "12” pipe",
+        "time": "2020-10-08T18:44:41Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.028908,
+          43.202665,
+          312
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert 12-8",
+        "desc": "",
+        "type": "12” pipe",
+        "time": "2020-10-08T18:45:02Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.028941,
+          43.202695,
+          312
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert 24-1",
+        "desc": "",
+        "type": "24” pipe",
+        "time": "2020-10-08T18:45:38Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.028803,
+          43.202703,
+          311
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert 12-9",
+        "desc": "",
+        "type": "12” pipe",
+        "time": "2020-10-08T18:48:04Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.029579,
+          43.203367,
+          322
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert 6-3",
+        "desc": "",
+        "type": "6” pipe",
+        "time": "2020-10-08T18:48:54Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.029019,
+          43.203543,
+          319
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert 6-4",
+        "desc": "",
+        "type": "6” pipe",
+        "time": "2020-10-08T18:49:30Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.029105,
+          43.20366,
+          322
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert  6-5",
+        "desc": "",
+        "type": "6” pipe",
+        "time": "2020-10-08T18:49:50Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.029102,
+          43.203708,
+          324
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert 12-10",
+        "desc": "",
+        "type": "12” pipe",
+        "time": "2020-10-08T18:50:42Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.028795,
+          43.204072,
+          323
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert  12-11",
+        "desc": "",
+        "type": "12” pipe",
+        "time": "2020-10-08T18:51:34Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.028943,
+          43.204288,
+          327
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert  12-12",
+        "desc": "",
+        "type": "12” pipe",
+        "time": "2020-10-08T18:52:08Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.029166,
+          43.204259,
+          329
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert  12–13",
+        "desc": "",
+        "type": "12” pipe",
+        "time": "2020-10-08T18:53:45Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.030021,
+          43.204112,
+          330
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert  12-14",
+        "desc": "",
+        "type": "12” pipe",
+        "time": "2020-10-08T18:54:57Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.029775,
+          43.203782,
+          329
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert  12-15",
+        "desc": "",
+        "type": "12” pipe",
+        "time": "2020-10-08T18:57:52Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.02939,
+          43.205214,
+          341
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert  6-6",
+        "desc": "",
+        "type": "6” pipe",
+        "time": "2020-10-08T18:58:35Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.029165,
+          43.205483,
+          340
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert  12-16",
+        "desc": "",
+        "type": "12” pipe",
+        "time": "2020-10-08T18:59:04Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.028987,
+          43.205635,
+          341
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert  6-7",
+        "desc": "",
+        "type": "6” pipe",
+        "time": "2020-10-08T18:59:42Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.028913,
+          43.205839,
+          341
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert  12-17",
+        "desc": "",
+        "type": "12” pipe",
+        "time": "2020-10-08T19:00:52Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.02886,
+          43.206425,
+          346
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert  6-8",
+        "desc": "",
+        "type": "6” pipe",
+        "time": "2020-10-08T19:02:12Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.028734,
+          43.20584,
+          347
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert 6-9",
+        "desc": "",
+        "type": "6” pipe",
+        "time": "2020-10-08T19:02:55Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.028861,
+          43.205491,
+          345
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert  12-18",
+        "desc": "",
+        "type": "12” pipe",
+        "time": "2020-10-08T19:03:47Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.029077,
+          43.205128,
+          344
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert  12-19",
+        "desc": "",
+        "type": "12” pipe",
+        "time": "2020-10-08T19:04:23Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.028958,
+          43.20511,
+          339
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bridge 1",
+        "desc": "",
+        "type": "Bridge",
+        "time": "2020-10-09T13:39:02Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.028289,
+          43.205444,
+          344
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert 4-1",
+        "desc": "",
+        "type": "4” pipe",
+        "time": "2020-10-09T13:41:56Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.028992,
+          43.206698,
+          341
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bridge 2",
+        "desc": "",
+        "type": "Bridge",
+        "time": "2020-10-09T13:42:25Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.028942,
+          43.206764,
+          341
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Isle O’ Pie",
+        "desc": "",
+        "type": "Island",
+        "time": "2020-10-09T13:42:57Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.028829,
+          43.206801,
+          341
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert  12-20",
+        "desc": "",
+        "type": "12” pipe",
+        "time": "2020-10-09T13:43:58Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.028886,
+          43.20685,
+          341
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert 24-2",
+        "desc": "",
+        "type": "24” pipe",
+        "time": "2020-10-09T13:44:49Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.028506,
+          43.206921,
+          345
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Flower Island",
+        "desc": "",
+        "type": "Island",
+        "time": "2020-10-09T13:45:48Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.028694,
+          43.207336,
+          344
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bridge 3",
+        "desc": "",
+        "type": "Bridge",
+        "time": "2020-10-09T13:47:37Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.028267,
+          43.208064,
+          338
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert  12-21",
+        "desc": "",
+        "type": "12” pipe",
+        "time": "2020-10-09T13:48:21Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.028401,
+          43.207828,
+          337
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert  12-22",
+        "desc": "",
+        "type": "12” pipe",
+        "time": "2020-10-09T13:48:46Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.028637,
+          43.207858,
+          338
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert  12-23",
+        "desc": "",
+        "type": "12” pipe",
+        "time": "2020-10-09T13:49:08Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.02872,
+          43.207779,
+          338
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Frog Pond",
+        "desc": "",
+        "type": "Landmark",
+        "time": "2020-10-09T13:49:35Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.028787,
+          43.207654,
+          338
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert  12-24",
+        "desc": "",
+        "type": "12” pipe",
+        "time": "2020-10-09T13:50:25Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.028751,
+          43.207895,
+          338
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Moose Junction",
+        "desc": "",
+        "type": "Landmark",
+        "time": "2020-10-09T13:52:35Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.027182,
+          43.208247,
+          342
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert  12-25",
+        "desc": "",
+        "type": "12” pipe",
+        "time": "2020-10-09T13:53:33Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.027124,
+          43.208587,
+          345
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert  12-26",
+        "desc": "",
+        "type": "12” pipe",
+        "time": "2020-10-09T13:54:29Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.026752,
+          43.208737,
+          344
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert  12-27",
+        "desc": "",
+        "type": "12” pipe",
+        "time": "2020-10-09T13:55:00Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.026487,
+          43.208749,
+          345
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Moss Rock",
+        "desc": "",
+        "type": "Landmark",
+        "time": "2020-10-09T13:58:21Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.024487,
+          43.209101,
+          375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bear’s  Picnic Table",
+        "desc": "",
+        "type": "Landmark",
+        "time": "2020-10-09T13:59:41Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.024589,
+          43.208787,
+          377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Causeway1",
+        "desc": "",
+        "type": "Landmark",
+        "time": "2020-10-09T14:01:12Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.024405,
+          43.208691,
+          378
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gorge",
+        "desc": "",
+        "type": "Landmark",
+        "time": "2020-10-09T14:03:05Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.024394,
+          43.207925,
+          375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert  12-28",
+        "desc": "",
+        "type": "12” pipe",
+        "time": "2020-10-09T14:06:05Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.022839,
+          43.207745,
+          366
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert 12-29",
+        "desc": "",
+        "type": "12” pipe",
+        "time": "2020-10-09T14:08:05Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.023407,
+          43.206568,
+          360
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Causeway2",
+        "desc": "",
+        "type": "Landmark",
+        "time": "2020-10-09T14:08:30Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.023427,
+          43.206533,
+          360
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert 6-10",
+        "desc": "",
+        "type": "6” pipe",
+        "time": "2020-10-09T14:13:53Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.024316,
+          43.204138,
+          343
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert 6-11",
+        "desc": "",
+        "type": "6” pipe",
+        "time": "2020-10-09T14:14:41Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.024573,
+          43.203666,
+          332
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert  12-30",
+        "desc": "",
+        "type": "12” pipe",
+        "time": "2020-10-09T14:15:05Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.024708,
+          43.203631,
+          331
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert 6-12",
+        "desc": "",
+        "type": "6” pipe",
+        "time": "2020-10-09T14:15:23Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.024811,
+          43.203651,
+          331
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert 12-31",
+        "desc": "",
+        "type": "12” pipe",
+        "time": "2020-10-09T14:15:56Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.025123,
+          43.203644,
+          329
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert 12-32",
+        "desc": "",
+        "type": "12” pipe",
+        "time": "2020-10-09T14:16:29Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.025379,
+          43.203753,
+          332
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert 6-13",
+        "desc": "",
+        "type": "6” pipe",
+        "time": "2020-10-09T14:18:15Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.026491,
+          43.203717,
+          333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert 4-2",
+        "desc": "",
+        "type": "4” pipe",
+        "time": "2020-10-09T14:19:44Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.027503,
+          43.203671,
+          334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert 6-14",
+        "desc": "",
+        "type": "6” pipe",
+        "time": "2020-10-09T14:21:36Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.027528,
+          43.204321,
+          338
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert 6-15",
+        "desc": "",
+        "type": "6” pipe",
+        "time": "2020-10-09T14:22:10Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.027406,
+          43.204494,
+          340
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert 6-16",
+        "desc": "",
+        "type": "6” pipe",
+        "time": "2020-10-09T14:23:12Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.027195,
+          43.204898,
+          343
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert 4-3",
+        "desc": "",
+        "type": "4” pipe",
+        "time": "2020-10-09T14:23:32Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.027241,
+          43.204924,
+          343
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert 6-17",
+        "desc": "",
+        "type": "6” pipe",
+        "time": "2020-10-09T14:24:42Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.026795,
+          43.205097,
+          343
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Big Rock Junction ",
+        "desc": "",
+        "type": "Landmark",
+        "time": "2020-10-09T14:25:51Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.026205,
+          43.204843,
+          344
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert 12-33",
+        "desc": "",
+        "type": "12” pipe",
+        "time": "2020-10-09T14:27:06Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.02568,
+          43.205227,
+          338
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Big Oak  Causeway ",
+        "desc": "",
+        "type": "Landmark",
+        "time": "2020-10-09T14:27:23Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.02569,
+          43.205202,
+          338
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Swamp Causeway ",
+        "desc": "",
+        "type": "Landmark",
+        "time": "2020-10-09T14:30:22Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.026469,
+          43.205665,
+          348
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Narrow Causeway",
+        "desc": "",
+        "type": "Landmark",
+        "time": "2020-10-09T14:31:32Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.02608,
+          43.206447,
+          350
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert 12-34",
+        "desc": "",
+        "type": "12” pipe",
+        "time": "2020-10-09T14:32:03Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.025981,
+          43.206539,
+          350
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert 4-4",
+        "desc": "",
+        "type": "4” pipe",
+        "time": "2020-10-09T14:34:38Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.027747,
+          43.206665,
+          345
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert 12-35",
+        "desc": "",
+        "type": "12” pipe",
+        "time": "2020-10-09T14:35:30Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.027561,
+          43.2064,
+          348
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "First Causeway ",
+        "desc": "",
+        "type": "Landmark",
+        "time": "2020-10-09T14:37:10Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.027479,
+          43.205571,
+          345
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert 12-36",
+        "desc": "",
+        "type": "12” pipe",
+        "time": "2020-10-09T14:37:43Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.027452,
+          43.205481,
+          345
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culvert 4-5",
+        "desc": "",
+        "type": "4” pipe",
+        "time": "2020-10-09T14:38:19Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.027359,
+          43.205327,
+          345
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wildlife camera",
+        "desc": "",
+        "type": "Landmark",
+        "time": "2020-10-09T18:31:35Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.028827,
+          43.206722,
+          351
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Water Temple",
+        "desc": "",
+        "type": "Building",
+        "time": "2020-10-09T18:38:09Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.029814,
+          43.204221,
+          338
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Barn",
+        "desc": "",
+        "type": "Building",
+        "time": "2020-10-09T18:39:07Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.029493,
+          43.204032,
+          333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "House",
+        "desc": "",
+        "type": "Building",
+        "time": "2020-10-09T18:39:46Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.029601,
+          43.203888,
+          331
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Garage",
+        "desc": "",
+        "type": "Building",
+        "time": "2020-10-09T18:40:17Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.029376,
+          43.203903,
+          331
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gazebo",
+        "desc": "",
+        "type": "Building",
+        "time": "2020-10-09T18:41:00Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.029426,
+          43.203674,
+          329
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Waypoint 84",
+        "desc": "",
+        "type": "Not specified",
+        "time": "2020-10-09T19:41:22Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.029471,
+          43.203857,
+          330.251537
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Waypoint 85",
+        "desc": "",
+        "type": "Not specified",
+        "time": "2020-10-09T19:41:24Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.029471,
+          43.203857,
+          330.140801
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Waypoint 86",
+        "desc": "",
+        "type": "Not specified",
+        "time": "2020-10-09T19:41:26Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.029471,
+          43.203857,
+          330.440948
+        ]
+      }
+    }
+  ]
+}

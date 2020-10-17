@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" creator="EasyTrails" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+	<trk>
+		<name><![CDATA[Shortcut]]></name>
+		<desc><![CDATA[]]></desc>
+		<trkseg>
+			<trkpt lat="43.204874" lon="-72.027083">
+				<ele>346.261196</ele>
+				<time>2020-10-09T17:11:04Z</time>
+				<hdop>2.000000</hdop>
+				<vdop>2.400000</vdop>
+			</trkpt>
+			<trkpt lat="43.204896" lon="-72.027023">
+				<ele>343.549953</ele>
+				<time>2020-10-09T17:11:15Z</time>
+				<hdop>1.000000</hdop>
+				<vdop>1.200000</vdop>
+			</trkpt>
+			<trkpt lat="43.204886" lon="-72.026960">
+				<ele>342.324551</ele>
+				<time>2020-10-09T17:11:21Z</time>
+				<hdop>1.000000</hdop>
+				<vdop>1.400000</vdop>
+			</trkpt>
+			<trkpt lat="43.204901" lon="-72.026892">
+				<ele>339.089687</ele>
+				<time>2020-10-09T17:11:26Z</time>
+				<hdop>1.000000</hdop>
+				<vdop>1.400000</vdop>
+			</trkpt>
+			<trkpt lat="43.204926" lon="-72.026837">
+				<ele>340.325527</ele>
+				<time>2020-10-09T17:11:29Z</time>
+				<hdop>1.000000</hdop>
+				<vdop>1.400000</vdop>
+			</trkpt>
+			<trkpt lat="43.204949" lon="-72.026774">
+				<ele>340.922817</ele>
+				<time>2020-10-09T17:11:36Z</time>
+				<hdop>1.000000</hdop>
+				<vdop>1.200000</vdop>
+			</trkpt>
+			<trkpt lat="43.204971" lon="-72.026714">
+				<ele>340.099880</ele>
+				<time>2020-10-09T17:11:41Z</time>
+				<hdop>1.000000</hdop>
+				<vdop>1.400000</vdop>
+			</trkpt>
+			<trkpt lat="43.204990" lon="-72.026649">
+				<ele>339.817348</ele>
+				<time>2020-10-09T17:11:48Z</time>
+				<hdop>1.000000</hdop>
+				<vdop>1.400000</vdop>
+			</trkpt>
+			<trkpt lat="43.205024" lon="-72.026592">
+				<ele>340.311550</ele>
+				<time>2020-10-09T17:11:54Z</time>
+				<hdop>1.000000</hdop>
+				<vdop>1.400000</vdop>
+			</trkpt>
+			<trkpt lat="43.205055" lon="-72.026545">
+				<ele>340.530117</ele>
+				<time>2020-10-09T17:11:59Z</time>
+				<hdop>1.000000</hdop>
+				<vdop>1.400000</vdop>
+			</trkpt>
+		</trkseg>
+	</trk>
+</gpx>

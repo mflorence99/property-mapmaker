@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" creator="EasyTrails" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+	<trk>
+		<name><![CDATA[Hemlock Causeway ]]></name>
+		<desc><![CDATA[]]></desc>
+		<trkseg>
+			<trkpt lat="43.208316" lon="-72.024278">
+				<ele>378.106167</ele>
+				<time>2020-10-15T13:30:07Z</time>
+				<hdop>1.000000</hdop>
+				<vdop>1.400000</vdop>
+			</trkpt>
+			<trkpt lat="43.208367" lon="-72.024279">
+				<ele>377.935329</ele>
+				<time>2020-10-15T13:30:17Z</time>
+				<hdop>1.000000</hdop>
+				<vdop>1.400000</vdop>
+			</trkpt>
+			<trkpt lat="43.208414" lon="-72.024290">
+				<ele>377.898037</ele>
+				<time>2020-10-15T13:30:22Z</time>
+				<hdop>1.000000</hdop>
+				<vdop>1.400000</vdop>
+			</trkpt>
+			<trkpt lat="43.208460" lon="-72.024307">
+				<ele>377.548061</ele>
+				<time>2020-10-15T13:30:27Z</time>
+				<hdop>1.000000</hdop>
+				<vdop>1.400000</vdop>
+			</trkpt>
+			<trkpt lat="43.208516" lon="-72.024324">
+				<ele>377.243862</ele>
+				<time>2020-10-15T13:30:32Z</time>
+				<hdop>1.000000</hdop>
+				<vdop>1.400000</vdop>
+			</trkpt>
+			<trkpt lat="43.208561" lon="-72.024341">
+				<ele>376.917690</ele>
+				<time>2020-10-15T13:30:36Z</time>
+				<hdop>1.000000</hdop>
+				<vdop>1.400000</vdop>
+			</trkpt>
+			<trkpt lat="43.208613" lon="-72.024352">
+				<ele>376.814236</ele>
+				<time>2020-10-15T13:30:41Z</time>
+				<hdop>1.000000</hdop>
+				<vdop>1.400000</vdop>
+			</trkpt>
+			<trkpt lat="43.208666" lon="-72.024354">
+				<ele>377.395840</ele>
+				<time>2020-10-15T13:30:49Z</time>
+				<hdop>1.000000</hdop>
+				<vdop>1.200000</vdop>
+			</trkpt>
+			<trkpt lat="43.208710" lon="-72.024385">
+				<ele>379.149990</ele>
+				<time>2020-10-15T13:30:54Z</time>
+				<hdop>1.000000</hdop>
+				<vdop>1.400000</vdop>
+			</trkpt>
+			<trkpt lat="43.208755" lon="-72.024417">
+				<ele>380.225185</ele>
+				<time>2020-10-15T13:31:01Z</time>
+				<hdop>1.000000</hdop>
+				<vdop>1.400000</vdop>
+			</trkpt>
+			<trkpt lat="43.208812" lon="-72.024421">
+				<ele>378.215298</ele>
+				<time>2020-10-15T13:31:13Z</time>
+				<hdop>1.000000</hdop>
+				<vdop>1.400000</vdop>
+			</trkpt>
+		</trkseg>
+	</trk>
+</gpx>

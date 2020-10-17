@@ -1,0 +1,245 @@
+<?xml version="1.0"?>
+<gpx version="1.0" creator="Viking -- http://viking.sf.net/"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://www.topografix.com/GPX/1/0"
+xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+<trk>
+  <name>Park Lane</name>
+  <trkseg>
+  <trkpt lat="43.206710000000001" lon="-72.028762999999998">
+    <ele>350.25962700000002</ele>
+    <time>2020-10-09T18:32:00Z</time>
+    <hdop>1</hdop>
+    <vdop>1.2</vdop>
+  </trkpt>
+  <trkpt lat="43.206665000000001" lon="-72.028782000000007">
+    <ele>350.42379599999998</ele>
+    <time>2020-10-09T18:32:07Z</time>
+    <hdop>1</hdop>
+    <vdop>1.2</vdop>
+  </trkpt>
+  <trkpt lat="43.206617999999999" lon="-72.028773000000001">
+    <ele>350.33908300000002</ele>
+    <time>2020-10-09T18:32:11Z</time>
+    <hdop>1</hdop>
+    <vdop>1.2</vdop>
+  </trkpt>
+  <trkpt lat="43.206567999999997" lon="-72.028762">
+    <ele>350.552077</ele>
+    <time>2020-10-09T18:32:18Z</time>
+    <hdop>1</hdop>
+    <vdop>1.2</vdop>
+  </trkpt>
+  <trkpt lat="43.206519999999998" lon="-72.028763999999995">
+    <ele>350.72860400000002</ele>
+    <time>2020-10-09T18:32:25Z</time>
+    <hdop>1</hdop>
+    <vdop>1.2</vdop>
+  </trkpt>
+  <trkpt lat="43.206473000000003" lon="-72.028772000000004">
+    <ele>351.08640200000002</ele>
+    <time>2020-10-09T18:32:30Z</time>
+    <hdop>1</hdop>
+    <vdop>1.2</vdop>
+  </trkpt>
+  <trkpt lat="43.206426" lon="-72.028769999999994">
+    <ele>350.920006</ele>
+    <time>2020-10-09T18:32:35Z</time>
+    <hdop>1</hdop>
+    <vdop>1.2</vdop>
+  </trkpt>
+  <trkpt lat="43.20637" lon="-72.028775999999993">
+    <ele>351.16170499999998</ele>
+    <time>2020-10-09T18:32:40Z</time>
+    <hdop>1</hdop>
+    <vdop>1.2</vdop>
+  </trkpt>
+  <trkpt lat="43.206327999999999" lon="-72.028801999999999">
+    <ele>351.30776600000002</ele>
+    <time>2020-10-09T18:32:46Z</time>
+    <hdop>1</hdop>
+    <vdop>1.2</vdop>
+  </trkpt>
+  <trkpt lat="43.206282000000002" lon="-72.028816000000006">
+    <ele>350.33749499999999</ele>
+    <time>2020-10-09T18:32:52Z</time>
+    <hdop>1</hdop>
+    <vdop>1.2</vdop>
+  </trkpt>
+  <trkpt lat="43.206231000000002" lon="-72.028825999999995">
+    <ele>349.30399199999999</ele>
+    <time>2020-10-09T18:32:57Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  <trkpt lat="43.206187" lon="-72.028848999999994">
+    <ele>349.24872399999998</ele>
+    <time>2020-10-09T18:33:01Z</time>
+    <hdop>1</hdop>
+    <vdop>1.2</vdop>
+  </trkpt>
+  <trkpt lat="43.206139" lon="-72.028853999999995">
+    <ele>349.62081999999998</ele>
+    <time>2020-10-09T18:33:06Z</time>
+    <hdop>1</hdop>
+    <vdop>1.2</vdop>
+  </trkpt>
+  <trkpt lat="43.206094" lon="-72.028846999999999">
+    <ele>349.89964700000002</ele>
+    <time>2020-10-09T18:33:10Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  <trkpt lat="43.206051000000002" lon="-72.028869">
+    <ele>350.18257699999998</ele>
+    <time>2020-10-09T18:33:15Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  <trkpt lat="43.205998999999998" lon="-72.028889000000007">
+    <ele>350.19163400000002</ele>
+    <time>2020-10-09T18:33:22Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  <trkpt lat="43.205953999999998" lon="-72.028909999999996">
+    <ele>350.56077099999999</ele>
+    <time>2020-10-09T18:33:27Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  <trkpt lat="43.205896000000003" lon="-72.028892999999997">
+    <ele>350.86884300000003</ele>
+    <time>2020-10-09T18:33:32Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  <trkpt lat="43.205849000000001" lon="-72.028898999999996">
+    <ele>349.57266600000003</ele>
+    <time>2020-10-09T18:33:37Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  <trkpt lat="43.205790999999998" lon="-72.028903">
+    <ele>348.54089399999998</ele>
+    <time>2020-10-09T18:33:41Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  <trkpt lat="43.205744000000003" lon="-72.028915999999995">
+    <ele>347.63184699999999</ele>
+    <time>2020-10-09T18:33:46Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  <trkpt lat="43.205685000000003" lon="-72.028925999999998">
+    <ele>347.13569699999999</ele>
+    <time>2020-10-09T18:33:50Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  <trkpt lat="43.205641999999997" lon="-72.028970999999999">
+    <ele>346.30175200000002</ele>
+    <time>2020-10-09T18:33:54Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  <trkpt lat="43.205598999999999" lon="-72.028998000000001">
+    <ele>345.64498200000003</ele>
+    <time>2020-10-09T18:33:59Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  <trkpt lat="43.205553000000002" lon="-72.029027999999997">
+    <ele>344.94707599999998</ele>
+    <time>2020-10-09T18:34:04Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  <trkpt lat="43.205517" lon="-72.029070000000004">
+    <ele>344.48385300000001</ele>
+    <time>2020-10-09T18:34:09Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  <trkpt lat="43.205472999999998" lon="-72.029090999999994">
+    <ele>344.20045699999997</ele>
+    <time>2020-10-09T18:34:13Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  <trkpt lat="43.205429000000002" lon="-72.029121000000004">
+    <ele>344.20714700000002</ele>
+    <time>2020-10-09T18:34:17Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  <trkpt lat="43.205379999999998" lon="-72.029150999999999">
+    <ele>344.57670899999999</ele>
+    <time>2020-10-09T18:34:22Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  <trkpt lat="43.205337999999998" lon="-72.029182000000006">
+    <ele>344.46090299999997</ele>
+    <time>2020-10-09T18:34:27Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  <trkpt lat="43.205291000000003" lon="-72.029210000000006">
+    <ele>344.89842900000002</ele>
+    <time>2020-10-09T18:34:32Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  <trkpt lat="43.205241999999998" lon="-72.029235999999997">
+    <ele>344.20127100000002</ele>
+    <time>2020-10-09T18:34:37Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  <trkpt lat="43.205196000000001" lon="-72.029253999999995">
+    <ele>344.19699100000003</ele>
+    <time>2020-10-09T18:34:42Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  <trkpt lat="43.205165999999998" lon="-72.029302999999999">
+    <ele>344.087423</ele>
+    <time>2020-10-09T18:34:46Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  <trkpt lat="43.205131000000002" lon="-72.029358999999999">
+    <ele>343.57126099999999</ele>
+    <time>2020-10-09T18:34:51Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  <trkpt lat="43.205095999999998" lon="-72.029400999999993">
+    <ele>343.60390100000001</ele>
+    <time>2020-10-09T18:34:56Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  <trkpt lat="43.205055000000002" lon="-72.029428999999993">
+    <ele>343.76629200000002</ele>
+    <time>2020-10-09T18:35:02Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  <trkpt lat="43.205002999999998" lon="-72.029437999999999">
+    <ele>343.48066699999998</ele>
+    <time>2020-10-09T18:35:06Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  <trkpt lat="43.204948999999999" lon="-72.029452000000006">
+    <ele>342.86175200000002</ele>
+    <time>2020-10-09T18:35:10Z</time>
+    <hdop>1</hdop>
+    <vdop>1.3999999999999999</vdop>
+  </trkpt>
+  </trkseg>
+</trk>
+</gpx>

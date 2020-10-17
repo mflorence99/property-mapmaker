@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<gpx version="1.0" creator="Viking -- http://viking.sf.net/"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://www.topografix.com/GPX/1/0"
+xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+<trk>
+  <name>Second faux trail</name>
+  <trkseg>
+  <trkpt lat="43.208961570744506" lon="-72.024276599399087">
+  </trkpt>
+  <trkpt lat="43.209000669912328" lon="-72.024257823935983">
+  </trkpt>
+  <trkpt lat="43.209041724011577" lon="-72.024241730681894">
+  </trkpt>
+  <trkpt lat="43.209076913217501" lon="-72.024247095099923">
+  </trkpt>
+  <trkpt lat="43.209100372676851" lon="-72.024279281608102">
+  </trkpt>
+  <trkpt lat="43.209094507812864" lon="-72.024284646026132">
+  </trkpt>
+  </trkseg>
+</trk>
+</gpx>

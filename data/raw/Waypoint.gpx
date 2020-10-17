@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" creator="EasyTrails" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+	<wpt lat="43.206717" lon="-72.022854">
+		<ele>366.000000</ele>
+		<time>2020-10-15T13:55:14Z</time>
+		<name><![CDATA[Deer Valley Ovelook]]></name>
+		<desc><![CDATA[]]></desc>
+		<type><![CDATA[Landmark]]></type>
+	</wpt>
+	
+</gpx>
