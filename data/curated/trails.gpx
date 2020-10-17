@@ -3,6 +3,11 @@
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xmlns="http://www.topografix.com/GPX/1/0"
 xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+  <name>trails.gpx</name>
+  <author></author>
+  <desc></desc>
+  <time>2020-10-17T15:11:29.345073Z</time>
+  <keywords></keywords>
 <trk>
   <name>Access road</name>
   <trkseg>
@@ -248,7 +253,6 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
   </trkpt>
   </trkseg>
 </trk>
-
 <trk>
   <name>Big rock connector</name>
   <trkseg>
@@ -500,7 +504,6 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
   </trkpt>
   </trkseg>
 </trk>
-
 <trk>
   <name>Central loop</name>
   <trkseg>
@@ -510,7 +513,7 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
     <hdop>2</hdop>
     <vdop>2.3999999999999999</vdop>
   </trkpt>
-  <trkpt lat="43.204906000000001" lon="-72.026055999999997">
+  <trkpt lat="43.204936213053678" lon="-72.026072962936411">
     <ele>350.47152299999999</ele>
     <time>2020-10-09T17:23:49Z</time>
     <hdop>1</hdop>
@@ -1633,7 +1636,6 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
   </trkpt>
   </trkseg>
 </trk>
-
 <trk>
   <name>Hemlock Causeway </name>
   <trkseg>
@@ -1705,7 +1707,6 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
   </trkpt>
   </trkseg>
 </trk>
-
 <trk>
   <name>Hemlock rock trail</name>
   <trkseg>
@@ -1837,7 +1838,6 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
   </trkpt>
   </trkseg>
 </trk>
-
 <trk>
   <name>Horse trail</name>
   <trkseg>
@@ -1903,7 +1903,6 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
   </trkpt>
   </trkseg>
 </trk>
-
 <trk>
   <name>Inner loop</name>
   <trkseg>
@@ -2501,43 +2500,37 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
     <hdop>1</hdop>
     <vdop>1.3999999999999999</vdop>
   </trkpt>
-  <trkpt lat="43.202889999999996" lon="-72.028428000000005">
+  <trkpt lat="43.202883336080845" lon="-72.028409166988382">
     <ele>319.264814</ele>
     <time>2020-10-09T17:04:42Z</time>
     <hdop>1</hdop>
     <vdop>1.2</vdop>
   </trkpt>
-  <trkpt lat="43.202888999999999" lon="-72.028497000000002">
-    <ele>319.40465699999999</ele>
-    <time>2020-10-09T17:04:48Z</time>
-    <hdop>1</hdop>
-    <vdop>1.2</vdop>
-  </trkpt>
-  <trkpt lat="43.202903999999997" lon="-72.028559000000001">
+  <trkpt lat="43.202861829385007" lon="-72.028435989078531">
     <ele>319.33232900000002</ele>
     <time>2020-10-09T17:04:53Z</time>
     <hdop>1</hdop>
     <vdop>1.2</vdop>
   </trkpt>
-  <trkpt lat="43.202877999999998" lon="-72.028615000000002">
+  <trkpt lat="43.202838367526361" lon="-72.02846817558671">
     <ele>319.178988</ele>
     <time>2020-10-09T17:04:59Z</time>
     <hdop>2</hdop>
     <vdop>2.6000000000000001</vdop>
   </trkpt>
-  <trkpt lat="43.202835999999998" lon="-72.028655999999998">
+  <trkpt lat="43.202807085034131" lon="-72.028537913021097">
     <ele>319.42957999999999</ele>
     <time>2020-10-09T17:05:05Z</time>
     <hdop>1</hdop>
     <vdop>1.2</vdop>
   </trkpt>
-  <trkpt lat="43.202798000000001" lon="-72.028706999999997">
+  <trkpt lat="43.202771892211182" lon="-72.028607650455484">
     <ele>319.44176599999997</ele>
     <time>2020-10-09T17:05:09Z</time>
     <hdop>1</hdop>
     <vdop>1.2</vdop>
   </trkpt>
-  <trkpt lat="43.202767999999999" lon="-72.028762999999998">
+  <trkpt lat="43.202740609684867" lon="-72.028672023471842">
     <ele>319.37796900000001</ele>
     <time>2020-10-09T17:05:14Z</time>
     <hdop>1</hdop>
@@ -2545,7 +2538,6 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
   </trkpt>
   </trkseg>
 </trk>
-
 <trk>
   <name>Narrow causeway connector</name>
   <trkseg>
@@ -2713,7 +2705,6 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
   </trkpt>
   </trkseg>
 </trk>
-
 <trk>
   <name>Outer loop</name>
   <trkseg>
@@ -4243,11 +4234,10 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
   </trkpt>
   </trkseg>
 </trk>
-
 <trk>
   <name>Park Lane</name>
   <trkseg>
-  <trkpt lat="43.206710000000001" lon="-72.028762999999998">
+  <trkpt lat="43.206797428465727" lon="-72.028784676250467">
     <ele>350.25962700000002</ele>
     <time>2020-10-09T18:32:00Z</time>
     <hdop>1</hdop>
@@ -4475,7 +4465,7 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
     <hdop>1</hdop>
     <vdop>1.3999999999999999</vdop>
   </trkpt>
-  <trkpt lat="43.204948999999999" lon="-72.029452000000006">
+  <trkpt lat="43.20490590918201" lon="-72.029469980653772">
     <ele>342.86175200000002</ele>
     <time>2020-10-09T18:35:10Z</time>
     <hdop>1</hdop>
@@ -4608,7 +4598,6 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
   </trkpt>
   </trkseg>
 </trk>
-
 <trk>
   <name>Second faux trail</name>
   <trkseg>
@@ -4626,7 +4615,6 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
   </trkpt>
   </trkseg>
 </trk>
-
 <trk>
   <name>Shortcut</name>
   <trkseg>
@@ -4692,5 +4680,4 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
   </trkpt>
   </trkseg>
 </trk>
-
 </gpx>

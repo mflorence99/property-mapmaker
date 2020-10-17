@@ -1,28 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<gpx xmlns="http://www.topografix.com/GPX/1/1" creator="EasyTrails" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
-		
-	<wpt lat="43.205444" lon="-72.028289">
-		<ele>344.000000</ele>
-		<time>2020-10-09T13:39:02Z</time>
-		<name><![CDATA[Bridge 1]]></name>
-		<desc><![CDATA[]]></desc>
-		<type><![CDATA[Bridge]]></type>
-	</wpt>
-	
-	<wpt lat="43.206764" lon="-72.028942">
-		<ele>341.000000</ele>
-		<time>2020-10-09T13:42:25Z</time>
-		<name><![CDATA[Bridge 2]]></name>
-		<desc><![CDATA[]]></desc>
-		<type><![CDATA[Bridge]]></type>
-	</wpt>
-	
-	<wpt lat="43.208064" lon="-72.028267">
-		<ele>338.000000</ele>
-		<time>2020-10-09T13:47:37Z</time>
-		<name><![CDATA[Bridge 3]]></name>
-		<desc><![CDATA[]]></desc>
-		<type><![CDATA[Bridge]]></type>
-	</wpt>
-
+<?xml version="1.0"?>
+<gpx version="1.0" creator="Viking -- http://viking.sf.net/"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://www.topografix.com/GPX/1/0"
+xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+  <name>bridges.gpx</name>
+  <time>2020-10-09T13:39:02Z</time>
+<wpt lat="43.20519414770343" lon="-72.02829175190449">
+  <name>Bridge 1</name>
+  <ele>344</ele>
+  <time>2020-10-09T13:39:02Z</time>
+</wpt>
+<wpt lat="43.206774809214373" lon="-72.028736328048709">
+  <name>Bridge 2</name>
+  <ele>341</ele>
+  <time>2020-10-09T13:42:25Z</time>
+</wpt>
+<wpt lat="43.208169001270548" lon="-72.028264474695206">
+  <name>Bridge 3</name>
+  <ele>338</ele>
+  <time>2020-10-09T13:47:37Z</time>
+</wpt>
 </gpx>
