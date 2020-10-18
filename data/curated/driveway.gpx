@@ -8,31 +8,31 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
 <trk>
   <name>Driveway</name>
   <trkseg>
-  <trkpt lat="43.20393" lon="-72.029556999999997">
+  <trkpt lat="43.203789135097281" lon="-72.029538673610688">
     <ele>336.84286100000003</ele>
     <time>2020-10-17T14:19:35Z</time>
     <hdop>2</hdop>
     <vdop>2.3999999999999999</vdop>
   </trkpt>
-  <trkpt lat="43.203882" lon="-72.029570000000007">
+  <trkpt lat="43.203774471659564" lon="-72.029556107969285">
     <ele>337.70040499999999</ele>
     <time>2020-10-17T14:19:38Z</time>
     <hdop>2</hdop>
     <vdop>2.3999999999999999</vdop>
   </trkpt>
-  <trkpt lat="43.203831999999998" lon="-72.029578999999998">
+  <trkpt lat="43.203761763344041" lon="-72.029577565641404">
     <ele>339.21865500000001</ele>
     <time>2020-10-17T14:19:41Z</time>
     <hdop>2</hdop>
     <vdop>2.7999999999999998</vdop>
   </trkpt>
-  <trkpt lat="43.203772999999998" lon="-72.029593000000006">
+  <trkpt lat="43.203740256957872" lon="-72.029593658895493">
     <ele>341.62099799999999</ele>
     <time>2020-10-17T14:19:44Z</time>
     <hdop>1</hdop>
     <vdop>1.6000000000000001</vdop>
   </trkpt>
-  <trkpt lat="43.20373" lon="-72.029612">
+  <trkpt lat="43.203712885182696" lon="-72.029612434358597">
     <ele>342.20858399999997</ele>
     <time>2020-10-17T14:19:47Z</time>
     <hdop>1</hdop>

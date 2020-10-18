@@ -1906,7 +1906,7 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
 <trk>
   <name>Inner loop</name>
   <trkseg>
-  <trkpt lat="43.206811000000002" lon="-72.028465999999995">
+  <trkpt lat="43.206799365056078" lon="-72.028541305059434">
     <ele>341.71261199999998</ele>
     <time>2020-10-09T16:55:31Z</time>
     <hdop>2</hdop>
@@ -4220,13 +4220,13 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
     <hdop>1</hdop>
     <vdop>1.3999999999999999</vdop>
   </trkpt>
-  <trkpt lat="43.208199999999998" lon="-72.028064000000001">
+  <trkpt lat="43.20821381164486" lon="-72.028116174930574">
     <ele>340.49775799999998</ele>
     <time>2020-10-09T18:12:35Z</time>
     <hdop>1</hdop>
     <vdop>1.3999999999999999</vdop>
   </trkpt>
-  <trkpt lat="43.208154" lon="-72.028114000000002">
+  <trkpt lat="43.208167380781319" lon="-72.028259673112871">
     <ele>340.24676399999998</ele>
     <time>2020-10-09T18:12:39Z</time>
     <hdop>1</hdop>
