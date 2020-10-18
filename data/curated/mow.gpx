@@ -1297,25 +1297,25 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
     <hdop>1</hdop>
     <vdop>1.2</vdop>
   </trkpt>
-  <trkpt lat="43.205399999999997" lon="-72.028537">
+  <trkpt lat="43.20540337894478" lon="-72.028503985111229">
     <ele>334.36359900000002</ele>
     <time>2020-10-15T19:07:57Z</time>
     <hdop>1</hdop>
     <vdop>1.3999999999999999</vdop>
   </trkpt>
-  <trkpt lat="43.205399531411956" lon="-72.028556399158475">
+  <trkpt lat="43.205323220896709" lon="-72.028520078365318">
     <ele>334.72705000000002</ele>
     <time>2020-10-15T19:08:04Z</time>
     <hdop>1</hdop>
     <vdop>1.3999999999999999</vdop>
   </trkpt>
-  <trkpt lat="43.205406000000004" lon="-72.028580000000005">
+  <trkpt lat="43.205320288283197" lon="-72.028595180217735">
     <ele>336.015939</ele>
     <time>2020-10-15T19:08:09Z</time>
     <hdop>1</hdop>
     <vdop>1.3999999999999999</vdop>
   </trkpt>
-  <trkpt lat="43.205446000000002" lon="-72.028627999999998">
+  <trkpt lat="43.205377962989729" lon="-72.028620661203377">
     <ele>337.61935299999999</ele>
     <time>2020-10-15T19:08:15Z</time>
     <hdop>1</hdop>
@@ -1375,19 +1375,19 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
     <hdop>1</hdop>
     <vdop>1.3999999999999999</vdop>
   </trkpt>
-  <trkpt lat="43.205126" lon="-72.028693000000004">
+  <trkpt lat="43.205090566453336" lon="-72.028689057533256">
     <ele>334.47529400000002</ele>
     <time>2020-10-15T19:09:15Z</time>
     <hdop>1</hdop>
     <vdop>1.3999999999999999</vdop>
   </trkpt>
-  <trkpt lat="43.205165000000001" lon="-72.028733000000003">
+  <trkpt lat="43.205116960069262" lon="-72.028742701713554">
     <ele>334.79090300000001</ele>
     <time>2020-10-15T19:09:20Z</time>
     <hdop>1</hdop>
     <vdop>1.3999999999999999</vdop>
   </trkpt>
-  <trkpt lat="43.205190000000002" lon="-72.028784999999999">
+  <trkpt lat="43.205157039241989" lon="-72.028801710311882">
     <ele>336.68944299999998</ele>
     <time>2020-10-15T19:09:32Z</time>
     <hdop>1</hdop>

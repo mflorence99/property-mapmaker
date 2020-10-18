@@ -15,7 +15,7 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
   <ele>348</ele>
   <time>2020-10-15T13:18:05Z</time>
 </wpt>
-<wpt lat="43.205142163761757" lon="-72.025631022562976">
+<wpt lat="43.205188008611742" lon="-72.025528975675584">
   <name>Big Oak  Causeway </name>
   <ele>338</ele>
   <time>2020-10-09T14:27:23Z</time>
@@ -74,6 +74,26 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
   <name>Old well</name>
   <ele>347</ele>
   <time>2020-10-17T14:43:30Z</time>
+</wpt>
+<wpt lat="43.206229812949324" lon="-72.02561916495371">
+  <name>Swamp 1</name>
+  <ele>346</ele>
+  <time>2020-10-18T17:36:42Z</time>
+</wpt>
+<wpt lat="43.207167250577434" lon="-72.026461378584386">
+  <name>Swamp 2</name>
+  <ele>346</ele>
+  <time>2020-10-18T17:44:48Z</time>
+</wpt>
+<wpt lat="43.207481029923017" lon="-72.02681140686083">
+  <name>Swamp 3</name>
+  <ele>346</ele>
+  <time>2020-10-18T17:47:15Z</time>
+</wpt>
+<wpt lat="43.207763" lon="-72.027283999999995">
+  <name>Swamp 4</name>
+  <ele>346</ele>
+  <time>2020-10-18T17:49:41Z</time>
 </wpt>
 <wpt lat="43.205668078399569" lon="-72.026478600611682">
   <name>Swamp Causeway </name>
