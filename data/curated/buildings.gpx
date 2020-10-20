@@ -1,44 +1,83 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<gpx xmlns="http://www.topografix.com/GPX/1/1" creator="EasyTrails" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
-	
-	<wpt lat="43.204221" lon="-72.029814">
-		<ele>338.000000</ele>
-		<time>2020-10-09T18:38:09Z</time>
-		<name><![CDATA[Water Temple]]></name>
-		<desc><![CDATA[]]></desc>
-		<type><![CDATA[Building]]></type>
-	</wpt>
-	
-	<wpt lat="43.204032" lon="-72.029493">
-		<ele>333.000000</ele>
-		<time>2020-10-09T18:39:07Z</time>
-		<name><![CDATA[Barn]]></name>
-		<desc><![CDATA[]]></desc>
-		<type><![CDATA[Building]]></type>
-	</wpt>
-	
-	<wpt lat="43.203888" lon="-72.029601">
-		<ele>331.000000</ele>
-		<time>2020-10-09T18:39:46Z</time>
-		<name><![CDATA[House]]></name>
-		<desc><![CDATA[]]></desc>
-		<type><![CDATA[Building]]></type>
-	</wpt>
-	
-	<wpt lat="43.203903" lon="-72.029376">
-		<ele>331.000000</ele>
-		<time>2020-10-09T18:40:17Z</time>
-		<name><![CDATA[Garage]]></name>
-		<desc><![CDATA[]]></desc>
-		<type><![CDATA[Building]]></type>
-	</wpt>
-	
-	<wpt lat="43.203674" lon="-72.029426">
-		<ele>329.000000</ele>
-		<time>2020-10-09T18:41:00Z</time>
-		<name><![CDATA[Gazebo]]></name>
-		<desc><![CDATA[]]></desc>
-		<type><![CDATA[Building]]></type>
-	</wpt>
-
+<?xml version="1.0"?>
+<gpx version="1.0" creator="Viking -- http://viking.sf.net/"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://www.topografix.com/GPX/1/0"
+xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+  <name>buildings.gpx</name>
+  <author></author>
+  <desc></desc>
+  <time>2020-10-20T10:39:15.191683Z</time>
+  <keywords></keywords>
+<trk>
+  <name>Barn</name>
+  <trkseg>
+  <trkpt lat="43.204143372242356" lon="-72.029501050594334">
+  </trkpt>
+  <trkpt lat="43.204045615181869" lon="-72.029522508266453">
+  </trkpt>
+  <trkpt lat="43.204027041571592" lon="-72.029368281248097">
+  </trkpt>
+  <trkpt lat="43.204124992153531" lon="-72.029346534018032">
+  </trkpt>
+  <trkpt lat="43.204143372242356" lon="-72.029501050594334">
+  </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>Gazebo</name>
+  <trkseg>
+  <trkpt lat="43.203719111150491" lon="-72.029448747518543">
+  </trkpt>
+  <trkpt lat="43.203728347105312" lon="-72.029422641698829">
+  </trkpt>
+  <trkpt lat="43.203720087403859" lon="-72.029396444442753">
+  </trkpt>
+  <trkpt lat="43.20370053744081" lon="-72.029396444442753">
+  </trkpt>
+  <trkpt lat="43.203689488948946" lon="-72.029421635870449">
+  </trkpt>
+  <trkpt lat="43.203699508979057" lon="-72.029447452132217">
+  </trkpt>
+  <trkpt lat="43.203719111150491" lon="-72.029448747518543">
+  </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>House</name>
+  <trkseg>
+  <trkpt lat="43.203895072330091" lon="-72.029719650629048">
+  </trkpt>
+  <trkpt lat="43.203890183216267" lon="-72.029621750000004">
+  </trkpt>
+  <trkpt lat="43.203930946777469" lon="-72.029618442956917">
+  </trkpt>
+  <trkpt lat="43.203927525316942" lon="-72.029552728836052">
+  </trkpt>
+  <trkpt lat="43.203885734604967" lon="-72.029558093254082">
+  </trkpt>
+  <trkpt lat="43.203876498673985" lon="-72.029440700891499">
+  </trkpt>
+  <trkpt lat="43.203817844985984" lon="-72.029448747518543">
+  </trkpt>
+  <trkpt lat="43.203839350034656" lon="-72.029726356151585">
+  </trkpt>
+  <trkpt lat="43.203895072330091" lon="-72.029719650629048">
+  </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>Water Temple</name>
+  <trkseg>
+  <trkpt lat="43.204256768716512" lon="-72.029906064155583">
+  </trkpt>
+  <trkpt lat="43.204216688952314" lon="-72.029883265378956">
+  </trkpt>
+  <trkpt lat="43.204246015611631" lon="-72.029793411376957">
+  </trkpt>
+  <trkpt lat="43.204286095356565" lon="-72.029814869049076">
+  </trkpt>
+  <trkpt lat="43.204256768716512" lon="-72.029906064155583">
+  </trkpt>
+  </trkseg>
+</trk>
 </gpx>
