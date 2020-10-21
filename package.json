@@ -1,0 +1,54 @@
+{
+  "name": "map",
+  "version": "0.0.0",
+  "description": "Personal tool to create map of our property from GPX data and other sources",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mflorence99/property-mapmaker.git"
+  },
+  "author": "Mark Florence",
+  "scripts": {
+    "clean:deps": "rm -rf node_modules && rm package-lock.json && npm install",
+    "postinstall": "ngcc",
+    "prettier": "prettier --write .",
+    "serve": "ng serve"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^0.1001.6",
+    "@angular/cli": "^10",
+    "@angular/common": "^10",
+    "@angular/compiler": "^10",
+    "@angular/compiler-cli": "^10",
+    "@angular/core": "^10",
+    "@angular/language-service": "^10",
+    "@angular/platform-browser": "^10",
+    "@angular/platform-browser-dynamic": "^10",
+    "@fortawesome/angular-fontawesome": "^0.7.0",
+    "@fortawesome/fontawesome-svg-core": "^1",
+    "@fortawesome/free-brands-svg-icons": "^5",
+    "@fortawesome/free-regular-svg-icons": "^5",
+    "@fortawesome/free-solid-svg-icons": "^5",
+    "@typescript-eslint/eslint-plugin": "^4",
+    "@typescript-eslint/parser": "^4",
+    "eslint": "^7",
+    "eslint-config-mflorence99": "^1.1.1",
+    "eslint-config-prettier": "^6",
+    "eslint-plugin-import-splitnsort": "^0.1.4",
+    "prettier": "^2",
+    "prettier-plugin-package": "^1",
+    "rxjs": "^6",
+    "stylelint": "^13",
+    "stylelint-config-standard": "^20",
+    "stylelint-order": "^4",
+    "stylelint-scss": "^3",
+    "ts-node": "^9",
+    "tslib": "^2",
+    "typescript": "^4",
+    "zone.js": "^0.11.2"
+  },
+  "build": {
+    "appId": "map"
+  }
+}
