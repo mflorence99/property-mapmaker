@@ -1,0 +1,70 @@
+@import 'colors.scss';
+
+:root {
+  --primary-color: var(--mat-blue-500);
+  --accent-color: var(--mat-amber-500);
+  --warn-color: var(--mat-red-500);
+
+  --text-color: var(--mat-grey-100);
+  --disabled-color: var(--mat-grey-500);
+  --background-color: var(--mat-grey-900);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--mat-grey-700);
+  border-radius: 4px;
+}
+
+:focus {
+  outline: 0;
+}
+
+a {
+  color: var(--accent-color);
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  height: 100%;
+  line-height: 150%;
+  overflow: hidden;
+  user-select: none;
+  width: 100%;
+}
+
+html {
+  border: 0;
+  font-size: 14px;
+  height: 100%;
+  width: 100%;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
