@@ -1,9 +1,11 @@
+import { CacheInterceptor } from './cache';
 import { ContoursComponent } from './contours';
 import { RootComponent } from './root';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 
@@ -36,6 +38,14 @@ const MODULES = [
 
   declarations: [...COMPONENTS],
 
-  imports: [...MODULES]
+  imports: [...MODULES],
+
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: CacheInterceptor,
+      multi: true
+    }
+  ]
 })
 export class MapModule {}
