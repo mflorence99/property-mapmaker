@@ -2,9 +2,8 @@ import { ChangeDetectionStrategy } from '@angular/core';
 import { Component } from '@angular/core';
 
 @Component({
-  changeDetection: ChangeDetectionStrategy.Default,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   selector: 'map-root',
-  templateUrl: 'root.html',
-  styleUrls: ['root.scss']
+  template: '<map-contours></map-contours>'
 })
 export class RootComponent {}
