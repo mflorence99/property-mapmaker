@@ -7,7 +7,15 @@ import { Component } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.Default,
   selector: 'map-root',
   template: `
-    <main *ngIf="params.ready">
+    <main
+      *ngIf="params.ready"
+      [ngStyle]="{
+        'height.px': params.dims.cyTile * params.dims.numYTiles * params.scale,
+        'width.px': params.dims.cxTile * params.dims.numXTiles * params.scale
+      }"
+    >
+      <map-topo></map-topo>
+      <map-forest></map-forest>
       <map-contours></map-contours>
     </main>
   `

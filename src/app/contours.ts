@@ -13,7 +13,7 @@ const LAYERS = [
 ];
 
 @Component({
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  changeDetection: ChangeDetectionStrategy.Default,
   selector: 'map-contours',
   template: ''
 })
@@ -35,13 +35,13 @@ export class ContoursComponent implements AfterViewInit {
           BBOX: `${this.params.bbox.minX},${this.params.bbox.minY},${this.params.bbox.maxX},${this.params.bbox.maxY}`,
           CRS: this.params.crs,
           FORMAT: 'image/svg',
-          HEIGHT: '1024',
+          HEIGHT: String(this.params.dims.cyTile * this.params.dims.numYTiles),
           LAYERS: LAYERS.join(','),
           REQUEST: 'GetMap',
           SERVICE: 'WMS',
           STYLES: new Array(LAYERS.length).fill('default').join(','),
           VERSION: '1.3.0',
-          WIDTH: '1024'
+          WIDTH: String(this.params.dims.cxTile * this.params.dims.numXTiles)
           /* eslint-enable @typescript-eslint/naming-convention */
         },
         responseType: 'text'

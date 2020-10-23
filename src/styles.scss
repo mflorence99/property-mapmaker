@@ -28,7 +28,7 @@ body {
   font-weight: 400;
   height: 100%;
   line-height: 150%;
-  overflow: hidden;
+  overflow: auto;
   user-select: none;
   width: 100%;
 }
@@ -41,11 +41,34 @@ html {
 }
 
 map-root {
-  overflow: hidden;
+  main {
+    position: relative;
 
-  map-contours {
-    g rect {
-      fill-opacity: 0;
+    map-contours {
+      height: 100%;
+      position: absolute;
+      width: 100%;
+      z-index: 2;
+
+      g rect {
+        fill-opacity: 0;
+      }
+    }
+
+    map-forest {
+      background-color: var(--mat-green-500);
+      height: 100%;
+      opacity: 0.25;
+      position: absolute;
+      width: 100%;
+      z-index: 1;
+    }
+
+    map-topo {
+      height: 100%;
+      position: absolute;
+      width: 100%;
+      z-index: 0;
     }
   }
 }

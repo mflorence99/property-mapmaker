@@ -1,6 +1,8 @@
 import { CacheInterceptor } from './cache';
 import { ContoursComponent } from './contours';
+import { ForestComponent } from './forest';
 import { RootComponent } from './root';
+import { TopoComponent } from './topo';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
@@ -24,7 +26,12 @@ class IconsModule {
   }
 }
 
-const COMPONENTS = [ContoursComponent, RootComponent];
+const COMPONENTS = [
+  ContoursComponent,
+  ForestComponent,
+  RootComponent,
+  TopoComponent
+];
 
 const MODULES = [
   BrowserModule,
