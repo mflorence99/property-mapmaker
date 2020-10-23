@@ -35,13 +35,14 @@
             }
           },
           "options": {
+            "allowedCommonJsDependencies": ["xml2js"],
             "aot": true,
             "assets": ["src/assets"],
             "index": "src/index.html",
             "main": "src/main.ts",
             "outputPath": "dist",
             "polyfills": "src/polyfills.ts",
-            "styles": ["src/theme.scss"],
+            "styles": ["src/styles.scss"],
             "tsConfig": "src/tsconfig.json"
           }
         },

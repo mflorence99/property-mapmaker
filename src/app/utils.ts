@@ -2,12 +2,6 @@ import { Injectable } from '@angular/core';
 
 @Injectable({ providedIn: 'root' })
 export class Utils {
-  /** Run function on next tick */
-  nextTick(fn: Function): void {
-    setTimeout(fn, 0);
-  }
-
-  /** Extract search params from launch URL */
   parseInitialSearchParams(): any {
     if (location.search && location.search.length > 1) {
       const raw = location.search.substring(1).split('&');

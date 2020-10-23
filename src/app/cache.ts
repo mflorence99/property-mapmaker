@@ -16,12 +16,13 @@ export class CacheInterceptor implements HttpInterceptor {
     request: HttpRequest<any>,
     handler: HttpHandler
   ): Observable<HttpEvent<any>> {
-    // quick exit if not a GET for text
-    if (request.method !== 'GET' || request.responseType !== 'text')
+    // quick exit if not a GET for text and cache requested
+    if (
+      request.method !== 'GET' ||
+      request.responseType !== 'text' ||
+      !request.headers.get('x-cache-result')
+    )
       return handler.handle(request);
-    // support escape to ignore cache
-    if (request.headers.get('x-reset-cache'))
-      localStorage.removeItem(request.urlWithParams);
     // check if there's a cached response
     const body = localStorage.getItem(request.urlWithParams);
     if (body) {

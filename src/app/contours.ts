@@ -5,7 +5,6 @@ import { ChangeDetectionStrategy } from '@angular/core';
 import { Component } from '@angular/core';
 import { ElementRef } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { ViewChild } from '@angular/core';
 
 const LAYERS = [
   '11', // 20ft contours
@@ -16,16 +15,21 @@ const LAYERS = [
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
   selector: 'map-contours',
-  template: '<div #contours></div>'
+  template: ''
 })
 export class ContoursComponent implements AfterViewInit {
-  @ViewChild('contours') contours: ElementRef;
-
-  constructor(private http: HttpClient, private params: Params) {}
+  constructor(
+    private host: ElementRef,
+    private http: HttpClient,
+    private params: Params
+  ) {}
 
   ngAfterViewInit(): void {
     this.http
-      .get(this.params.endpoints.contours, {
+      .get('/contours', {
+        headers: {
+          'x-cache-result': 'true'
+        },
         params: {
           /* eslint-disable @typescript-eslint/naming-convention */
           BBOX: `${this.params.bbox.minX},${this.params.bbox.minY},${this.params.bbox.maxX},${this.params.bbox.maxY}`,
@@ -36,15 +40,14 @@ export class ContoursComponent implements AfterViewInit {
           REQUEST: 'GetMap',
           SERVICE: 'WMS',
           STYLES: new Array(LAYERS.length).fill('default').join(','),
-          TILED: 'true',
           VERSION: '1.3.0',
           WIDTH: '1024'
           /* eslint-enable @typescript-eslint/naming-convention */
         },
         responseType: 'text'
       })
-      .subscribe((svg) => {
-        this.contours.nativeElement.innerHTML = svg;
+      .subscribe((svg: string) => {
+        this.host.nativeElement.innerHTML = svg;
       });
   }
 }
