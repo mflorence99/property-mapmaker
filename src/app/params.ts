@@ -19,6 +19,10 @@ export class Params {
     numXTiles: 0,
     numYTiles: 0
   };
+  origin = {
+    lat: 0,
+    lon: 0
+  };
   ready = false;
   scale = 1;
   tiles = {
@@ -49,11 +53,11 @@ export class Params {
       // compute dimension
       this.dims.numYTiles = Math.abs(this.tiles.left - this.tiles.right) + 1;
       this.dims.numXTiles = Math.abs(this.tiles.top - this.tiles.bottom) + 1;
-      // recompute bounding box
-      this.bbox.maxX = this.tile2lon(this.tiles.right);
-      this.bbox.maxY = this.tile2lat(this.tiles.top);
-      this.bbox.minX = this.tile2lon(this.tiles.left);
-      this.bbox.minY = this.tile2lat(this.tiles.bottom);
+      // compute origin for lat/lon conversion
+      const maxX = this.tile2lon(this.tiles.right);
+      const maxY = this.tile2lat(this.tiles.top);
+      this.origin.lat = this.tile2lat(this.tiles.bottom);
+      this.origin.lon = this.tile2lon(this.tiles.left);
       // ready to render!
       this.ready = true;
     });

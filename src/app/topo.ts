@@ -3,6 +3,8 @@ import { Params } from './params';
 import { ChangeDetectionStrategy } from '@angular/core';
 import { Component } from '@angular/core';
 
+// NOTE: don't know why ArcGIS has x, y backwards!
+
 @Component({
   changeDetection: ChangeDetectionStrategy.Default,
   selector: 'map-topo',
