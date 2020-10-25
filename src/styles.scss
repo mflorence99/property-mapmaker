@@ -8,6 +8,15 @@
   --text-color: var(--mat-grey-900);
   --disabled-color: var(--mat-grey-500);
   --background-color: var(--mat-grey-100);
+
+  // NOTE: these set in params.ts
+  --map-cxNominal: 0;
+  --map-cyNominal: 0;
+  --map-cxTile: 0;
+  --map-cyTile: 0;
+  --map-numXTiles: 0;
+  --map-numYTiles: 0;
+  --map-scale: 1;
 }
 
 * {
@@ -42,33 +51,68 @@ html {
 
 map-root {
   main {
+    background-color: var(--mat-light-green-200);
+    height: calc(var(--map-cyNominal) * var(--map-scale));
     position: relative;
+    width: calc(var(--map-cxNominal) * var(--map-scale));
 
-    map-contours {
-      height: 100%;
-      position: absolute;
-      width: 100%;
-      z-index: 2;
-
-      g rect {
-        fill-opacity: 0;
-      }
-    }
-
-    map-forest {
-      background-color: var(--mat-green-500);
-      height: 100%;
-      opacity: 0.25;
-      position: absolute;
-      width: 100%;
-      z-index: 1;
-    }
-
+    map-contours,
+    map-forest,
+    map-street,
     map-topo {
       height: 100%;
       position: absolute;
       width: 100%;
-      z-index: 0;
+    }
+
+    map-contours {
+      svg {
+        & > g {
+          transform: scale(1, 1);
+        }
+
+        g {
+          font-size: calc(8.5 / var(--map-scale));
+        }
+
+        g path {
+          stroke-width: calc(1 / var(--map-scale));
+        }
+
+        g#Labels path {
+          fill-opacity: 0;
+          stroke-opacity: 0;
+        }
+
+        g#Labels text {
+          transform: scale(calc(0.8 / var(--map-scale)));
+        }
+
+        g rect {
+          fill-opacity: 0;
+        }
+      }
+    }
+
+    map-tile {
+      display: inline-block;
+      height: calc(var(--map-cyTile) * var(--map-scale));
+      position: relative;
+      vertical-align: top;
+      width: calc(var(--map-cxTile) * var(--map-scale));
+
+      canvas {
+        height: var(--map-cyTile);
+        position: absolute;
+        visibility: hidden;
+        width: var(--map-cxTile);
+      }
+
+      img {
+        height: 100%;
+        position: absolute;
+        width: 100%;
+      }
     }
   }
 }

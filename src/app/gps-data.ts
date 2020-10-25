@@ -43,7 +43,7 @@ export class GpsData {
   }
 
   private parse(xml: string): Observable<Tracks | Waypoints> {
-    return new Observable<any>((observer) => {
+    return new Observable<Tracks | Waypoints>((observer) => {
       parseString(xml, (err, obj) => {
         if (err) observer.error(err);
         else {

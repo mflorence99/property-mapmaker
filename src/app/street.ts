@@ -7,21 +7,21 @@ import { Component } from '@angular/core';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.Default,
-  selector: 'map-topo',
+  selector: 'map-street',
   template: `
     <ng-container *ngFor="let y of yTiles; let iy = index">
       <ng-container *ngFor="let x of xTiles; let ix = index">
         <map-tile
-          [alpha]="128"
-          [threshold]="128"
-          [transparent]="[128, 128, 128]"
-          src="/topo/tile/{{ params.zoom }}/{{ y + iy }}/{{ x + ix }}"
+          [alpha]="0"
+          [threshold]="16"
+          [transparent]="[243, 240, 207]"
+          src="/street/tile/{{ params.zoom }}/{{ y + iy }}/{{ x + ix }}"
         ></map-tile>
       </ng-container>
     </ng-container>
   `
 })
-export class TopoComponent {
+export class StreetComponent {
   xTiles = new Array(this.params.dims.numXTiles).fill(this.params.tiles.left);
   yTiles = new Array(this.params.dims.numYTiles).fill(this.params.tiles.top);
 

@@ -11,6 +11,16 @@ const PROXY_CONFIG = [
   },
   {
     changeOrigin: true,
+    context: ['/street'],
+    pathRewrite: {
+      '/street': ''
+    },
+    target:
+      'https://services.arcgisonline.com/arcgis/rest/services/World_Street_Map/MapServer',
+    secure: true
+  },
+  {
+    changeOrigin: true,
     context: ['/topo'],
     pathRewrite: {
       '/topo': ''

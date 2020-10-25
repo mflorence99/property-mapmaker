@@ -2,6 +2,8 @@ import { CacheInterceptor } from './cache';
 import { ContoursComponent } from './contours';
 import { ForestComponent } from './forest';
 import { RootComponent } from './root';
+import { StreetComponent } from './street';
+import { TileComponent } from './tile';
 import { TopoComponent } from './topo';
 
 import { BrowserModule } from '@angular/platform-browser';
@@ -30,6 +32,8 @@ const COMPONENTS = [
   ContoursComponent,
   ForestComponent,
   RootComponent,
+  StreetComponent,
+  TileComponent,
   TopoComponent
 ];
 

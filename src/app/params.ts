@@ -14,6 +14,8 @@ export class Params {
   };
   crs = 'CRS:84';
   dims = {
+    cxNominal: 0,
+    cyNominal: 0,
     cxTile: 256,
     cyTile: 256,
     numXTiles: 0,
@@ -53,11 +55,20 @@ export class Params {
       // compute dimension
       this.dims.numYTiles = Math.abs(this.tiles.left - this.tiles.right) + 1;
       this.dims.numXTiles = Math.abs(this.tiles.top - this.tiles.bottom) + 1;
+      this.dims.cxNominal = this.dims.cxTile * this.dims.numXTiles;
+      this.dims.cyNominal = this.dims.cyTile * this.dims.numYTiles;
       // compute origin for lat/lon conversion
-      const maxX = this.tile2lon(this.tiles.right);
-      const maxY = this.tile2lat(this.tiles.top);
       this.origin.lat = this.tile2lat(this.tiles.bottom);
       this.origin.lon = this.tile2lon(this.tiles.left);
+      // set CSS variables
+      const style = document.body.style;
+      style.setProperty('--map-cxNominal', `${this.dims.cxNominal}px`);
+      style.setProperty('--map-cyNominal', `${this.dims.cyNominal}px`);
+      style.setProperty('--map-cxTile', `${this.dims.cxTile}px`);
+      style.setProperty('--map-cyTile', `${this.dims.cyTile}px`);
+      style.setProperty('--map-numXTiles', `${this.dims.numXTiles}`);
+      style.setProperty('--map-numYTiles', `${this.dims.numYTiles}`);
+      style.setProperty('--map-scale', `${this.scale}`);
       // ready to render!
       this.ready = true;
     });

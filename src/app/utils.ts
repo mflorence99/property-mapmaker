@@ -2,6 +2,14 @@ import { Injectable } from '@angular/core';
 
 @Injectable({ providedIn: 'root' })
 export class Utils {
+  comparePixel(p: number[], q: number[], threshold: number): boolean {
+    return (
+      Math.abs(p[0] - q[0]) < threshold &&
+      Math.abs(p[1] - q[1]) < threshold &&
+      Math.abs(p[2] - q[2]) < threshold
+    );
+  }
+
   parseInitialSearchParams(): any {
     if (location.search && location.search.length > 1) {
       const raw = location.search.substring(1).split('&');

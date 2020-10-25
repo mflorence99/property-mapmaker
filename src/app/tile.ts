@@ -1,0 +1,76 @@
+import { Params } from './params';
+import { Utils } from './utils';
+
+import { AfterViewInit } from '@angular/core';
+import { ChangeDetectionStrategy } from '@angular/core';
+import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Input } from '@angular/core';
+import { Observable } from 'rxjs';
+import { ViewChild } from '@angular/core';
+
+import { mergeMap } from 'rxjs/operators';
+
+@Component({
+  changeDetection: ChangeDetectionStrategy.Default,
+  selector: 'map-tile',
+  template: '<canvas #canvas></canvas><img #image>'
+})
+export class TileComponent implements AfterViewInit {
+  @ViewChild('canvas', { static: true }) canvas;
+  @ViewChild('image', { static: true }) image;
+
+  // eslint-disable-next-line @typescript-eslint/member-ordering
+  @Input() alpha: number;
+  @Input() src: string;
+  @Input() threshold: number;
+  @Input() transparent: number[];
+
+  constructor(
+    private http: HttpClient,
+    public params: Params,
+    private utils: Utils
+  ) {}
+
+  ngAfterViewInit(): void {
+    this.http
+      .get(this.src, { responseType: 'blob' })
+      .pipe(mergeMap((blob: Blob) => this.createImageBitmap(blob)))
+      .subscribe((bitmap: ImageBitmap) => {
+        // draw the bitmap on the canvas
+        const canvas = this.canvas.nativeElement;
+        canvas.height = this.params.dims.cyTile;
+        canvas.width = this.params.dims.cxTile;
+        const ctx = canvas.getContext('2d');
+        ctx.drawImage(bitmap, 0, 0);
+        // munge the image for transparency
+        const imageData = ctx.getImageData(
+          0,
+          0,
+          this.params.dims.cxTile,
+          this.params.dims.cyTile
+        );
+        const pixels = imageData.data;
+        for (let ix = 0; ix < pixels.length; ix += 4) {
+          const pixel = [pixels[ix], pixels[ix + 1], pixels[ix + 2]];
+          if (this.utils.comparePixel(pixel, this.transparent, this.threshold))
+            pixels[ix + 3] = this.alpha;
+        }
+        ctx.putImageData(imageData, 0, 0);
+        // draw the munged image
+        const image = this.image.nativeElement;
+        image.src = canvas.toDataURL();
+      });
+  }
+
+  private createImageBitmap(blob: Blob): Observable<ImageBitmap> {
+    return new Observable<ImageBitmap>((observer) => {
+      createImageBitmap(blob)
+        .then((bitmap) => {
+          observer.next(bitmap);
+          observer.complete();
+        })
+        .catch((err) => observer.error(err));
+    });
+  }
+}
