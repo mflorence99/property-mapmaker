@@ -6,6 +6,8 @@ import { Injectable } from '@angular/core';
 const RAD2DEG = 180 / Math.PI;
 const PI_4 = Math.PI / 4;
 
+export type XY = [number, number];
+
 @Injectable({ providedIn: 'root' })
 export class Params {
   bbox = {
@@ -80,16 +82,18 @@ export class Params {
     });
   }
 
-  point2xy(point: Point): [number, number] {
-    const x =
-      ((this.lon2x(point.lon) - this.lon2x(this.bounds.left)) *
-        this.dims.cxNominal) /
-      (this.lon2x(this.bounds.right) - this.lon2x(this.bounds.left));
-    const y =
-      ((this.lat2y(point.lat) - this.lat2y(this.bounds.top)) *
-        this.dims.cxNominal) /
-      (this.lat2y(this.bounds.bottom) - this.lat2y(this.bounds.top));
-    return [x, y];
+  point2xy(point: Point): XY {
+    if (point) {
+      const x =
+        ((this.lon2x(point.lon) - this.lon2x(this.bounds.left)) *
+          this.dims.cxNominal) /
+        (this.lon2x(this.bounds.right) - this.lon2x(this.bounds.left));
+      const y =
+        ((this.lat2y(point.lat) - this.lat2y(this.bounds.top)) *
+          this.dims.cxNominal) /
+        (this.lat2y(this.bounds.bottom) - this.lat2y(this.bounds.top));
+      return [x, y];
+    } else return undefined;
   }
 
   /* eslint-disable @typescript-eslint/member-ordering */
