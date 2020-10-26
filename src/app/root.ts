@@ -12,6 +12,8 @@ import { Component } from '@angular/core';
       <map-forest></map-forest>
       <map-street></map-street>
       <map-contours *ngIf="params.scale > 1"></map-contours>
+      <map-boundary></map-boundary>
+      <map-track key="water"></map-track>
     </main>
   `
 })

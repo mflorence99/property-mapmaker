@@ -1,3 +1,4 @@
+import { BoundaryComponent } from './boundary';
 import { CacheInterceptor } from './cache';
 import { ContoursComponent } from './contours';
 import { ForestComponent } from './forest';
@@ -5,6 +6,7 @@ import { RootComponent } from './root';
 import { StreetComponent } from './street';
 import { TileComponent } from './tile';
 import { TopoComponent } from './topo';
+import { TrackComponent } from './track';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
@@ -29,12 +31,14 @@ class IconsModule {
 }
 
 const COMPONENTS = [
+  BoundaryComponent,
   ContoursComponent,
   ForestComponent,
   RootComponent,
   StreetComponent,
   TileComponent,
-  TopoComponent
+  TopoComponent,
+  TrackComponent
 ];
 
 const MODULES = [

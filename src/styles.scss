@@ -56,13 +56,38 @@ map-root {
     position: relative;
     width: calc(var(--map-cxNominal) * var(--map-scale));
 
+    map-boundary,
     map-contours,
     map-forest,
     map-street,
-    map-topo {
+    map-topo,
+    map-track {
       height: 100%;
       position: absolute;
       width: 100%;
+    }
+
+    map-boundary,
+    map-track {
+      svg {
+        height: 100%;
+        width: 100%;
+
+        & > g {
+          transform: scale(var(--map-scale), var(--map-scale));
+        }
+      }
+    }
+
+    map-boundary {
+      svg {
+        g polygon {
+          fill: transparent;
+          stroke: var(--mat-blue-grey-500);
+          stroke-dasharray: 4;
+          stroke-width: calc(3 / var(--map-scale));
+        }
+      }
     }
 
     map-contours {
@@ -112,6 +137,28 @@ map-root {
         height: 100%;
         position: absolute;
         width: 100%;
+      }
+    }
+
+    map-track[key='water'] {
+      svg {
+        g[id='Pond'] path {
+          fill: rgba(var(--rgb-blue-200), 0.5);
+          stroke-width: 0;
+        }
+
+        g[id='Swamp'] path {
+          fill: rgba(var(--rgb-blue-100), 0.25);
+          stroke: var(--mat-blue-200);
+          stroke-dasharray: 2;
+          stroke-width: calc(1 / var(--map-scale));
+        }
+
+        g path {
+          fill: transparent;
+          stroke: var(--mat-blue-200);
+          stroke-width: calc(2 / var(--map-scale));
+        }
       }
     }
   }

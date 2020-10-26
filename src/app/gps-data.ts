@@ -26,11 +26,16 @@ export interface Waypoints {
 export class GpsData {
   boundary: Tracks;
   islands: Waypoints;
+  water: Tracks;
 
   constructor(private http: HttpClient) {}
 
   load(): Observable<any> {
-    return forkJoin([this.loadImpl('boundary'), this.loadImpl('islands')]);
+    return forkJoin([
+      this.loadImpl('boundary'),
+      this.loadImpl('islands'),
+      this.loadImpl('water')
+    ]);
   }
 
   private loadImpl(key: string): Observable<Tracks | Waypoints> {
@@ -40,6 +45,18 @@ export class GpsData {
         mergeMap((response: HttpResponse<string>) => this.parse(response.body)),
         tap((data: Tracks | Waypoints) => (this[key] = data))
       );
+  }
+
+  private meters2feet(meters: number): number {
+    return meters * 3.28084;
+  }
+
+  private obj2point(obj: any): Point {
+    // NOTE: GPS collected elevation in meters
+    const ele = this.meters2feet(Number(obj.ele?.[0]));
+    const lat = Number(obj.$.lat);
+    const lon = Number(obj.$.lon);
+    return { ele, lat, lon };
   }
 
   private parse(xml: string): Observable<Tracks | Waypoints> {
@@ -54,30 +71,18 @@ export class GpsData {
     });
   }
 
-  private toFeet(m: number): number {
-    return m * 3.28084;
-  }
-
   private toTracks(gpx: any): Tracks {
     return gpx.trk.reduce((acc, trk) => {
-      acc[trk.name[0]] = trk.trkseg[0].trkpt.map((trkpt) => ({
-        // NOTE: GPS collected elevation in meters
-        ele: this.toFeet(Number(trkpt.ele[0])),
-        lat: Number(trkpt.$.lat),
-        lon: Number(trkpt.$.lon)
-      }));
+      acc[trk.name[0]] = trk.trkseg[0].trkpt.map((trkpt) =>
+        this.obj2point(trkpt)
+      );
       return acc;
     }, {});
   }
 
   private toWaypoints(gpx: any): Waypoints {
     return gpx.wpt.reduce((acc, wpt) => {
-      acc[wpt.name[0]] = {
-        // NOTE: GPS collected elevation in meters
-        ele: this.toFeet(Number(wpt.ele[0])),
-        lat: Number(wpt.$.lat),
-        lon: Number(wpt.$.lon)
-      };
+      acc[wpt.name[0]] = this.obj2point(wpt);
       return acc;
     }, {});
   }

@@ -1,10 +1,10 @@
 #VIKING GPS Data file http://viking.sf.net/
 FILE_VERSION=1
 
-xmpp=0.250000
-ympp=0.250000
-lat=43.204185
-lon=-72.028580
+xmpp=0.500000
+ympp=0.500000
+lat=43.207407
+lon=-72.022534
 mode=mercator
 color=#cccccc
 highlightcolor=#eea500
@@ -14,6 +14,20 @@ drawhighlight=t
 
 ~Layer Map
 name=Map
+mode=60
+directory=
+cache_type=1
+mapfile=
+alpha=255
+autodownload=t
+adlonlymissing=f
+mapzoom=0
+~EndLayer
+
+
+~Layer Map
+name=Map
+visible=f
 mode=50
 directory=
 cache_type=1
@@ -438,6 +452,7 @@ type="trackend"
 
 ~Layer TrackWaypoint
 name=water.gpx
+visible=f
 tracks_visible=t
 waypoints_visible=t
 routes_visible=t
@@ -976,6 +991,7 @@ type="waypointlistend"
 
 ~Layer TrackWaypoint
 name=bridges.gpx
+visible=f
 tracks_visible=t
 waypoints_visible=t
 routes_visible=t
@@ -1029,6 +1045,7 @@ type="waypointlistend"
 
 ~Layer TrackWaypoint
 name=trails.gpx
+visible=f
 tracks_visible=t
 waypoints_visible=t
 routes_visible=t
@@ -1944,6 +1961,7 @@ type="waypointlistend"
 
 ~Layer TrackWaypoint
 name=mow.gpx
+visible=f
 tracks_visible=t
 waypoints_visible=t
 routes_visible=t
@@ -2316,6 +2334,7 @@ type="trackend"
 
 ~Layer TrackWaypoint
 name=culverts.gpx
+visible=f
 tracks_visible=t
 waypoints_visible=t
 routes_visible=t
@@ -2359,6 +2378,28 @@ metadatakeywords=
 
 ~LayerData
 type="waypointlist"
+type="waypoint" latitude="43.208550972017015" longitude="-72.027007423452375" name="Culvert 12-25" altitude="345" unixtime="1602251613"
+type="waypoint" latitude="43.208679022560268" longitude="-72.026729814819333" name="Culvert 12-26" altitude="344" unixtime="1602251669"
+type="waypoint" latitude="43.208704437139936" longitude="-72.026484392694471" name="Culvert 12-27" altitude="345" unixtime="1602251700"
+type="waypoint" latitude="43.207735743170232" longitude="-72.022823177389142" name="Culvert 12-28" altitude="366" unixtime="1602252365"
+type="waypoint" latitude="43.206562416576666" longitude="-72.0234353069973" name="Culvert 12-29" altitude="360" unixtime="1602252485"
+type="waypoint" latitude="43.202904181848332" longitude="-72.030238585983284" name="Culvert 12-3" altitude="321" unixtime="1602182312"
+type="waypoint" latitude="43.203610557260859" longitude="-72.024711452535627" name="Culvert 12-30" altitude="331" unixtime="1602252905"
+type="waypoint" latitude="43.203643999999997" longitude="-72.025122999999994" name="Culvert 12-31" altitude="329" unixtime="1602252956"
+type="waypoint" latitude="43.203724369317904" longitude="-72.025404252956392" name="Culvert 12-32" altitude="332" unixtime="1602252989"
+type="waypoint" latitude="43.205190452461643" longitude="-72.025517576287271" name="Culvert 12-33" altitude="338" unixtime="1602253626"
+type="waypoint" latitude="43.206538999999999" longitude="-72.025981000000002" name="Culvert 12-34" altitude="350" unixtime="1602253923"
+type="waypoint" latitude="43.206380914297426" longitude="-72.027605556062696" name="Culvert 12-35" altitude="348" unixtime="1602254130"
+type="waypoint" latitude="43.205489408754353" longitude="-72.027514360956189" name="Culvert 12-36" altitude="345" unixtime="1602254263"
+type="waypoint" latitude="43.202461" longitude="-72.029470000000003" name="Culvert 12-4" altitude="312" unixtime="1602182508"
+type="waypoint" latitude="43.202820000000003" longitude="-72.029263" name="Culvert 12-5" altitude="311" unixtime="1602182579"
+type="waypoint" latitude="43.202765999999997" longitude="-72.029319999999998" name="Culvert 12-6" altitude="312" unixtime="1602182624"
+type="waypoint" latitude="43.202665000000003" longitude="-72.028908000000001" name="Culvert 12-7" altitude="312" unixtime="1602182681"
+type="waypoint" latitude="43.202694999999999" longitude="-72.028941000000003" name="Culvert 12-8" altitude="312" unixtime="1602182702"
+type="waypoint" latitude="43.203466285790626" longitude="-72.029513048444755" name="Culvert 12-9" altitude="322" unixtime="1602182884"
+type="waypoint" latitude="43.204093880942366" longitude="-72.029970365081795" name="Culvert 12–13" altitude="330" unixtime="1602183225"
+type="waypoint" latitude="43.202814244736935" longitude="-72.02877007654763" name="Culvert 24-1" altitude="311" unixtime="1602182738"
+type="waypoint" latitude="43.20680120210212" longitude="-72.028542538447383" name="Culvert 24-2" altitude="345" unixtime="1602251089"
 type="waypoint" latitude="43.206727399740693" longitude="-72.02878527836323" name="Culvert 4-1" altitude="341" unixtime="1602250916"
 type="waypoint" latitude="43.203743505991113" longitude="-72.027559958509443" name="Culvert 4-2" altitude="334" unixtime="1602253184"
 type="waypoint" latitude="43.204922119393423" longitude="-72.027277571411133" name="Culvert 4-3" altitude="343" unixtime="1602253412"
@@ -2397,28 +2438,6 @@ type="waypoint" latitude="43.207827999999999" longitude="-72.028401000000002" na
 type="waypoint" latitude="43.207858000000002" longitude="-72.028637000000003" name="Culvert 12-22" altitude="338" unixtime="1602251326"
 type="waypoint" latitude="43.207779000000002" longitude="-72.028720000000007" name="Culvert 12-23" altitude="338" unixtime="1602251348"
 type="waypoint" latitude="43.207895000000001" longitude="-72.028751" name="Culvert 12-24" altitude="338" unixtime="1602251425"
-type="waypoint" latitude="43.208550972017015" longitude="-72.027007423452375" name="Culvert 12-25" altitude="345" unixtime="1602251613"
-type="waypoint" latitude="43.208679022560268" longitude="-72.026729814819333" name="Culvert 12-26" altitude="344" unixtime="1602251669"
-type="waypoint" latitude="43.208704437139936" longitude="-72.026484392694471" name="Culvert 12-27" altitude="345" unixtime="1602251700"
-type="waypoint" latitude="43.207735743170232" longitude="-72.022823177389142" name="Culvert 12-28" altitude="366" unixtime="1602252365"
-type="waypoint" latitude="43.206562416576666" longitude="-72.0234353069973" name="Culvert 12-29" altitude="360" unixtime="1602252485"
-type="waypoint" latitude="43.202904181848332" longitude="-72.030238585983284" name="Culvert 12-3" altitude="321" unixtime="1602182312"
-type="waypoint" latitude="43.203610557260859" longitude="-72.024711452535627" name="Culvert 12-30" altitude="331" unixtime="1602252905"
-type="waypoint" latitude="43.203643999999997" longitude="-72.025122999999994" name="Culvert 12-31" altitude="329" unixtime="1602252956"
-type="waypoint" latitude="43.203724369317904" longitude="-72.025404252956392" name="Culvert 12-32" altitude="332" unixtime="1602252989"
-type="waypoint" latitude="43.205190452461643" longitude="-72.025517576287271" name="Culvert 12-33" altitude="338" unixtime="1602253626"
-type="waypoint" latitude="43.206538999999999" longitude="-72.025981000000002" name="Culvert 12-34" altitude="350" unixtime="1602253923"
-type="waypoint" latitude="43.206380914297426" longitude="-72.027605556062696" name="Culvert 12-35" altitude="348" unixtime="1602254130"
-type="waypoint" latitude="43.205489408754353" longitude="-72.027514360956189" name="Culvert 12-36" altitude="345" unixtime="1602254263"
-type="waypoint" latitude="43.202461" longitude="-72.029470000000003" name="Culvert 12-4" altitude="312" unixtime="1602182508"
-type="waypoint" latitude="43.202820000000003" longitude="-72.029263" name="Culvert 12-5" altitude="311" unixtime="1602182579"
-type="waypoint" latitude="43.202765999999997" longitude="-72.029319999999998" name="Culvert 12-6" altitude="312" unixtime="1602182624"
-type="waypoint" latitude="43.202665000000003" longitude="-72.028908000000001" name="Culvert 12-7" altitude="312" unixtime="1602182681"
-type="waypoint" latitude="43.202694999999999" longitude="-72.028941000000003" name="Culvert 12-8" altitude="312" unixtime="1602182702"
-type="waypoint" latitude="43.203466285790626" longitude="-72.029513048444755" name="Culvert 12-9" altitude="322" unixtime="1602182884"
-type="waypoint" latitude="43.204093880942366" longitude="-72.029970365081795" name="Culvert 12–13" altitude="330" unixtime="1602183225"
-type="waypoint" latitude="43.202814244736935" longitude="-72.02877007654763" name="Culvert 24-1" altitude="311" unixtime="1602182738"
-type="waypoint" latitude="43.20680120210212" longitude="-72.028542538447383" name="Culvert 24-2" altitude="345" unixtime="1602251089"
 type="waypointlistend"
 ~EndLayerData
 ~EndLayer

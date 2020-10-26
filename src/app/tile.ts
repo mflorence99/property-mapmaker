@@ -1,5 +1,4 @@
 import { Params } from './params';
-import { Utils } from './utils';
 
 import { AfterViewInit } from '@angular/core';
 import { ChangeDetectionStrategy } from '@angular/core';
@@ -26,11 +25,7 @@ export class TileComponent implements AfterViewInit {
   @Input() threshold: number;
   @Input() transparent: number[];
 
-  constructor(
-    private http: HttpClient,
-    public params: Params,
-    private utils: Utils
-  ) {}
+  constructor(private http: HttpClient, public params: Params) {}
 
   ngAfterViewInit(): void {
     this.http
@@ -53,7 +48,7 @@ export class TileComponent implements AfterViewInit {
         const pixels = imageData.data;
         for (let ix = 0; ix < pixels.length; ix += 4) {
           const pixel = [pixels[ix], pixels[ix + 1], pixels[ix + 2]];
-          if (this.utils.comparePixel(pixel, this.transparent, this.threshold))
+          if (this.comparePixel(pixel, this.transparent, this.threshold))
             pixels[ix + 3] = this.alpha;
         }
         ctx.putImageData(imageData, 0, 0);
@@ -61,6 +56,14 @@ export class TileComponent implements AfterViewInit {
         const image = this.image.nativeElement;
         image.src = canvas.toDataURL();
       });
+  }
+
+  private comparePixel(p: number[], q: number[], threshold: number): boolean {
+    return (
+      Math.abs(p[0] - q[0]) < threshold &&
+      Math.abs(p[1] - q[1]) < threshold &&
+      Math.abs(p[2] - q[2]) < threshold
+    );
   }
 
   private createImageBitmap(blob: Blob): Observable<ImageBitmap> {
