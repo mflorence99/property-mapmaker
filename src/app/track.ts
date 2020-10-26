@@ -17,13 +17,29 @@ type LineProps = { angle: number; length: number };
   template: `<svg
     attr.viewPort="0 0 {{ params.dims.cxNominal }} {{ params.dims.cyNominal }}"
   >
+    <defs>
+      <pattern id="halftone" patternUnits="userSpaceOnUse" width="2" height="2">
+        <g fill="rgba(0, 0, 0, 0.5)">
+          <rect x="0" y="0" width="1" height="1" />
+          <rect x="1" y="1" width="1" height="1" />
+        </g>
+      </pattern>
+      <pattern id="wetland" patternUnits="userSpaceOnUse" width="4" height="4">
+        <g fill="rgba(79, 195, 247, 0.5)">
+          <rect x="0" y="0" width="2" height="2" />
+        </g>
+      </pattern>
+    </defs>
     <g *ngFor="let track of gpsData[key] | keyvalue" [id]="track.key.trim()">
-      <path [attr.d]="path(track.value, bezier.bind(this))" />
+      <path *ngIf="outlined" id="outline" [attr.d]="path(track.value)" />
+      <path id="base" [attr.d]="path(track.value)" />
     </g>
   </svg>`
 })
 export class TrackComponent {
   @Input() key: string;
+  @Input() op: string;
+  @Input() outlined: boolean;
 
   constructor(public gpsData: GpsData, public params: Params) {}
 
@@ -45,13 +61,13 @@ export class TrackComponent {
     return `L ${x} ${y}`;
   }
 
-  path(points: Point[], op: Function): string {
+  path(points: Point[]): string {
     return points.reduce(
       (acc: string, point: Point, ix: number, points: Point[]) => {
         if (ix === 0) {
           const [x, y] = this.params.point2xy(point);
           return `M ${x} ${y}`;
-        } else return `${acc} ${op(point, ix, points)}`;
+        } else return `${acc} ${this[this.op](point, ix, points)}`;
       },
       ''
     );

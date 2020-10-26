@@ -25,15 +25,23 @@ export interface Waypoints {
 @Injectable({ providedIn: 'root' })
 export class GpsData {
   boundary: Tracks;
+  buildings: Tracks;
+  driveway: Tracks;
   islands: Waypoints;
+  mow: Tracks;
+  trails: Tracks;
   water: Tracks;
 
   constructor(private http: HttpClient) {}
 
   load(): Observable<any> {
     return forkJoin([
+      this.loadImpl('buildings'),
       this.loadImpl('boundary'),
+      this.loadImpl('driveway'),
       this.loadImpl('islands'),
+      this.loadImpl('mow'),
+      this.loadImpl('trails'),
       this.loadImpl('water')
     ]);
   }

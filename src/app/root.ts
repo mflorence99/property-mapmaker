@@ -11,9 +11,13 @@ import { Component } from '@angular/core';
       <map-topo></map-topo>
       <map-forest></map-forest>
       <map-street></map-street>
-      <map-contours *ngIf="params.scale > 1"></map-contours>
       <map-boundary></map-boundary>
-      <map-track key="water"></map-track>
+      <map-track key="mow" op="bezier"></map-track>
+      <map-track key="water" op="bezier"></map-track>
+      <map-track key="buildings" op="linear"></map-track>
+      <map-track key="driveway" op="bezier" [outlined]="true"></map-track>
+      <map-track key="trails" op="bezier" [outlined]="true"></map-track>
+      <map-contours *ngIf="params.scale > 1"></map-contours>
     </main>
   `
 })

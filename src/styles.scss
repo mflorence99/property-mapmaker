@@ -140,6 +140,74 @@ map-root {
       }
     }
 
+    map-track[key='buildings'] {
+      svg {
+        g path {
+          fill: url(#halftone);
+          stroke-width: 0;
+        }
+      }
+    }
+
+    map-track[key='driveway'] {
+      svg {
+        g path[id='outline'] {
+          fill: transparent;
+          stroke: var(--mat-grey-500);
+          stroke-width: calc(9 / var(--map-scale));
+        }
+
+        g path[id='base'] {
+          fill: transparent;
+          stroke: white;
+          stroke-width: calc(7 / var(--map-scale));
+        }
+      }
+    }
+
+    map-track[key='mow'] {
+      svg {
+        g path {
+          fill: rgba(var(--rgb-yellow-300), 0.25);
+          stroke-width: 0;
+        }
+      }
+    }
+
+    map-track[key='trails'] {
+      svg {
+        g[id='Central loop'] path[id='base'] {
+          fill: transparent;
+          stroke: var(--mat-grey-200);
+          stroke-width: calc(5 / var(--map-scale));
+        }
+
+        g[id='Inner loop'] path[id='base'] {
+          fill: transparent;
+          stroke: var(--mat-grey-200);
+          stroke-width: calc(5 / var(--map-scale));
+        }
+
+        g[id='Outer loop'] path[id='base'] {
+          fill: transparent;
+          stroke: var(--mat-grey-200);
+          stroke-width: calc(5 / var(--map-scale));
+        }
+
+        g path[id='outline'] {
+          fill: transparent;
+          stroke: var(--mat-grey-500);
+          stroke-width: calc(7 / var(--map-scale));
+        }
+
+        g path[id='base'] {
+          fill: transparent;
+          stroke: white;
+          stroke-width: calc(5 / var(--map-scale));
+        }
+      }
+    }
+
     map-track[key='water'] {
       svg {
         g[id='Pond'] path {
@@ -148,10 +216,15 @@ map-root {
         }
 
         g[id='Swamp'] path {
-          fill: rgba(var(--rgb-blue-100), 0.25);
+          fill: url(#wetland);
+          stroke-width: 0;
+        }
+
+        g[id='Underground'] path {
+          fill: transparent;
           stroke: var(--mat-blue-200);
           stroke-dasharray: 2;
-          stroke-width: calc(1 / var(--map-scale));
+          stroke-width: calc(2 / var(--map-scale));
         }
 
         g path {
