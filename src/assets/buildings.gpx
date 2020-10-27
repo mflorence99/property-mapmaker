@@ -24,6 +24,21 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
   </trkseg>
 </trk>
 <trk>
+  <name>Garage</name>
+  <trkseg>
+  <trkpt lat="43.203988909487862" lon="-72.029348471233362">
+  </trkpt>
+  <trkpt lat="43.203931233468069" lon="-72.029353835651392">
+  </trkpt>
+  <trkpt lat="43.20392634566727" lon="-72.029251911708826">
+  </trkpt>
+  <trkpt lat="43.203983044132414" lon="-72.029247888395304">
+  </trkpt>
+  <trkpt lat="43.203985976810202" lon="-72.029345789024347">
+  </trkpt>
+  </trkseg>
+</trk>
+<trk>
   <name>Gazebo</name>
   <trkseg>
   <trkpt lat="43.203719111150491" lon="-72.029448747518543">
@@ -45,15 +60,15 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
 <trk>
   <name>House</name>
   <trkseg>
-  <trkpt lat="43.203913787931278" lon="-72.029717626294129">
+  <trkpt lat="43.203924390546845" lon="-72.029715933868403">
   </trkpt>
-  <trkpt lat="43.203895703061214" lon="-72.02943867655658">
+  <trkpt lat="43.203911682262543" lon="-72.029442348548884">
   </trkpt>
-  <trkpt lat="43.203817844985984" lon="-72.029448747518543">
+  <trkpt lat="43.203825656883787" lon="-72.029450395175928">
   </trkpt>
   <trkpt lat="43.203839350034656" lon="-72.029726356151585">
   </trkpt>
-  <trkpt lat="43.203913787931278" lon="-72.029718296846383">
+  <trkpt lat="43.203925368107065" lon="-72.02971727497291">
   </trkpt>
   </trkseg>
 </trk>

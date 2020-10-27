@@ -12,12 +12,14 @@ import { Component } from '@angular/core';
       <map-forest></map-forest>
       <map-street></map-street>
       <map-boundary></map-boundary>
-      <map-track key="mow" op="bezier"></map-track>
-      <map-track key="water" op="bezier"></map-track>
-      <map-track key="buildings" op="linear"></map-track>
-      <map-track key="driveway" op="bezier" [outlined]="true"></map-track>
-      <map-track key="trails" op="bezier" [outlined]="true"></map-track>
-      <map-contours *ngIf="params.scale > 1"></map-contours>
+      <map-tracks key="mow" op="bezier"></map-tracks>
+      <map-tracks key="water" op="bezier"></map-tracks>
+      <map-tracks key="buildings" op="linear"></map-tracks>
+      <map-tracks key="driveway" op="bezier" [outlined]="true"></map-tracks>
+      <map-tracks key="trails" op="bezier" [outlined]="true"></map-tracks>
+      <map-labels key="landmarks"></map-labels>
+      <map-labels key="watermarks"></map-labels>
+      <map-contours></map-contours>
     </main>
   `
 })

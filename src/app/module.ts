@@ -2,11 +2,12 @@ import { BoundaryComponent } from './boundary';
 import { CacheInterceptor } from './cache';
 import { ContoursComponent } from './contours';
 import { ForestComponent } from './forest';
+import { LabelsComponent } from './labels';
 import { RootComponent } from './root';
 import { StreetComponent } from './street';
 import { TileComponent } from './tile';
 import { TopoComponent } from './topo';
-import { TrackComponent } from './track';
+import { TracksComponent } from './tracks';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
@@ -34,11 +35,12 @@ const COMPONENTS = [
   BoundaryComponent,
   ContoursComponent,
   ForestComponent,
+  LabelsComponent,
   RootComponent,
   StreetComponent,
   TileComponent,
   TopoComponent,
-  TrackComponent
+  TracksComponent
 ];
 
 const MODULES = [

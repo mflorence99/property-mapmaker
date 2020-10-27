@@ -28,21 +28,24 @@ export class GpsData {
   buildings: Tracks;
   driveway: Tracks;
   islands: Waypoints;
+  landmarks: Waypoints;
   mow: Tracks;
   trails: Tracks;
   water: Tracks;
+  watermarks: Waypoints;
 
   constructor(private http: HttpClient) {}
 
   load(): Observable<any> {
     return forkJoin([
-      this.loadImpl('buildings'),
       this.loadImpl('boundary'),
+      this.loadImpl('buildings'),
       this.loadImpl('driveway'),
-      this.loadImpl('islands'),
+      this.loadImpl('landmarks'),
       this.loadImpl('mow'),
       this.loadImpl('trails'),
-      this.loadImpl('water')
+      this.loadImpl('water'),
+      this.loadImpl('watermarks')
     ]);
   }
 

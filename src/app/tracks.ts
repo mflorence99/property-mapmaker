@@ -13,7 +13,7 @@ type LineProps = { angle: number; length: number };
 
 @Component({
   changeDetection: ChangeDetectionStrategy.Default,
-  selector: 'map-track',
+  selector: 'map-tracks',
   template: `<svg
     attr.viewPort="0 0 {{ params.dims.cxNominal }} {{ params.dims.cyNominal }}"
   >
@@ -31,12 +31,18 @@ type LineProps = { angle: number; length: number };
       </pattern>
     </defs>
     <g *ngFor="let track of gpsData[key] | keyvalue" [id]="track.key.trim()">
-      <path *ngIf="outlined" id="outline" [attr.d]="path(track.value)" />
-      <path id="base" [attr.d]="path(track.value)" />
+      <ng-container *ngIf="outlined; else normalPath">
+        <path id="outline" [attr.d]="path(track.value)" />
+        <path id="background" [attr.d]="path(track.value)" />
+        <path id="colorized" [attr.d]="path(track.value)" />
+      </ng-container>
+      <ng-template #normalPath>
+        <path [attr.d]="path(track.value)" />
+      </ng-template>
     </g>
   </svg>`
 })
-export class TrackComponent {
+export class TracksComponent {
   @Input() key: string;
   @Input() op: string;
   @Input() outlined: boolean;

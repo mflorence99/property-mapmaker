@@ -20,7 +20,7 @@
 }
 
 * {
-  box-sizing: border-box;
+  // box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -44,7 +44,7 @@ body {
 
 html {
   border: 0;
-  font-size: 14px;
+  font-size: 10px;
   height: 100%;
   width: 100%;
 }
@@ -52,6 +52,7 @@ html {
 map-root {
   main {
     background-color: var(--mat-light-green-200);
+    border: 3px solid var(--mat-grey-600);
     height: calc(var(--map-cyNominal) * var(--map-scale));
     position: relative;
     width: calc(var(--map-cxNominal) * var(--map-scale));
@@ -59,16 +60,18 @@ map-root {
     map-boundary,
     map-contours,
     map-forest,
+    map-labels,
     map-street,
     map-topo,
-    map-track {
+    map-tracks {
       height: 100%;
       position: absolute;
       width: 100%;
     }
 
     map-boundary,
-    map-track {
+    map-labels,
+    map-tracks {
       svg {
         height: 100%;
         width: 100%;
@@ -96,12 +99,9 @@ map-root {
           transform: scale(1, 1);
         }
 
-        g {
-          font-size: calc(8.5 / var(--map-scale));
-        }
-
         g path {
-          stroke-width: calc(1 / var(--map-scale));
+          stroke-dasharray: 2;
+          stroke-width: calc(0.5 / var(--map-scale));
         }
 
         g#Labels path {
@@ -110,11 +110,36 @@ map-root {
         }
 
         g#Labels text {
-          transform: scale(calc(0.8 / var(--map-scale)));
+          transform: scale(calc(1 / var(--map-scale)));
         }
 
         g rect {
           fill-opacity: 0;
+        }
+      }
+    }
+
+    map-labels[key='landmarks'] {
+      svg {
+        g text {
+          fill: var(--mat-grey-600);
+        }
+      }
+    }
+
+    map-labels[key='watermarks'] {
+      svg {
+        g text {
+          fill: var(--mat-blue-600);
+        }
+      }
+    }
+
+    map-labels {
+      svg {
+        g text {
+          font-size: calc(10pt / var(--map-scale));
+          font-style: italic;
         }
       }
     }
@@ -140,7 +165,7 @@ map-root {
       }
     }
 
-    map-track[key='buildings'] {
+    map-tracks[key='buildings'] {
       svg {
         g path {
           fill: url(#halftone);
@@ -149,7 +174,7 @@ map-root {
       }
     }
 
-    map-track[key='driveway'] {
+    map-tracks[key='driveway'] {
       svg {
         g path[id='outline'] {
           fill: transparent;
@@ -157,7 +182,8 @@ map-root {
           stroke-width: calc(9 / var(--map-scale));
         }
 
-        g path[id='base'] {
+        g path[id='background'],
+        g path[id='colorized'] {
           fill: transparent;
           stroke: white;
           stroke-width: calc(7 / var(--map-scale));
@@ -165,7 +191,7 @@ map-root {
       }
     }
 
-    map-track[key='mow'] {
+    map-tracks[key='mow'] {
       svg {
         g path {
           fill: rgba(var(--rgb-yellow-300), 0.25);
@@ -174,23 +200,14 @@ map-root {
       }
     }
 
-    map-track[key='trails'] {
+    map-tracks[key='trails'] {
       svg {
-        g[id='Central loop'] path[id='base'] {
+        g[id='Central loop'] path[id='colorized'],
+        g[id='Inner loop'] path[id='colorized'],
+        g[id='Outer loop'] path[id='colorized'],
+        g[id='Park Lane'] path[id='colorized'] {
           fill: transparent;
-          stroke: var(--mat-grey-200);
-          stroke-width: calc(5 / var(--map-scale));
-        }
-
-        g[id='Inner loop'] path[id='base'] {
-          fill: transparent;
-          stroke: var(--mat-grey-200);
-          stroke-width: calc(5 / var(--map-scale));
-        }
-
-        g[id='Outer loop'] path[id='base'] {
-          fill: transparent;
-          stroke: var(--mat-grey-200);
+          stroke: rgba(var(--rgb-red-900), 0.25);
           stroke-width: calc(5 / var(--map-scale));
         }
 
@@ -200,7 +217,8 @@ map-root {
           stroke-width: calc(7 / var(--map-scale));
         }
 
-        g path[id='base'] {
+        g path[id='background'],
+        g path[id='colorized'] {
           fill: transparent;
           stroke: white;
           stroke-width: calc(5 / var(--map-scale));
@@ -208,10 +226,11 @@ map-root {
       }
     }
 
-    map-track[key='water'] {
+    map-tracks[key='water'] {
       svg {
+        g[id='Frog Pond'] path,
         g[id='Pond'] path {
-          fill: rgba(var(--rgb-blue-200), 0.5);
+          fill: var(--mat-blue-200);
           stroke-width: 0;
         }
 
@@ -224,13 +243,13 @@ map-root {
           fill: transparent;
           stroke: var(--mat-blue-200);
           stroke-dasharray: 2;
-          stroke-width: calc(2 / var(--map-scale));
+          stroke-width: calc(3 / var(--map-scale));
         }
 
         g path {
           fill: transparent;
           stroke: var(--mat-blue-200);
-          stroke-width: calc(2 / var(--map-scale));
+          stroke-width: calc(3 / var(--map-scale));
         }
       }
     }
