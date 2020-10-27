@@ -58,6 +58,7 @@ map-root {
     width: calc(var(--map-cxNominal) * var(--map-scale));
 
     map-boundary,
+    map-bridges,
     map-contours,
     map-forest,
     map-labels,
@@ -70,6 +71,7 @@ map-root {
     }
 
     map-boundary,
+    map-bridges,
     map-labels,
     map-tracks {
       svg {
@@ -88,7 +90,7 @@ map-root {
           fill: transparent;
           stroke: var(--mat-blue-grey-500);
           stroke-dasharray: 4;
-          stroke-width: calc(3 / var(--map-scale));
+          stroke-width: 3;
         }
       }
     }
@@ -244,13 +246,13 @@ map-root {
           fill: transparent;
           stroke: var(--mat-blue-200);
           stroke-dasharray: 2;
-          stroke-width: calc(3 / var(--map-scale));
+          stroke-width: 3;
         }
 
         g path {
           fill: transparent;
           stroke: var(--mat-blue-200);
-          stroke-width: calc(3 / var(--map-scale));
+          stroke-width: 3;
         }
       }
     }

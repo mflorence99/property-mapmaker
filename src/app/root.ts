@@ -17,6 +17,7 @@ import { Component } from '@angular/core';
       <map-tracks key="buildings" op="linear"></map-tracks>
       <map-tracks key="driveway" op="bezier" [outlined]="true"></map-tracks>
       <map-tracks key="trails" op="bezier" [outlined]="true"></map-tracks>
+      <map-bridges></map-bridges>
       <map-labels key="landmarks"></map-labels>
       <map-labels key="watermarks"></map-labels>
       <map-contours></map-contours>

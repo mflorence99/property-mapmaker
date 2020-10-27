@@ -1,4 +1,5 @@
 import { BoundaryComponent } from './boundary';
+import { BridgesComponent } from './bridges';
 import { CacheInterceptor } from './cache';
 import { ContoursComponent } from './contours';
 import { ForestComponent } from './forest';
@@ -33,6 +34,7 @@ class IconsModule {
 
 const COMPONENTS = [
   BoundaryComponent,
+  BridgesComponent,
   ContoursComponent,
   ForestComponent,
   LabelsComponent,
