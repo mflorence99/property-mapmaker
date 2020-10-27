@@ -1167,6 +1167,27 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
   </trkseg>
 </trk>
 <trk>
+  <name>Sacrificial Pool</name>
+  <trkseg>
+  <trkpt lat="43.205489060930233" lon="-72.029003393848413">
+  </trkpt>
+  <trkpt lat="43.205501768885945" lon="-72.028972548444742">
+  </trkpt>
+  <trkpt lat="43.205484173254256" lon="-72.02894170304107">
+  </trkpt>
+  <trkpt lat="43.205450937047218" lon="-72.028940361936563">
+  </trkpt>
+  <trkpt lat="43.20543334140087" lon="-72.028961819608682">
+  </trkpt>
+  <trkpt lat="43.205443116760584" lon="-72.02900473495292">
+  </trkpt>
+  <trkpt lat="43.205470487759435" lon="-72.02901546378898">
+  </trkpt>
+  <trkpt lat="43.205490038465378" lon="-72.028999370534891">
+  </trkpt>
+  </trkseg>
+</trk>
+<trk>
   <name>Swamp</name>
   <trkseg>
   <trkpt lat="43.207856946" lon="-72.027406291000005">

@@ -179,14 +179,14 @@ map-root {
         g path[id='outline'] {
           fill: transparent;
           stroke: var(--mat-grey-500);
-          stroke-width: calc(9 / var(--map-scale));
+          stroke-width: 5;
         }
 
         g path[id='background'],
         g path[id='colorized'] {
           fill: transparent;
           stroke: white;
-          stroke-width: calc(7 / var(--map-scale));
+          stroke-width: 3;
         }
       }
     }
@@ -208,20 +208,20 @@ map-root {
         g[id='Park Lane'] path[id='colorized'] {
           fill: transparent;
           stroke: rgba(var(--rgb-red-900), 0.25);
-          stroke-width: calc(5 / var(--map-scale));
+          stroke-width: 3;
         }
 
         g path[id='outline'] {
           fill: transparent;
           stroke: var(--mat-grey-500);
-          stroke-width: calc(7 / var(--map-scale));
+          stroke-width: 5;
         }
 
         g path[id='background'],
         g path[id='colorized'] {
           fill: transparent;
           stroke: white;
-          stroke-width: calc(5 / var(--map-scale));
+          stroke-width: 3;
         }
       }
     }
@@ -229,7 +229,8 @@ map-root {
     map-tracks[key='water'] {
       svg {
         g[id='Frog Pond'] path,
-        g[id='Pond'] path {
+        g[id='Pond'] path,
+        g[id='Sacrificial Pool'] path {
           fill: var(--mat-blue-200);
           stroke-width: 0;
         }
