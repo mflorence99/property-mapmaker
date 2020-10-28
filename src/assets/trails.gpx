@@ -1278,11 +1278,11 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
 <trk>
   <name>Inner loop</name>
   <trkseg>
-  <trkpt lat="43.206799365056078" lon="-72.028541305059434">
+  <trkpt lat="43.206797919724053" lon="-72.028559504125596">
     <ele>341.71261199999998</ele>
     <time>2020-10-09T16:55:31Z</time>
   </trkpt>
-  <trkpt lat="43.206811520349319" lon="-72.028448816637038">
+  <trkpt lat="43.206813291487485" lon="-72.028496223209373">
     <ele>337.36086699999998</ele>
     <time>2020-10-09T16:55:35Z</time>
   </trkpt>
@@ -1378,7 +1378,7 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
     <ele>348.12142599999999</ele>
     <time>2020-10-09T16:57:54Z</time>
   </trkpt>
-  <trkpt lat="43.206235999999997" lon="-72.027411999999998">
+  <trkpt lat="43.206234868956216" lon="-72.027415541980744">
     <ele>347.050747</ele>
     <time>2020-10-09T16:58:03Z</time>
   </trkpt>
@@ -1703,7 +1703,7 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
 <trk>
   <name>Narrow causeway connector</name>
   <trkseg>
-  <trkpt lat="43.206623394946355" lon="-72.027821473888395">
+  <trkpt lat="43.206626854501998" lon="-72.027812508914948">
     <ele>348.26430900000003</ele>
     <time>2020-10-09T17:17:44Z</time>
   </trkpt>
@@ -1807,7 +1807,7 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
     <ele>340.721272</ele>
     <time>2020-10-09T17:19:52Z</time>
   </trkpt>
-  <trkpt lat="43.206441576517314" lon="-72.026228241733548">
+  <trkpt lat="43.206441126003774" lon="-72.026239393327714">
     <ele>340.699567</ele>
     <time>2020-10-09T17:20:04Z</time>
   </trkpt>
@@ -2828,7 +2828,7 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
     <ele>340.49775799999998</ele>
     <time>2020-10-09T18:12:35Z</time>
   </trkpt>
-  <trkpt lat="43.208132921026454" lon="-72.028372841594688">
+  <trkpt lat="43.208118527088551" lon="-72.028424052570344">
     <ele>340.24676399999998</ele>
     <time>2020-10-09T18:12:39Z</time>
   </trkpt>
@@ -2837,7 +2837,7 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
 <trk>
   <name>Park Lane</name>
   <trkseg>
-  <trkpt lat="43.206717170782341" lon="-72.028844339222914">
+  <trkpt lat="43.206814537462883" lon="-72.028876004789353">
     <ele>350.25962700000002</ele>
     <time>2020-10-09T18:32:00Z</time>
   </trkpt>
@@ -2998,13 +2998,9 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
 <trk>
   <name>Rock bench connector</name>
   <trkseg>
-  <trkpt lat="43.206226521761849" lon="-72.026367716602323">
+  <trkpt lat="43.2062690822588" lon="-72.026342658374787">
     <ele>350.79787800000003</ele>
     <time>2020-10-09T17:14:41Z</time>
-  </trkpt>
-  <trkpt lat="43.206273442864074" lon="-72.026351623348233">
-    <ele>351.39718199999999</ele>
-    <time>2020-10-09T17:14:45Z</time>
   </trkpt>
   <trkpt lat="43.206302768534627" lon="-72.026356987766263">
     <ele>351.63131299999998</ele>

@@ -17,19 +17,17 @@ import { Input } from '@angular/core';
       *ngFor="let waypoint of gpsData[key] | keyvalue"
       [id]="waypoint.key.trim()"
     >
-      <text
-        [attr.x]="point(waypoint.value)[0]"
-        [attr.y]="point(waypoint.value)[1]"
-        text-anchor="middle"
-      >
-        <tspan
-          *ngFor="let word of words(waypoint.key); let ix = index"
-          [attr.dy]="ix > 0 ? '1em' : 0"
-          [attr.x]="point(waypoint.value)[0]"
-        >
-          {{ word }}
-        </tspan>
-      </text>
+      <ng-container *ngIf="point(waypoint.value) as xy">
+        <text [attr.x]="xy[0]" [attr.y]="xy[1]" text-anchor="middle">
+          <tspan
+            *ngFor="let word of words(waypoint.key); let ix = index"
+            [attr.dy]="ix > 0 ? '1em' : 0"
+            [attr.x]="xy[0]"
+          >
+            {{ word }}
+          </tspan>
+        </text>
+      </ng-container>
     </g>
   </svg>`
 })

@@ -49,6 +49,22 @@ html {
   width: 100%;
 }
 
+.icon-bridge {
+  .edges {
+    fill: transparent;
+    stroke: var(--mat-blue-grey-500);
+    stroke-width: 1;
+  }
+  .roadway {
+    fill: white;
+  }
+}
+
+.icon-wetland {
+  fill: rgba(var(--rgb-blue-200), 0.5);
+  transform: scale(calc(1 / var(--map-scale)));
+}
+
 map-root {
   main {
     background-color: var(--mat-light-green-200);
@@ -60,6 +76,7 @@ map-root {
     map-boundary,
     map-bridges,
     map-contours,
+    map-culverts,
     map-forest,
     map-labels,
     map-street,
@@ -72,6 +89,7 @@ map-root {
 
     map-boundary,
     map-bridges,
+    map-culverts,
     map-labels,
     map-tracks {
       svg {
@@ -121,6 +139,20 @@ map-root {
       }
     }
 
+    map-culverts {
+      g path {
+        stroke: var(--mat-grey-700);
+        stroke-dasharray: 1;
+        stroke-width: 1;
+      }
+
+      g text {
+        fill: var(--mat-grey-700);
+        font-size: 4pt;
+        transform: rotate(-90deg);
+      }
+    }
+
     map-labels[key='landmarks'] {
       svg {
         g text {
@@ -140,7 +172,7 @@ map-root {
     map-labels {
       svg {
         g text {
-          font-size: calc(10pt / var(--map-scale));
+          font-size: max(calc(10pt / var(--map-scale) * 2), 10pt);
           font-style: italic;
         }
       }
@@ -172,6 +204,17 @@ map-root {
         g path {
           fill: url(#halftone);
           stroke-width: 0;
+        }
+      }
+    }
+
+    map-tracks[key='ditches'] {
+      svg {
+        g path {
+          fill: transparent;
+          stroke: var(--mat-blue-400);
+          stroke-dasharray: 1;
+          stroke-width: 1;
         }
       }
     }
@@ -246,13 +289,20 @@ map-root {
           fill: transparent;
           stroke: var(--mat-blue-200);
           stroke-dasharray: 2;
+          stroke-width: 2;
+        }
+
+        g[id='Lower Flo'] path,
+        g[id='River Flo'] path {
+          fill: transparent;
+          stroke: var(--mat-blue-200);
           stroke-width: 3;
         }
 
         g path {
           fill: transparent;
           stroke: var(--mat-blue-200);
-          stroke-width: 3;
+          stroke-width: 2;
         }
       }
     }

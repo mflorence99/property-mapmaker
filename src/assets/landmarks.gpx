@@ -69,7 +69,7 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
   <ele>347</ele>
   <time>2020-10-17T14:43:30Z</time>
 </wpt>
-<wpt lat="43.206533" lon="-72.023426999999998">
+<wpt lat="43.206447006638925" lon="-72.023366407869332">
   <name>Outer Causeway</name>
   <ele>360</ele>
   <time>2020-10-09T14:08:30Z</time>
@@ -83,7 +83,7 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
   <ele>348</ele>
   <time>2020-10-09T14:30:22Z</time>
 </wpt>
-<wpt lat="43.205578145362807" lon="-72.027521979918475">
+<wpt lat="43.20564836772963" lon="-72.027515785215371">
   <name>Washout Causeway </name>
   <ele>345</ele>
   <time>2020-10-09T14:37:10Z</time>

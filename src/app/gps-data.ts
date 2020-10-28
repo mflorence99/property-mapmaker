@@ -27,6 +27,8 @@ export class GpsData {
   boundary: Tracks;
   bridges: Waypoints;
   buildings: Tracks;
+  culverts: Waypoints;
+  ditches: Tracks;
   driveway: Tracks;
   islands: Waypoints;
   landmarks: Waypoints;
@@ -42,6 +44,8 @@ export class GpsData {
       this.loadImpl('boundary'),
       this.loadImpl('bridges'),
       this.loadImpl('buildings'),
+      this.loadImpl('culverts'),
+      this.loadImpl('ditches'),
       this.loadImpl('driveway'),
       this.loadImpl('landmarks'),
       this.loadImpl('mow'),

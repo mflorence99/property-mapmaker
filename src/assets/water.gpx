@@ -23,7 +23,7 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
     <ele>347.35476299999999</ele>
     <time>2020-10-17T17:08:49Z</time>
   </trkpt>
-  <trkpt lat="43.206798758316751" lon="-72.028542538447383">
+  <trkpt lat="43.206803784808862" lon="-72.02852597651291">
     <ele>349.57906700000001</ele>
     <time>2020-10-17T17:08:52Z</time>
   </trkpt>
@@ -471,7 +471,7 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
 <trk>
   <name>Pond</name>
   <trkseg>
-  <trkpt lat="43.203096149583004" lon="-72.028773587871086">
+  <trkpt lat="43.203085207880243" lon="-72.028775421951295">
     <ele>316.48135000000002</ele>
     <time>2020-10-17T14:25:10Z</time>
   </trkpt>
@@ -579,7 +579,7 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
     <ele>312.33945849999998</ele>
     <time>2020-10-17T14:27:06Z</time>
   </trkpt>
-  <trkpt lat="43.20309663836975" lon="-72.02877425842334">
+  <trkpt lat="43.203084230306551" lon="-72.028775421951295">
     <ele>312.61532199999999</ele>
     <time>2020-10-17T14:27:10Z</time>
   </trkpt>
@@ -1160,7 +1160,7 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
     <ele>325.82052199999998</ele>
     <time>2020-10-17T17:51:21Z</time>
   </trkpt>
-  <trkpt lat="43.203096149583004" lon="-72.028774593699467">
+  <trkpt lat="43.203052947940385" lon="-72.028784809682847">
     <ele>325.42306100000002</ele>
     <time>2020-10-17T17:51:40Z</time>
   </trkpt>

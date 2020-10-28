@@ -2,6 +2,7 @@ import { BoundaryComponent } from './boundary';
 import { BridgesComponent } from './bridges';
 import { CacheInterceptor } from './cache';
 import { ContoursComponent } from './contours';
+import { CulvertsComponent } from './culverts';
 import { ForestComponent } from './forest';
 import { LabelsComponent } from './labels';
 import { RootComponent } from './root';
@@ -36,6 +37,7 @@ const COMPONENTS = [
   BoundaryComponent,
   BridgesComponent,
   ContoursComponent,
+  CulvertsComponent,
   ForestComponent,
   LabelsComponent,
   RootComponent,
