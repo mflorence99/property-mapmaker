@@ -67,7 +67,6 @@ html {
 
 map-root {
   main {
-    background-color: var(--mat-light-green-200);
     border: 3px solid var(--mat-grey-600);
     height: calc(var(--map-cyNominal) * var(--map-scale));
     position: relative;
@@ -77,6 +76,7 @@ map-root {
     map-bridges,
     map-contours,
     map-culverts,
+    map-dep,
     map-forest,
     map-labels,
     map-street,
@@ -150,6 +150,26 @@ map-root {
         fill: var(--mat-grey-700);
         font-size: 4pt;
         transform: rotate(-90deg);
+      }
+    }
+
+    map-image {
+      display: block;
+      height: calc(var(--map-cyNominal) * var(--map-scale));
+      position: relative;
+      width: calc(var(--map-cxNominal) * var(--map-scale));
+
+      canvas {
+        height: var(--map-cyNominal);
+        position: absolute;
+        visibility: hidden;
+        width: var(--map-cxNominal);
+      }
+
+      img {
+        height: 100%;
+        position: absolute;
+        width: 100%;
       }
     }
 

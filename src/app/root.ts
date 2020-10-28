@@ -8,8 +8,7 @@ import { Component } from '@angular/core';
   selector: 'map-root',
   template: `
     <main *ngIf="params.ready">
-      <map-topo></map-topo>
-      <map-forest></map-forest>
+      <map-dep></map-dep>
       <map-street></map-street>
       <map-boundary></map-boundary>
       <map-tracks key="mow" op="bezier"></map-tracks>

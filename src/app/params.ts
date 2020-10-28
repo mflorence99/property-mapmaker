@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 const RAD2DEG = 180 / Math.PI;
 const PI_4 = Math.PI / 4;
 
-export type XY = [number, number];
+export type XY = [x: number, y: number];
 
 @Injectable({ providedIn: 'root' })
 export class Params {

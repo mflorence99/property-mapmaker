@@ -3,8 +3,8 @@ FILE_VERSION=1
 
 xmpp=0.125000
 ympp=0.125000
-lat=43.203498
-lon=-72.028903
+lat=43.207016
+lon=-72.026085
 mode=mercator
 color=#cccccc
 highlightcolor=#eea500
@@ -2323,7 +2323,6 @@ type="trackend"
 
 ~Layer TrackWaypoint
 name=boundary.gpx
-visible=f
 tracks_visible=t
 waypoints_visible=t
 routes_visible=t

@@ -11,6 +11,16 @@ const PROXY_CONFIG = [
   },
   {
     changeOrigin: true,
+    context: ['/dep'],
+    pathRewrite: {
+      '/dep': ''
+    },
+    target:
+      'https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage',
+    secure: true
+  },
+  {
+    changeOrigin: true,
     context: ['/street'],
     pathRewrite: {
       '/street': ''

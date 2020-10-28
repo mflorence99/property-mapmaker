@@ -3,7 +3,9 @@ import { BridgesComponent } from './bridges';
 import { CacheInterceptor } from './cache';
 import { ContoursComponent } from './contours';
 import { CulvertsComponent } from './culverts';
+import { DEPComponent } from './dep';
 import { ForestComponent } from './forest';
+import { ImageComponent } from './image';
 import { LabelsComponent } from './labels';
 import { RootComponent } from './root';
 import { StreetComponent } from './street';
@@ -38,7 +40,9 @@ const COMPONENTS = [
   BridgesComponent,
   ContoursComponent,
   CulvertsComponent,
+  DEPComponent,
   ForestComponent,
+  ImageComponent,
   LabelsComponent,
   RootComponent,
   StreetComponent,
