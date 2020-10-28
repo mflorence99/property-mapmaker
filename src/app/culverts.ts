@@ -55,6 +55,10 @@ export class CulvertsComponent {
     'Culvert 4-1': -20,
     'Culvert 4-4': 90,
     'Culvert 4-5': 160,
+    'Culvert 12-7': 120,
+    'Culvert 12-8': 120,
+    'Culvert 12-9': 55,
+    'Culvert 12-14': 55,
     'Culvert 12-17': 10,
     'Culvert 12-20': -20,
     'Culvert 12-21': 20,
@@ -69,6 +73,7 @@ export class CulvertsComponent {
     'Culvert 12-34': 60,
     'Culvert 12-35': 130,
     'Culvert 12-36': 170,
+    'Culvert 24-1': 67,
     'Culvert 24-2': 82,
     'xxx': 0
   };

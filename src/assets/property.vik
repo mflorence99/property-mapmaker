@@ -3,8 +3,8 @@ FILE_VERSION=1
 
 xmpp=0.125000
 ympp=0.125000
-lat=43.206813
-lon=-72.028939
+lat=43.203498
+lon=-72.028903
 mode=mercator
 color=#cccccc
 highlightcolor=#eea500
@@ -1923,7 +1923,7 @@ type="waypoint" latitude="43.204160853322193" longitude="-72.029937152462011" na
 type="waypoint" latitude="43.204169651329522" longitude="-72.029406075077063" name="Barn" unixtime="1603810722"
 type="waypoint" latitude="43.203889092026515" longitude="-72.029249165849691" name="Garage" unixtime="1603810740"
 type="waypoint" latitude="43.203660342371641" longitude="-72.029394005136496" name="Gazebo" unixtime="1603810760"
-type="waypoint" latitude="43.203779605119237" longitude="-72.029650156097418" name="House" unixtime="1603810777"
+type="waypoint" latitude="43.203886828544462" longitude="-72.029934467194551" name="House" unixtime="1603810777"
 type="waypointlistend"
 ~EndLayerData
 ~EndLayer
@@ -2178,11 +2178,11 @@ type="waypoint" latitude="43.205489408754353" longitude="-72.027514360956189" na
 type="waypoint" latitude="43.202461" longitude="-72.029470000000003" name="Culvert 12-4" altitude="312" unixtime="1602182508"
 type="waypoint" latitude="43.202820000000003" longitude="-72.029263" name="Culvert 12-5" altitude="311" unixtime="1602182579"
 type="waypoint" latitude="43.202765999999997" longitude="-72.029319999999998" name="Culvert 12-6" altitude="312" unixtime="1602182624"
-type="waypoint" latitude="43.202665000000003" longitude="-72.028908000000001" name="Culvert 12-7" altitude="312" unixtime="1602182681"
-type="waypoint" latitude="43.202694999999999" longitude="-72.028941000000003" name="Culvert 12-8" altitude="312" unixtime="1602182702"
-type="waypoint" latitude="43.203466285790626" longitude="-72.029513048444755" name="Culvert 12-9" altitude="322" unixtime="1602182884"
-type="waypoint" latitude="43.204093880942366" longitude="-72.029970365081795" name="Culvert 12–13" altitude="330" unixtime="1602183225"
-type="waypoint" latitude="43.202814244736935" longitude="-72.02877007654763" name="Culvert 24-1" altitude="311" unixtime="1602182738"
+type="waypoint" latitude="43.202626495224386" longitude="-72.028922603843682" name="Culvert 12-7" altitude="312" unixtime="1602182681"
+type="waypoint" latitude="43.20265582264814" longitude="-72.028997705696099" name="Culvert 12-8" altitude="312" unixtime="1602182702"
+type="waypoint" latitude="43.20346354323609" longitude="-72.02952006590175" name="Culvert 12-9" altitude="322" unixtime="1602182884"
+type="waypoint" latitude="43.204093880942366" longitude="-72.029970365081795" name="Culvert 12-13" altitude="330" unixtime="1602183225"
+type="waypoint" latitude="43.202720342930768" longitude="-72.028687910554879" name="Culvert 24-1" altitude="311" unixtime="1602182738"
 type="waypoint" latitude="43.206802822810019" longitude="-72.028539047954553" name="Culvert 24-2" altitude="345" unixtime="1602251089"
 type="waypoint" latitude="43.206706048836999" longitude="-72.028835432050698" name="Culvert 4-1" altitude="341" unixtime="1602250916"
 type="waypoint" latitude="43.203743505991113" longitude="-72.027559958509443" name="Culvert 4-2" altitude="334" unixtime="1602253184"
@@ -2210,7 +2210,7 @@ type="waypoint" latitude="43.203243999999998" longitude="-72.030124999999998" na
 type="waypoint" latitude="43.204071999999996" longitude="-72.028795000000002" name="Culvert 12-10" altitude="323" unixtime="1602183042"
 type="waypoint" latitude="43.204287999999998" longitude="-72.028942999999998" name="Culvert 12-11" altitude="327" unixtime="1602183094"
 type="waypoint" latitude="43.204259" longitude="-72.029166000000004" name="Culvert 12-12" altitude="329" unixtime="1602183128"
-type="waypoint" latitude="43.203781999999997" longitude="-72.029775000000001" name="Culvert 12-14" altitude="329" unixtime="1602183297"
+type="waypoint" latitude="43.203720642976805" longitude="-72.029721231577867" name="Culvert 12-14" altitude="329" unixtime="1602183297"
 type="waypoint" latitude="43.205173347744392" longitude="-72.029294592590333" name="Culvert 12-15" altitude="341" unixtime="1602183472"
 type="waypoint" latitude="43.205633767448397" longitude="-72.028972727508545" name="Culvert 12-16" altitude="341" unixtime="1602183544"
 type="waypoint" latitude="43.206416703517043" longitude="-72.028813974378579" name="Culvert 12-17" altitude="346" unixtime="1602183652"
@@ -2236,7 +2236,6 @@ type="waypointlistend"
 
 ~Layer TrackWaypoint
 name=buildings.gpx
-visible=f
 tracks_visible=t
 waypoints_visible=t
 routes_visible=t
