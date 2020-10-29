@@ -19,7 +19,7 @@ import { Component } from '@angular/core';
   `
 })
 export class DEPComponent {
-  alpha = 140;
+  alpha = 127;
   query = {
     bbox: `${this.params.bounds.left},${this.params.bounds.bottom},${this.params.bounds.right},${this.params.bounds.top}`,
     bboxSR: '4326',

@@ -24,11 +24,14 @@ type CLUT = Record<number, RGBA>;
 @Component({
   changeDetection: ChangeDetectionStrategy.Default,
   selector: 'map-image',
-  template: '<canvas #canvas></canvas><img #image>'
+  template: `<canvas #canvas></canvas>
+    <img class="outside" #outside />
+    <img class="inside" #inside />`
 })
 export class ImageComponent implements AfterViewInit, OnInit {
   @ViewChild('canvas', { static: true }) canvas;
-  @ViewChild('image', { static: true }) image;
+  @ViewChild('inside', { static: true }) inside;
+  @ViewChild('outside', { static: true }) outside;
 
   // eslint-disable-next-line @typescript-eslint/member-ordering
   @Input() alpha: number;
@@ -76,9 +79,13 @@ export class ImageComponent implements AfterViewInit, OnInit {
         }
         // console.table(histogram);
         ctx.putImageData(imageData, 0, 0);
-        // draw the munged image
-        const image = this.image.nativeElement;
-        image.src = canvas.toDataURL();
+        // draw the munged image twice
+        // ... outside is filtered sepia
+        const outside = this.outside.nativeElement;
+        outside.src = canvas.toDataURL();
+        // ... inside is clipped to boundary
+        const inside = this.inside.nativeElement;
+        inside.src = canvas.toDataURL();
       });
   }
 

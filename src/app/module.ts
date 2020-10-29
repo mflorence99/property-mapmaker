@@ -1,6 +1,8 @@
 import { BoundaryComponent } from './boundary';
 import { BridgesComponent } from './bridges';
 import { CacheInterceptor } from './cache';
+import { ClipComponent } from './clip';
+import { CompassComponent } from './compass';
 import { ContoursComponent } from './contours';
 import { CulvertsComponent } from './culverts';
 import { DEPComponent } from './dep';
@@ -38,6 +40,8 @@ class IconsModule {
 const COMPONENTS = [
   BoundaryComponent,
   BridgesComponent,
+  ClipComponent,
+  CompassComponent,
   ContoursComponent,
   CulvertsComponent,
   DEPComponent,

@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
   selector: 'map-root',
   template: `
     <main *ngIf="params.ready" [ngClass]="params.format">
+      <map-clip></map-clip>
       <map-dep></map-dep>
       <map-street></map-street>
       <map-boundary></map-boundary>
@@ -23,6 +24,7 @@ import { Component } from '@angular/core';
       <map-labels key="landmarks"></map-labels>
       <map-labels key="watermarks"></map-labels>
       <map-contours></map-contours>
+      <map-compass></map-compass>
     </main>
   `
 })

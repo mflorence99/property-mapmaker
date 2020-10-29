@@ -63,7 +63,9 @@ map-root {
 
     map-boundary,
     map-bridges,
+    map-clip,
     map-contours,
+    map-compass,
     map-culverts,
     map-dep,
     map-forest,
@@ -78,6 +80,7 @@ map-root {
 
     map-boundary,
     map-bridges,
+    map-clip,
     map-culverts,
     map-labels,
     map-tracks {
@@ -94,8 +97,8 @@ map-root {
     map-boundary {
       svg {
         g polygon {
-          fill: transparent;
-          stroke: var(--mat-gray-500);
+          fill: none;
+          stroke: var(--mat-gray-700);
           stroke-dasharray: 4;
           stroke-width: 3;
         }
@@ -105,14 +108,25 @@ map-root {
     map-bridges {
       svg {
         g path.edges {
-          fill: transparent;
-          stroke: var(--mat-gray-500);
+          fill: none;
+          stroke: var(--mat-gray-800);
           stroke-width: 1;
         }
 
         g path.roadway {
           fill: white;
         }
+      }
+    }
+
+    map-compass {
+      left: 5%;
+      position: absolute;
+      top: 5%;
+
+      svg {
+        height: 20%;
+        width: 12%;
       }
     }
 
@@ -173,12 +187,19 @@ map-root {
         position: absolute;
         width: 100%;
       }
+
+      img.inside {
+        clip-path: url(#boundary);
+      }
+
+      img.outside {
+        filter: sepia(1);
+      }
     }
 
     map-labels {
       svg {
         g text {
-          font-size: 6pt;
           font-style: italic;
         }
       }
@@ -189,8 +210,7 @@ map-root {
         g text {
           fill: var(--mat-gray-800);
           font-size: 5pt;
-          font-style: normal;
-          font-weight: bold;
+          font-style: italic;
         }
       }
     }
@@ -199,6 +219,7 @@ map-root {
       svg {
         g text {
           fill: var(--mat-brown-600);
+          font-size: 6pt;
         }
       }
     }
@@ -207,6 +228,7 @@ map-root {
       svg {
         g text {
           fill: var(--mat-blue-600);
+          font-size: 5.5pt;
         }
       }
     }
@@ -244,8 +266,8 @@ map-root {
     map-tracks[key='ditches'] {
       svg {
         g path {
-          fill: transparent;
-          stroke: var(--mat-blue-400);
+          fill: none;
+          stroke: var(--mat-blue-600);
           stroke-dasharray: 1;
           stroke-width: 1;
         }
@@ -255,14 +277,14 @@ map-root {
     map-tracks[key='driveway'] {
       svg {
         g path[id='outline'] {
-          fill: transparent;
+          fill: none;
           stroke: var(--mat-gray-500);
           stroke-width: 5;
         }
 
         g path[id='background'],
         g path[id='colorized'] {
-          fill: transparent;
+          fill: none;
           stroke: white;
           stroke-width: 3;
         }
@@ -282,13 +304,13 @@ map-root {
       svg {
         g path[id='background'],
         g path[id='colorized'] {
-          fill: transparent;
+          fill: none;
           stroke: white;
           stroke-width: 3;
         }
 
         g path[id='outline'] {
-          fill: transparent;
+          fill: none;
           stroke: var(--mat-gray-500);
           stroke-width: 5;
         }
@@ -297,9 +319,18 @@ map-root {
         g[id='Inner loop'] path[id='colorized'],
         g[id='Outer loop'] path[id='colorized'],
         g[id='Park Lane'] path[id='colorized'] {
-          fill: transparent;
-          stroke: rgba(var(--rgb-red-600), 0.5);
+          fill: none;
+          stroke: rgba(var(--rgb-red-500), 0.75);
           stroke-width: 3;
+        }
+
+        g[id='Central loop'] path[id='outline'],
+        g[id='Inner loop'] path[id='outline'],
+        g[id='Outer loop'] path[id='outline'],
+        g[id='Park Lane'] path[id='outline'] {
+          fill: none;
+          stroke: white;
+          stroke-width: 5;
         }
       }
     }
@@ -307,36 +338,37 @@ map-root {
     map-tracks[key='water'] {
       svg {
         g path {
-          fill: transparent;
-          stroke: var(--mat-blue-200);
+          fill: none;
+          stroke: var(--mat-blue-300);
           stroke-width: 2;
         }
 
         g[id='Frog Pond'] path,
         g[id='Pond'] path,
-        g[id='Sacrificial Pool'] path {
-          fill: var(--mat-blue-200);
+        g[id='Sacrificial Pool'] path,
+        g[id='Trench 1'] path,
+        g[id='Trench 2'] path {
+          fill: var(--mat-blue-300);
           stroke-width: 0;
         }
 
         g[id='Swamp'] path {
           fill: url(#wetland);
           stroke: var(--mat-light-green-100);
-          stroke-dasharray: 1;
-          stroke-width: 1;
+          stroke-width: 0;
         }
 
         g[id='Underground'] path {
-          fill: transparent;
-          stroke: var(--mat-blue-200);
+          fill: none;
+          stroke: var(--mat-blue-300);
           stroke-dasharray: 2;
           stroke-width: 2;
         }
 
         g[id='Lower Flo'] path,
         g[id='River Flo'] path {
-          fill: transparent;
-          stroke: var(--mat-blue-200);
+          fill: none;
+          stroke: var(--mat-blue-300);
           stroke-width: 3;
         }
       }
@@ -344,13 +376,29 @@ map-root {
   }
 
   main.poster {
+    map-contours {
+      svg {
+        g#Labels text {
+          font-size: 6pt;
+        }
+      }
+    }
+
     map-culverts,
     map-tracks[key='buildings'],
     map-tracks[key='ditches'] {
       visibility: hidden;
     }
 
-    map-labels {
+    map-labels[key='buildingmarks'] {
+      svg {
+        g text {
+          font-size: 7pt;
+        }
+      }
+    }
+
+    map-labels[key='landmarks'] {
       svg {
         g text {
           font-size: 10pt;
@@ -358,10 +406,10 @@ map-root {
       }
     }
 
-    map-labels[key='buildingmarks'] {
+    map-labels[key='watermarks'] {
       svg {
         g text {
-          font-size: 7pt;
+          font-size: 8pt;
         }
       }
     }
