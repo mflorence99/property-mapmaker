@@ -36,7 +36,6 @@ const CY_BRIDGE = 10;
             center[1] +
             ')'
           "
-          class="icon-bridge"
         >
           <path
             class="roadway"

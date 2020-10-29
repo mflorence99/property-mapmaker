@@ -34,8 +34,8 @@ export class ImageComponent implements AfterViewInit, OnInit {
   @Input() alpha: number;
   @Input() query: any;
   @Input() ramp: Ramp[];
+  @Input() range: number[];
   @Input() src: string;
-  @Input() steps: number;
 
   private clut: CLUT;
 
@@ -52,7 +52,7 @@ export class ImageComponent implements AfterViewInit, OnInit {
         canvas.width = this.params.dims.cxNominal;
         const ctx = canvas.getContext('2d');
         ctx.drawImage(bitmap, 0, 0);
-        // munge the image for transparency
+        // grab the image pixels
         const imageData = ctx.getImageData(
           0,
           0,
@@ -60,18 +60,21 @@ export class ImageComponent implements AfterViewInit, OnInit {
           this.params.dims.cyNominal
         );
         const pixels = imageData.data;
-        let max = Number.MIN_SAFE_INTEGER;
-        let min = Number.MAX_SAFE_INTEGER;
+        // const histogram = {};
+        // munge the pixels for color change
         for (let ix = 0; ix < pixels.length; ix += 4) {
-          max = Math.max(max, pixels[ix]);
-          min = Math.min(min, pixels[ix]);
-          const rgba = this.clut[this.quantize(pixels[ix])];
-          pixels[ix] = rgba[0];
-          pixels[ix + 1] = rgba[1];
-          pixels[ix + 2] = rgba[2];
-          pixels[ix + 3] = rgba[3];
+          const value = this.quantize(pixels[ix]);
+          // if (!histogram[value]) histogram[value] = 1;
+          // else histogram[value] += 1;
+          const rgba = this.clut[value];
+          if (rgba) {
+            pixels[ix] = rgba[0];
+            pixels[ix + 1] = rgba[1];
+            pixels[ix + 2] = rgba[2];
+            pixels[ix + 3] = rgba[3];
+          } else console.log(value);
         }
-        console.log(min, max);
+        // console.table(histogram);
         ctx.putImageData(imageData, 0, 0);
         // draw the munged image
         const image = this.image.nativeElement;
@@ -110,6 +113,12 @@ export class ImageComponent implements AfterViewInit, OnInit {
   }
 
   private quantize(value: number): number {
-    return Math.trunc(value / (256 / this.steps));
+    value =
+      Math.max(this.range[0], Math.min(this.range[1], value)) - this.range[0];
+    value *= 256 / (this.range[1] - this.range[0]);
+    return Math.min(
+      this.ramp.length - 1,
+      Math.trunc(value / (256 / this.ramp.length))
+    );
   }
 }

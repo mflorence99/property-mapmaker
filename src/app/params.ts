@@ -3,6 +3,13 @@ import { Point } from './gps-data';
 
 import { Injectable } from '@angular/core';
 
+const FORMAT2SCALE = {
+  poster: 1,
+  small: 1.5,
+  medium: 2,
+  large: 4
+};
+
 const RAD2DEG = 180 / Math.PI;
 const PI_4 = Math.PI / 4;
 
@@ -31,6 +38,7 @@ export class Params {
     numXTiles: 0,
     numYTiles: 0
   };
+  format = 'poster';
   ready = false;
   scale = 1;
   tiles = {
@@ -43,7 +51,8 @@ export class Params {
 
   constructor(private gpsData: GpsData) {
     const searchParams = this.parseInitialSearchParams();
-    this.scale = searchParams?.scale ?? this.scale;
+    this.format = searchParams?.format ?? this.format;
+    this.scale = FORMAT2SCALE[this.format];
     // load all the GPS data
     this.gpsData.load().subscribe(() => {
       // compute the boundary box

@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.Default,
   selector: 'map-root',
   template: `
-    <main *ngIf="params.ready">
+    <main *ngIf="params.ready" [ngClass]="params.format">
       <map-dep></map-dep>
       <map-street></map-street>
       <map-boundary></map-boundary>
@@ -17,8 +17,9 @@ import { Component } from '@angular/core';
       <map-tracks key="buildings" op="linear"></map-tracks>
       <map-tracks key="driveway" op="bezier" [outlined]="true"></map-tracks>
       <map-tracks key="trails" op="bezier" [outlined]="true"></map-tracks>
-      <map-culverts *ngIf="params.scale >= 2"></map-culverts>
+      <map-culverts></map-culverts>
       <map-bridges></map-bridges>
+      <map-labels key="buildingmarks"></map-labels>
       <map-labels key="landmarks"></map-labels>
       <map-labels key="watermarks"></map-labels>
       <map-contours></map-contours>

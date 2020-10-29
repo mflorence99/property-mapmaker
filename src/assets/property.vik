@@ -3,8 +3,8 @@ FILE_VERSION=1
 
 xmpp=0.125000
 ympp=0.125000
-lat=43.207016
-lon=-72.026085
+lat=43.204117
+lon=-72.028801
 mode=mercator
 color=#cccccc
 highlightcolor=#eea500
@@ -233,6 +233,35 @@ type="trackpoint" latitude="43.207754000000001" longitude="-72.027970999999994" 
 type="trackpoint" latitude="43.207788999999998" longitude="-72.028028000000006" altitude="340.03608400000002" unixtime="1602267560"
 type="trackpoint" latitude="43.207797999999997" longitude="-72.028093999999996" altitude="339.72845100000001" unixtime="1602267565"
 type="trackend"
+type="track" name="Narrow causeway connector" color=#2d059f
+type="trackpoint" latitude="43.206626854501998" longitude="-72.027812508914948" altitude="348.26430900000003" unixtime="1602263864" newsegment="yes"
+type="trackpoint" latitude="43.206617999999999" longitude="-72.027726000000001" altitude="347.21175799999997" unixtime="1602263874"
+type="trackpoint" latitude="43.206583000000002" longitude="-72.027682999999996" altitude="346.88589100000002" unixtime="1602263881"
+type="trackpoint" latitude="43.206612999999997" longitude="-72.027620999999996" altitude="346.65389599999997" unixtime="1602263888"
+type="trackpoint" latitude="43.206614000000002" longitude="-72.027553999999995" altitude="346.87145500000003" unixtime="1602263897"
+type="trackpoint" latitude="43.206622000000003" longitude="-72.027490999999998" altitude="347.11202700000001" unixtime="1602263903"
+type="trackpoint" latitude="43.206634999999999" longitude="-72.027421000000004" altitude="347.13993299999998" unixtime="1602263909"
+type="trackpoint" latitude="43.206639000000003" longitude="-72.027358000000007" altitude="347.61371000000003" unixtime="1602263914"
+type="trackpoint" latitude="43.206626999999997" longitude="-72.027282999999997" altitude="346.93274200000002" unixtime="1602263921"
+type="trackpoint" latitude="43.206600000000002" longitude="-72.027226999999996" altitude="346.78942699999999" unixtime="1602263924"
+type="trackpoint" latitude="43.206581" longitude="-72.027170999999996" altitude="347.28961800000002" unixtime="1602263928"
+type="trackpoint" latitude="43.206547999999998" longitude="-72.027129000000002" altitude="347.89099599999997" unixtime="1602263932"
+type="trackpoint" latitude="43.206519" longitude="-72.027078000000003" altitude="348.48848600000002" unixtime="1602263936"
+type="trackpoint" latitude="43.206476000000002" longitude="-72.027027000000004" altitude="348.64104400000002" unixtime="1602263940"
+type="trackpoint" latitude="43.206454000000001" longitude="-72.026962999999995" altitude="348.67742099999998" unixtime="1602263944"
+type="trackpoint" latitude="43.206460999999997" longitude="-72.026899" altitude="348.35557499999999" unixtime="1602263948"
+type="trackpoint" latitude="43.206426999999998" longitude="-72.026833999999994" altitude="345.28512799999999" unixtime="1602263952"
+type="trackpoint" latitude="43.206426" longitude="-72.026768000000004" altitude="343.21403800000002" unixtime="1602263958"
+type="trackpoint" latitude="43.206431000000002" longitude="-72.026700000000005" altitude="342.58334600000001" unixtime="1602263963"
+type="trackpoint" latitude="43.206457" longitude="-72.026640999999998" altitude="342.32583" unixtime="1602263967"
+type="trackpoint" latitude="43.206487000000003" longitude="-72.026585999999995" altitude="341.84560199999999" unixtime="1602263971"
+type="trackpoint" latitude="43.206510000000002" longitude="-72.026528999999996" altitude="341.801016" unixtime="1602263975"
+type="trackpoint" latitude="43.206491999999997" longitude="-72.026471000000001" altitude="341.24709200000001" unixtime="1602263980"
+type="trackpoint" latitude="43.206470000000003" longitude="-72.026403000000002" altitude="340.868717" unixtime="1602263984"
+type="trackpoint" latitude="43.206445000000002" longitude="-72.026352000000003" altitude="340.97728000000001" unixtime="1602263988"
+type="trackpoint" latitude="43.206437666437608" longitude="-72.026289932540891" altitude="340.721272" unixtime="1602263992"
+type="trackpoint" latitude="43.206441126003774" longitude="-72.026239393327714" altitude="340.699567" unixtime="1602264004"
+type="trackend"
 type="track" name="Park Lane" color=#4a059f
 type="trackpoint" latitude="43.206814537462883" longitude="-72.028876004789353" altitude="350.25962700000002" unixtime="1602268320" newsegment="yes"
 type="trackpoint" latitude="43.206674160086223" longitude="-72.028822881550795" altitude="350.42379599999998" unixtime="1602268327"
@@ -283,35 +312,6 @@ type="trackpoint" latitude="43.208287040435181" longitude="-72.028734368653303" 
 type="trackpoint" latitude="43.208298770317882" longitude="-72.028852385849959" altitude="345.15222499999999" unixtime="1602267720"
 type="trackpoint" latitude="43.208349599783496" longitude="-72.02894626316548" altitude="346.12683600000003" unixtime="1602267728"
 type="trackpoint" latitude="43.208419978973659" longitude="-72.029007953972823" altitude="346.75898599999999" unixtime="1602267734"
-type="trackend"
-type="track" name="Narrow causeway connector" color=#2d059f
-type="trackpoint" latitude="43.206626854501998" longitude="-72.027812508914948" altitude="348.26430900000003" unixtime="1602263864" newsegment="yes"
-type="trackpoint" latitude="43.206617999999999" longitude="-72.027726000000001" altitude="347.21175799999997" unixtime="1602263874"
-type="trackpoint" latitude="43.206583000000002" longitude="-72.027682999999996" altitude="346.88589100000002" unixtime="1602263881"
-type="trackpoint" latitude="43.206612999999997" longitude="-72.027620999999996" altitude="346.65389599999997" unixtime="1602263888"
-type="trackpoint" latitude="43.206614000000002" longitude="-72.027553999999995" altitude="346.87145500000003" unixtime="1602263897"
-type="trackpoint" latitude="43.206622000000003" longitude="-72.027490999999998" altitude="347.11202700000001" unixtime="1602263903"
-type="trackpoint" latitude="43.206634999999999" longitude="-72.027421000000004" altitude="347.13993299999998" unixtime="1602263909"
-type="trackpoint" latitude="43.206639000000003" longitude="-72.027358000000007" altitude="347.61371000000003" unixtime="1602263914"
-type="trackpoint" latitude="43.206626999999997" longitude="-72.027282999999997" altitude="346.93274200000002" unixtime="1602263921"
-type="trackpoint" latitude="43.206600000000002" longitude="-72.027226999999996" altitude="346.78942699999999" unixtime="1602263924"
-type="trackpoint" latitude="43.206581" longitude="-72.027170999999996" altitude="347.28961800000002" unixtime="1602263928"
-type="trackpoint" latitude="43.206547999999998" longitude="-72.027129000000002" altitude="347.89099599999997" unixtime="1602263932"
-type="trackpoint" latitude="43.206519" longitude="-72.027078000000003" altitude="348.48848600000002" unixtime="1602263936"
-type="trackpoint" latitude="43.206476000000002" longitude="-72.027027000000004" altitude="348.64104400000002" unixtime="1602263940"
-type="trackpoint" latitude="43.206454000000001" longitude="-72.026962999999995" altitude="348.67742099999998" unixtime="1602263944"
-type="trackpoint" latitude="43.206460999999997" longitude="-72.026899" altitude="348.35557499999999" unixtime="1602263948"
-type="trackpoint" latitude="43.206426999999998" longitude="-72.026833999999994" altitude="345.28512799999999" unixtime="1602263952"
-type="trackpoint" latitude="43.206426" longitude="-72.026768000000004" altitude="343.21403800000002" unixtime="1602263958"
-type="trackpoint" latitude="43.206431000000002" longitude="-72.026700000000005" altitude="342.58334600000001" unixtime="1602263963"
-type="trackpoint" latitude="43.206457" longitude="-72.026640999999998" altitude="342.32583" unixtime="1602263967"
-type="trackpoint" latitude="43.206487000000003" longitude="-72.026585999999995" altitude="341.84560199999999" unixtime="1602263971"
-type="trackpoint" latitude="43.206510000000002" longitude="-72.026528999999996" altitude="341.801016" unixtime="1602263975"
-type="trackpoint" latitude="43.206491999999997" longitude="-72.026471000000001" altitude="341.24709200000001" unixtime="1602263980"
-type="trackpoint" latitude="43.206470000000003" longitude="-72.026403000000002" altitude="340.868717" unixtime="1602263984"
-type="trackpoint" latitude="43.206445000000002" longitude="-72.026352000000003" altitude="340.97728000000001" unixtime="1602263988"
-type="trackpoint" latitude="43.206437666437608" longitude="-72.026289932540891" altitude="340.721272" unixtime="1602263992"
-type="trackpoint" latitude="43.206441126003774" longitude="-72.026239393327714" altitude="340.699567" unixtime="1602264004"
 type="trackend"
 type="track" name="Rock bench connector" color=#5a171a
 type="trackpoint" latitude="43.2062690822588" longitude="-72.026342658374787" altitude="350.79787800000003" unixtime="1602263681" newsegment="yes"
@@ -957,6 +957,7 @@ type="waypointlistend"
 
 ~Layer TrackWaypoint
 name=water.gpx
+visible=f
 tracks_visible=t
 waypoints_visible=t
 routes_visible=t
@@ -1916,14 +1917,7 @@ type="waypoint" latitude="43.207943731117616" longitude="-72.024472776384826" na
 type="waypoint" latitude="43.208247" longitude="-72.027181999999996" name="Moose Junction" altitude="342" unixtime="1602251555"
 type="waypoint" latitude="43.209100999999997" longitude="-72.024486999999993" name="Moss Rock" altitude="375" unixtime="1602251901"
 type="waypoint" latitude="43.206474048446381" longitude="-72.026088339200015" name="Narrow Causeway" altitude="350" unixtime="1602253892"
-type="waypoint" latitude="43.204459999999997" longitude="-72.030125999999996" name="Old Well" altitude="347" unixtime="1602945810"
 type="waypoint" latitude="43.205668078399569" longitude="-72.026478600611682" name="Swamp Causeway " altitude="348" unixtime="1602253822"
-type="waypoint" latitude="43.205474526699511" longitude="-72.02899766299295" name="Sacrificial Pool" unixtime="1603571006"
-type="waypoint" latitude="43.204160853322193" longitude="-72.029937152462011" name="Water Temple" unixtime="1603810688"
-type="waypoint" latitude="43.204169651329522" longitude="-72.029406075077063" name="Barn" unixtime="1603810722"
-type="waypoint" latitude="43.203889092026515" longitude="-72.029249165849691" name="Garage" unixtime="1603810740"
-type="waypoint" latitude="43.203660342371641" longitude="-72.029394005136496" name="Gazebo" unixtime="1603810760"
-type="waypoint" latitude="43.203886828544462" longitude="-72.029934467194551" name="House" unixtime="1603810777"
 type="waypointlistend"
 ~EndLayerData
 ~EndLayer
@@ -2050,6 +2044,40 @@ metadatakeywords=
 ~LayerData
 type="waypointlist"
 type="waypointlistend"
+type="track" name="Ditch 1" color=#000000
+type="trackpoint" latitude="43.208558412876485" longitude="-72.027062491891854"
+type="trackpoint" latitude="43.208608264640574" longitude="-72.027019576547616"
+type="trackpoint" latitude="43.208633679249729" longitude="-72.02697532009887"
+type="trackpoint" latitude="43.20864443158117" longitude="-72.026929722545617"
+type="trackpoint" latitude="43.208683530952293" longitude="-72.026900218246453"
+type="trackpoint" latitude="43.208688418371928" longitude="-72.026855961797708"
+type="trackpoint" latitude="43.208691350823514" longitude="-72.026811705348962"
+type="trackpoint" latitude="43.208711877980683" longitude="-72.026766107795709"
+type="trackpoint" latitude="43.208720675331648" longitude="-72.026720510242455"
+type="trackpoint" latitude="43.208733382614128" longitude="-72.026674912689202"
+type="trackpoint" latitude="43.208738270029762" longitude="-72.026621268508904"
+type="trackpoint" latitude="43.208749022342772" longitude="-72.02655018997001"
+type="trackpoint" latitude="43.208748044859846" longitude="-72.026500569103234"
+type="trackpoint" latitude="43.208749999825685" longitude="-72.026448266027444"
+type="trackend"
+type="track" name="Ditch 2" color=#000000
+type="trackpoint" latitude="43.207787171570466" longitude="-72.022851423738473"
+type="trackpoint" latitude="43.207768599099381" longitude="-72.022860811470025"
+type="trackpoint" latitude="43.20773927413353" longitude="-72.022867516992562"
+type="trackpoint" latitude="43.207712881652199" longitude="-72.022876904724114"
+type="trackend"
+type="track" name="Ditch 3" color=#000000
+type="trackpoint" latitude="43.206611229745199" longitude="-72.023377136705392"
+type="trackpoint" latitude="43.206571151527896" longitude="-72.023370431182855"
+type="trackpoint" latitude="43.206548668613983" longitude="-72.02336238455581"
+type="trackend"
+type="track" name="Ditch 4" color=#000000
+type="trackpoint" latitude="43.205660098119743" longitude="-72.027401791332238"
+type="trackpoint" latitude="43.205629794607326" longitude="-72.027456776617043"
+type="trackpoint" latitude="43.205578962875293" longitude="-72.027459458826058"
+type="trackpoint" latitude="43.205514445615933" longitude="-72.027452753303521"
+type="trackpoint" latitude="43.205460681181009" longitude="-72.027412520168298"
+type="trackend"
 type="track" name="Ditch 5" color=#000000
 type="trackpoint" latitude="43.208013706387142" longitude="-72.028793857810967"
 type="trackpoint" latitude="43.207978516567827" longitude="-72.028828726528161"
@@ -2086,46 +2114,13 @@ type="trackpoint" latitude="43.206350965242038" longitude="-72.028910533903115"
 type="trackpoint" latitude="43.206320662072834" longitude="-72.028966860292428"
 type="trackpoint" latitude="43.206277651097132" longitude="-72.02905000877189"
 type="trackend"
-type="track" name="Ditch 1" color=#000000
-type="trackpoint" latitude="43.208558412876485" longitude="-72.027062491891854"
-type="trackpoint" latitude="43.208608264640574" longitude="-72.027019576547616"
-type="trackpoint" latitude="43.208633679249729" longitude="-72.02697532009887"
-type="trackpoint" latitude="43.20864443158117" longitude="-72.026929722545617"
-type="trackpoint" latitude="43.208683530952293" longitude="-72.026900218246453"
-type="trackpoint" latitude="43.208688418371928" longitude="-72.026855961797708"
-type="trackpoint" latitude="43.208691350823514" longitude="-72.026811705348962"
-type="trackpoint" latitude="43.208711877980683" longitude="-72.026766107795709"
-type="trackpoint" latitude="43.208720675331648" longitude="-72.026720510242455"
-type="trackpoint" latitude="43.208733382614128" longitude="-72.026674912689202"
-type="trackpoint" latitude="43.208738270029762" longitude="-72.026621268508904"
-type="trackpoint" latitude="43.208749022342772" longitude="-72.02655018997001"
-type="trackpoint" latitude="43.208748044859846" longitude="-72.026500569103234"
-type="trackpoint" latitude="43.208749999825685" longitude="-72.026448266027444"
-type="trackend"
-type="track" name="Ditch 2" color=#000000
-type="trackpoint" latitude="43.207787171570466" longitude="-72.022851423738473"
-type="trackpoint" latitude="43.207768599099381" longitude="-72.022860811470025"
-type="trackpoint" latitude="43.20773927413353" longitude="-72.022867516992562"
-type="trackpoint" latitude="43.207712881652199" longitude="-72.022876904724114"
-type="trackend"
-type="track" name="Ditch 3" color=#000000
-type="trackpoint" latitude="43.206611229745199" longitude="-72.023377136705392"
-type="trackpoint" latitude="43.206571151527896" longitude="-72.023370431182855"
-type="trackpoint" latitude="43.206548668613983" longitude="-72.02336238455581"
-type="trackend"
-type="track" name="Ditch 4" color=#000000
-type="trackpoint" latitude="43.205660098119743" longitude="-72.027401791332238"
-type="trackpoint" latitude="43.205629794607326" longitude="-72.027456776617043"
-type="trackpoint" latitude="43.205578962875293" longitude="-72.027459458826058"
-type="trackpoint" latitude="43.205514445615933" longitude="-72.027452753303521"
-type="trackpoint" latitude="43.205460681181009" longitude="-72.027412520168298"
-type="trackend"
 ~EndLayerData
 ~EndLayer
 
 
 ~Layer TrackWaypoint
 name=culverts.gpx
+visible=f
 tracks_visible=t
 waypoints_visible=t
 routes_visible=t
@@ -2169,25 +2164,6 @@ metadatakeywords=
 
 ~LayerData
 type="waypointlist"
-type="waypoint" latitude="43.203643999999997" longitude="-72.025122999999994" name="Culvert 12-31" altitude="329" unixtime="1602252956"
-type="waypoint" latitude="43.203724369317904" longitude="-72.025404252956392" name="Culvert 12-32" altitude="332" unixtime="1602252989"
-type="waypoint" latitude="43.205190452461643" longitude="-72.025517576287271" name="Culvert 12-33" altitude="338" unixtime="1602253626"
-type="waypoint" latitude="43.206538999999999" longitude="-72.025981000000002" name="Culvert 12-34" altitude="350" unixtime="1602253923"
-type="waypoint" latitude="43.206380914297426" longitude="-72.027605556062696" name="Culvert 12-35" altitude="348" unixtime="1602254130"
-type="waypoint" latitude="43.205489408754353" longitude="-72.027514360956189" name="Culvert 12-36" altitude="345" unixtime="1602254263"
-type="waypoint" latitude="43.202461" longitude="-72.029470000000003" name="Culvert 12-4" altitude="312" unixtime="1602182508"
-type="waypoint" latitude="43.202820000000003" longitude="-72.029263" name="Culvert 12-5" altitude="311" unixtime="1602182579"
-type="waypoint" latitude="43.202765999999997" longitude="-72.029319999999998" name="Culvert 12-6" altitude="312" unixtime="1602182624"
-type="waypoint" latitude="43.202626495224386" longitude="-72.028922603843682" name="Culvert 12-7" altitude="312" unixtime="1602182681"
-type="waypoint" latitude="43.20265582264814" longitude="-72.028997705696099" name="Culvert 12-8" altitude="312" unixtime="1602182702"
-type="waypoint" latitude="43.20346354323609" longitude="-72.02952006590175" name="Culvert 12-9" altitude="322" unixtime="1602182884"
-type="waypoint" latitude="43.204093880942366" longitude="-72.029970365081795" name="Culvert 12-13" altitude="330" unixtime="1602183225"
-type="waypoint" latitude="43.202720342930768" longitude="-72.028687910554879" name="Culvert 24-1" altitude="311" unixtime="1602182738"
-type="waypoint" latitude="43.206802822810019" longitude="-72.028539047954553" name="Culvert 24-2" altitude="345" unixtime="1602251089"
-type="waypoint" latitude="43.206706048836999" longitude="-72.028835432050698" name="Culvert 4-1" altitude="341" unixtime="1602250916"
-type="waypoint" latitude="43.203743505991113" longitude="-72.027559958509443" name="Culvert 4-2" altitude="334" unixtime="1602253184"
-type="waypoint" latitude="43.204922119393423" longitude="-72.027277571411133" name="Culvert 4-3" altitude="343" unixtime="1602253412"
-type="waypoint" latitude="43.206621982433127" longitude="-72.027770595071786" name="Culvert 4-4" altitude="345" unixtime="1602254078"
 type="waypoint" latitude="43.205335619205819" longitude="-72.027400953025818" name="Culvert 4-5" altitude="345" unixtime="1602254299"
 type="waypoint" latitude="43.203209000000001" longitude="-72.030012999999997" name="Culvert 6-1" altitude="322" unixtime="1602182223"
 type="waypoint" latitude="43.204130619761493" longitude="-72.024207197240827" name="Culvert 6-10" altitude="343" unixtime="1602252833"
@@ -2229,6 +2205,81 @@ type="waypoint" latitude="43.207735743170232" longitude="-72.022823177389142" na
 type="waypoint" latitude="43.206562416576666" longitude="-72.0234353069973" name="Culvert 12-29" altitude="360" unixtime="1602252485"
 type="waypoint" latitude="43.202904181848332" longitude="-72.030238585983284" name="Culvert 12-3" altitude="321" unixtime="1602182312"
 type="waypoint" latitude="43.203610557260859" longitude="-72.024711452535627" name="Culvert 12-30" altitude="331" unixtime="1602252905"
+type="waypoint" latitude="43.203643999999997" longitude="-72.025122999999994" name="Culvert 12-31" altitude="329" unixtime="1602252956"
+type="waypoint" latitude="43.203724369317904" longitude="-72.025404252956392" name="Culvert 12-32" altitude="332" unixtime="1602252989"
+type="waypoint" latitude="43.205190452461643" longitude="-72.025517576287271" name="Culvert 12-33" altitude="338" unixtime="1602253626"
+type="waypoint" latitude="43.206538999999999" longitude="-72.025981000000002" name="Culvert 12-34" altitude="350" unixtime="1602253923"
+type="waypoint" latitude="43.206380914297426" longitude="-72.027605556062696" name="Culvert 12-35" altitude="348" unixtime="1602254130"
+type="waypoint" latitude="43.205489408754353" longitude="-72.027514360956189" name="Culvert 12-36" altitude="345" unixtime="1602254263"
+type="waypoint" latitude="43.202461" longitude="-72.029470000000003" name="Culvert 12-4" altitude="312" unixtime="1602182508"
+type="waypoint" latitude="43.202820000000003" longitude="-72.029263" name="Culvert 12-5" altitude="311" unixtime="1602182579"
+type="waypoint" latitude="43.202765999999997" longitude="-72.029319999999998" name="Culvert 12-6" altitude="312" unixtime="1602182624"
+type="waypoint" latitude="43.202626495224386" longitude="-72.028922603843682" name="Culvert 12-7" altitude="312" unixtime="1602182681"
+type="waypoint" latitude="43.20265582264814" longitude="-72.028997705696099" name="Culvert 12-8" altitude="312" unixtime="1602182702"
+type="waypoint" latitude="43.20346354323609" longitude="-72.02952006590175" name="Culvert 12-9" altitude="322" unixtime="1602182884"
+type="waypoint" latitude="43.204093880942366" longitude="-72.029970365081795" name="Culvert 12-13" altitude="330" unixtime="1602183225"
+type="waypoint" latitude="43.202720342930768" longitude="-72.028687910554879" name="Culvert 24-1" altitude="311" unixtime="1602182738"
+type="waypoint" latitude="43.206802822810019" longitude="-72.028539047954553" name="Culvert 24-2" altitude="345" unixtime="1602251089"
+type="waypoint" latitude="43.206706048836999" longitude="-72.028835432050698" name="Culvert 4-1" altitude="341" unixtime="1602250916"
+type="waypoint" latitude="43.203743505991113" longitude="-72.027559958509443" name="Culvert 4-2" altitude="334" unixtime="1602253184"
+type="waypoint" latitude="43.204922119393423" longitude="-72.027277571411133" name="Culvert 4-3" altitude="343" unixtime="1602253412"
+type="waypoint" latitude="43.206621982433127" longitude="-72.027770595071786" name="Culvert 4-4" altitude="345" unixtime="1602254078"
+type="waypointlistend"
+~EndLayerData
+~EndLayer
+
+
+~Layer TrackWaypoint
+name=buildingmarks.gpx
+tracks_visible=t
+waypoints_visible=t
+routes_visible=t
+trackdrawlabels=t
+trackfontsize=3
+drawmode=0
+trackcolor=#000000
+drawlines=t
+line_thickness=3
+drawdirections=f
+trkdirectionsize=3
+drawpoints=t
+trkpointsize=5
+drawelevation=f
+elevation_factor=30
+drawstops=f
+stop_length=60
+bg_line_thickness=0
+trackbgcolor=#ffffff
+speed_factor=30.000000
+tracksortorder=0
+drawlabels=t
+wpfontsize=3
+wpcolor=#000000
+wptextcolor=#ffffff
+wpbgcolor=#8383c4
+wpbgand=f
+wpsymbol=1
+wpsize=2
+wpsyms=t
+wpsortorder=0
+drawimages=t
+image_size=64
+image_alpha=255
+image_cache_size=300
+metadatadesc=
+metadataauthor=
+metadatatime=2020-10-29T11:49:08.562601Z
+metadatakeywords=
+
+
+~LayerData
+type="waypointlist"
+type="waypoint" latitude="43.203855991684492" longitude="-72.029585546136857" name="House" unixtime="1603810777"
+type="waypoint" latitude="43.204253492246067" longitude="-72.029845457038874" name="Water Temple" unixtime="1603810688"
+type="waypoint" latitude="43.204459999999997" longitude="-72.030125999999996" name="Old Well" altitude="347" unixtime="1602945810"
+type="waypoint" latitude="43.204063234333447" longitude="-72.029436683536531" name="Barn" unixtime="1603810722"
+type="waypoint" latitude="43.203942994580409" longitude="-72.029302573085786" name="Garage" unixtime="1603810740"
+type="waypoint" latitude="43.203701536799564" longitude="-72.029424613595964" name="Gazebo" unixtime="1603810760"
 type="waypointlistend"
 ~EndLayerData
 ~EndLayer

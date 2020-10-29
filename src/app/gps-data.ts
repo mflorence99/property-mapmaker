@@ -26,6 +26,7 @@ export interface Waypoints {
 export class GpsData {
   boundary: Tracks;
   bridges: Waypoints;
+  buildingmarks: Waypoints;
   buildings: Tracks;
   culverts: Waypoints;
   ditches: Tracks;
@@ -43,6 +44,7 @@ export class GpsData {
     return forkJoin([
       this.loadImpl('boundary'),
       this.loadImpl('bridges'),
+      this.loadImpl('buildingmarks'),
       this.loadImpl('buildings'),
       this.loadImpl('culverts'),
       this.loadImpl('ditches'),

@@ -12,16 +12,16 @@ import { Component } from '@angular/core';
       [alpha]="alpha"
       [query]="query"
       [ramp]="ramp"
+      [range]="[111, 217]"
       [src]="src"
-      [steps]="steps"
     >
     </map-image>
   `
 })
 export class DEPComponent {
-  alpha = 127;
+  alpha = 140;
   query = {
-    bbox: `${this.params.bbox.minX},${this.params.bbox.minY},${this.params.bbox.maxX},${this.params.bbox.maxY}`,
+    bbox: `${this.params.bounds.left},${this.params.bounds.bottom},${this.params.bounds.right},${this.params.bounds.top}`,
     bboxSR: '4326',
     f: 'image',
     imageSR: '3857',
@@ -1055,7 +1055,6 @@ export class DEPComponent {
     }
   ];
   src = '/dep';
-  steps = 256;
 
   constructor(public params: Params) {}
 }
