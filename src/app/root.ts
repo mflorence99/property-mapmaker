@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
   selector: 'map-root',
   template: `
     <main *ngIf="params.ready" [ngClass]="params.format">
+      <map-patterns></map-patterns>
       <map-clip></map-clip>
       <map-dep></map-dep>
       <map-street></map-street>

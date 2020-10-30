@@ -59,7 +59,10 @@ export class GpsData {
 
   private loadImpl(key: string): Observable<Tracks | Waypoints> {
     return this.http
-      .get(`/assets/${key}.gpx`, { observe: 'response', responseType: 'text' })
+      .get(`/assets/data/${key}.gpx`, {
+        observe: 'response',
+        responseType: 'text'
+      })
       .pipe(
         mergeMap((response: HttpResponse<string>) => this.parse(response.body)),
         tap((data: Tracks | Waypoints) => (this[key] = data))

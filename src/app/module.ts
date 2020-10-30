@@ -9,6 +9,7 @@ import { DEPComponent } from './dep';
 import { ForestComponent } from './forest';
 import { ImageComponent } from './image';
 import { LabelsComponent } from './labels';
+import { PatternsComponent } from './patterns';
 import { RootComponent } from './root';
 import { StreetComponent } from './street';
 import { TileComponent } from './tile';
@@ -48,6 +49,7 @@ const COMPONENTS = [
   ForestComponent,
   ImageComponent,
   LabelsComponent,
+  PatternsComponent,
   RootComponent,
   StreetComponent,
   TileComponent,

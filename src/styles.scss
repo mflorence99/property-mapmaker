@@ -49,11 +49,6 @@ html {
   width: 100%;
 }
 
-.icon-wetland {
-  fill: var(--mat-green-100);
-  transform: scale(calc(1 / var(--map-scale)));
-}
-
 map-root {
   main {
     border: 3px solid var(--mat-gray-600);
@@ -70,6 +65,7 @@ map-root {
     map-dep,
     map-forest,
     map-labels,
+    map-patterns,
     map-street,
     map-topo,
     map-tracks {
@@ -125,8 +121,8 @@ map-root {
       top: 5%;
 
       svg {
-        height: 20%;
-        width: 12%;
+        height: 15%;
+        width: 9%;
       }
     }
 
@@ -157,13 +153,13 @@ map-root {
 
     map-culverts {
       g path {
-        stroke: var(--mat-gray-700);
+        stroke: var(--mat-gray-800);
         stroke-dasharray: 1;
         stroke-width: 1;
       }
 
       g text {
-        fill: var(--mat-gray-700);
+        fill: var(--mat-gray-800);
         font-size: 4pt;
         transform: rotate(-90deg);
       }
@@ -353,8 +349,7 @@ map-root {
         }
 
         g[id='Swamp'] path {
-          fill: url(#wetland);
-          stroke: var(--mat-light-green-100);
+          fill: url(#swamp);
           stroke-width: 0;
         }
 
