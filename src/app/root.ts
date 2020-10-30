@@ -24,6 +24,7 @@ import { Component } from '@angular/core';
       <map-labels key="buildingmarks"></map-labels>
       <map-labels key="landmarks"></map-labels>
       <map-labels key="watermarks"></map-labels>
+      <map-routes></map-routes>
       <map-contours></map-contours>
       <map-compass></map-compass>
     </main>

@@ -11,6 +11,7 @@ import { ImageComponent } from './image';
 import { LabelsComponent } from './labels';
 import { PatternsComponent } from './patterns';
 import { RootComponent } from './root';
+import { RoutesComponent } from './routes';
 import { StreetComponent } from './street';
 import { TileComponent } from './tile';
 import { TopoComponent } from './topo';
@@ -51,6 +52,7 @@ const COMPONENTS = [
   LabelsComponent,
   PatternsComponent,
   RootComponent,
+  RoutesComponent,
   StreetComponent,
   TileComponent,
   TopoComponent,

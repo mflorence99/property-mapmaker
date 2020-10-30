@@ -66,6 +66,7 @@ map-root {
     map-forest,
     map-labels,
     map-patterns,
+    map-routes,
     map-street,
     map-topo,
     map-tracks {
@@ -79,6 +80,7 @@ map-root {
     map-clip,
     map-culverts,
     map-labels,
+    map-routes,
     map-tracks {
       svg {
         height: 100%;
@@ -225,6 +227,27 @@ map-root {
         g text {
           fill: var(--mat-blue-600);
           font-size: 5.5pt;
+        }
+      }
+    }
+
+    map-routes {
+      svg {
+        text {
+          font-size: 5pt;
+          font-style: italic;
+        }
+
+        text[id^='Park Lane'],
+        text[id^='Central Loop'],
+        text[id^='Inner Loop'],
+        text[id^='Outer Loop'] {
+          fill: var(--mat-gray-800);
+        }
+
+        text[id^='River Flo'],
+        text[id^='Swamp Creek'] {
+          fill: var(--mat-blue-600);
         }
       }
     }
@@ -380,6 +403,7 @@ map-root {
     }
 
     map-culverts,
+    map-routes,
     map-tracks[key='buildings'],
     map-tracks[key='ditches'] {
       visibility: hidden;
