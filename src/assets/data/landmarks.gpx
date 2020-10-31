@@ -38,11 +38,6 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
   <ele>342</ele>
   <time>2020-10-09T13:52:35Z</time>
 </wpt>
-<wpt lat="43.209100999999997" lon="-72.024486999999993">
-  <name>Moss Rock</name>
-  <ele>375</ele>
-  <time>2020-10-09T13:58:21Z</time>
-</wpt>
 <wpt lat="43.206474048446381" lon="-72.026088339200015">
   <name>Narrow Causeway</name>
   <ele>350</ele>

@@ -26,7 +26,6 @@ import { Component } from '@angular/core';
       <map-labels key="watermarks"></map-labels>
       <map-routes></map-routes>
       <map-contours></map-contours>
-      <map-compass></map-compass>
     </main>
   `
 })

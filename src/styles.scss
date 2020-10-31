@@ -10,6 +10,10 @@
   --background-color: var(--mat-gray-100);
 
   // NOTE: these set in params.ts
+  --map-clip-x: 0;
+  --map-clip-y: 0;
+  --map-clip-cx: 0;
+  --map-clip-cy: 0;
   --map-cxNominal: 0;
   --map-cyNominal: 0;
   --map-cxTile: 0;
@@ -50,10 +54,15 @@ html {
 }
 
 map-root {
+  height: calc(var(--map-clip-cy) * var(--map-scale));
+  overflow: hidden;
+  position: relative;
+  width: calc(var(--map-clip-cx) * var(--map-scale));
+
   main {
-    border: 3px solid var(--mat-gray-600);
     height: calc(var(--map-cyNominal) * var(--map-scale));
-    position: relative;
+    position: absolute;
+    transform: translate(var(--map-clip-x), var(--map-clip-y));
     width: calc(var(--map-cxNominal) * var(--map-scale));
 
     map-boundary,

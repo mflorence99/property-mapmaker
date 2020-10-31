@@ -34,7 +34,7 @@ export class ContoursComponent implements AfterViewInit {
         },
         params: {
           /* eslint-disable @typescript-eslint/naming-convention */
-          BBOX: `${this.params.bbox.minX},${this.params.bbox.minY},${this.params.bbox.maxX},${this.params.bbox.maxY}`,
+          BBOX: `${this.params.bbox.left},${this.params.bbox.bottom},${this.params.bbox.right},${this.params.bbox.top}`,
           CRS: this.params.crs,
           FORMAT: 'image/svg',
           HEIGHT: String(this.params.dims.cyNominal),

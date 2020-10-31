@@ -9,7 +9,7 @@ import { parseString } from 'xml2js';
 import { tap } from 'rxjs/operators';
 
 export interface Point {
-  ele: number;
+  ele?: number;
   lat: number;
   lon: number;
 }

@@ -18,10 +18,10 @@ export type XY = [x: number, y: number];
 @Injectable({ providedIn: 'root' })
 export class Params {
   bbox = {
-    maxX: Number.MIN_SAFE_INTEGER,
-    maxY: Number.MIN_SAFE_INTEGER,
-    minX: Number.MAX_SAFE_INTEGER,
-    minY: Number.MAX_SAFE_INTEGER
+    bottom: Number.MAX_SAFE_INTEGER,
+    left: Number.MAX_SAFE_INTEGER,
+    top: Number.MIN_SAFE_INTEGER,
+    right: Number.MIN_SAFE_INTEGER
   };
   bounds = {
     bottom: 0,
@@ -29,8 +29,16 @@ export class Params {
     right: 0,
     top: 0
   };
+  clip = {
+    x: 0,
+    y: 0,
+    cx: 0,
+    cy: 0
+  };
   crs = 'CRS:84';
   dims = {
+    cxFeet: 3000,
+    cyFeet: 3000,
     cxNominal: 0,
     cyNominal: 0,
     cxTile: 256,
@@ -44,8 +52,8 @@ export class Params {
   tiles = {
     bottom: 0,
     left: 0,
-    right: 0,
-    top: 0
+    top: 0,
+    right: 0
   };
   zoom = 17;
 
@@ -57,16 +65,17 @@ export class Params {
     this.gpsData.load().subscribe(() => {
       // compute the boundary box
       this.gpsData.boundary.Boundary.forEach((point: Point) => {
-        this.bbox.maxX = Math.max(this.bbox.maxX, point.lon);
-        this.bbox.maxY = Math.max(this.bbox.maxY, point.lat);
-        this.bbox.minX = Math.min(this.bbox.minX, point.lon);
-        this.bbox.minY = Math.min(this.bbox.minY, point.lat);
+        this.bbox.right = Math.max(this.bbox.right, point.lon);
+        this.bbox.top = Math.max(this.bbox.top, point.lat);
+        this.bbox.left = Math.min(this.bbox.left, point.lon);
+        this.bbox.bottom = Math.min(this.bbox.bottom, point.lat);
       });
       // compute tiles
-      this.tiles.bottom = this.lat2tile(this.bbox.minY);
-      this.tiles.left = this.lon2tile(this.bbox.minX);
-      this.tiles.right = this.lon2tile(this.bbox.maxX);
-      this.tiles.top = this.lat2tile(this.bbox.maxY);
+      // NOTE: spread out one tile on all sides
+      this.tiles.bottom = this.lat2tile(this.bbox.bottom) + 0;
+      this.tiles.left = this.lon2tile(this.bbox.left) - 1;
+      this.tiles.right = this.lon2tile(this.bbox.right) + 0;
+      this.tiles.top = this.lat2tile(this.bbox.top) - 1;
       // compute dimension
       this.dims.numYTiles = Math.abs(this.tiles.left - this.tiles.right) + 1;
       this.dims.numXTiles = Math.abs(this.tiles.top - this.tiles.bottom) + 1;
@@ -77,8 +86,43 @@ export class Params {
       this.bounds.left = this.tile2lon(this.tiles.left);
       this.bounds.right = this.tile2lon(this.tiles.right + 1);
       this.bounds.top = this.tile2lat(this.tiles.top);
+      // compute a clip region cx/cyFeet around the center
+      const cyFeet = this.distance(
+        this.bounds.bottom,
+        this.bounds.left,
+        this.bounds.top,
+        this.bounds.left
+      );
+      const cxFeet = this.distance(
+        this.bounds.bottom,
+        this.bounds.left,
+        this.bounds.bottom,
+        this.bounds.right
+      );
+      const center = this.point2xy({
+        lat: this.bbox.top - (this.bbox.top - this.bbox.bottom) / 2,
+        lon: this.bbox.left + (this.bbox.right - this.bbox.left) / 2
+      });
+      this.clip = {
+        x: center[0] - 1500 * (this.dims.cxNominal / cxFeet),
+        y: center[1] - 1500 * (this.dims.cyNominal / cyFeet),
+        cx: (this.dims.cxFeet / cxFeet) * this.dims.cxNominal,
+        cy: (this.dims.cyFeet / cyFeet) * this.dims.cyNominal
+      };
+      // useful logging
+      console.table({
+        bbox: this.bbox,
+        bounds: this.bounds,
+        tiles: this.tiles
+      });
+      console.table({ dims: this.dims });
+      console.table({ clip: this.clip });
       // set CSS variables
       const style = document.body.style;
+      style.setProperty('--map-clip-x', `-${this.clip.x}px`);
+      style.setProperty('--map-clip-y', `-${this.clip.y}px`);
+      style.setProperty('--map-clip-cx', `${this.clip.cx}px`);
+      style.setProperty('--map-clip-cy', `${this.clip.cy}px`);
       style.setProperty('--map-cxNominal', `${this.dims.cxNominal}px`);
       style.setProperty('--map-cyNominal', `${this.dims.cyNominal}px`);
       style.setProperty('--map-cxTile', `${this.dims.cxTile}px`);
@@ -150,6 +194,40 @@ export class Params {
 
   private lon2x(lon: number): number {
     return lon;
+  }
+
+  // @see https://www.geodatasource.com/developers/javascript
+
+  private distance(
+    lat1: number,
+    lon1: number,
+    lat2: number,
+    lon2: number,
+    units: 'feet' | 'meters' = 'feet'
+  ): number {
+    const radlat1 = (Math.PI * lat1) / 180;
+    const radlat2 = (Math.PI * lat2) / 180;
+    const theta = lon1 - lon2;
+    const radtheta = (Math.PI * theta) / 180;
+    let dist =
+      Math.sin(radlat1) * Math.sin(radlat2) +
+      Math.cos(radlat1) * Math.cos(radlat2) * Math.cos(radtheta);
+    dist = Math.min(dist, 1);
+    dist = Math.acos(dist);
+    dist = (dist * 180) / Math.PI;
+    // OP puts it in miles first
+    dist = dist * 60 * 1.1515;
+    switch (units) {
+      case 'feet':
+        dist = dist * 5280;
+        break;
+      case 'meters':
+        dist = dist * 1609.344;
+        break;
+      default:
+        dist = undefined;
+    }
+    return Math.abs(dist);
   }
 
   // other helpers
