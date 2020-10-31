@@ -104,8 +104,8 @@ export class Params {
         lon: this.bbox.left + (this.bbox.right - this.bbox.left) / 2
       });
       this.clip = {
-        x: center[0] - 1500 * (this.dims.cxNominal / cxFeet),
-        y: center[1] - 1500 * (this.dims.cyNominal / cyFeet),
+        x: center[0] - (this.dims.cxFeet / 2) * (this.dims.cxNominal / cxFeet),
+        y: center[1] - (this.dims.cyFeet / 2) * (this.dims.cyNominal / cyFeet),
         cx: (this.dims.cxFeet / cxFeet) * this.dims.cxNominal,
         cy: (this.dims.cyFeet / cyFeet) * this.dims.cyNominal
       };
