@@ -2,6 +2,7 @@ import { Params } from './params';
 
 import { ChangeDetectionStrategy } from '@angular/core';
 import { Component } from '@angular/core';
+import { ElementRef } from '@angular/core';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.Default,
@@ -35,6 +36,8 @@ import { Component } from '@angular/core';
         <map-contours></map-contours>
         <map-grid></map-grid>
       </figure>
+
+      <img class="compass" src="assets/compass.svg" />
     </main>
   `
 })
@@ -43,11 +46,11 @@ export class RootComponent {
 
   private basis: MouseEvent;
 
-  constructor(public params: Params) {}
+  constructor(private host: ElementRef, public params: Params) {}
 
   doDrag(event: MouseEvent): void {
     if (this.dragging) {
-      window.scrollBy(
+      this.host.nativeElement.scrollBy(
         -(event.clientX - this.basis.clientX),
         -(event.clientY - this.basis.clientY)
       );
