@@ -4,7 +4,7 @@ import { Point } from './gps-data';
 import { Injectable } from '@angular/core';
 
 const FORMAT2SCALE = {
-  poster: 1,
+  poster: 0.9,
   small: 1.5,
   medium: 2,
   large: 4
@@ -29,6 +29,7 @@ export class Params {
     right: 0,
     top: 0
   };
+  center: Point;
   clip = {
     x: 0,
     y: 0,
@@ -70,11 +71,16 @@ export class Params {
         this.bbox.left = Math.min(this.bbox.left, point.lon);
         this.bbox.bottom = Math.min(this.bbox.bottom, point.lat);
       });
+      // ... and its center
+      this.center = {
+        lat: this.bbox.top - (this.bbox.top - this.bbox.bottom) / 2,
+        lon: this.bbox.left + (this.bbox.right - this.bbox.left) / 2
+      };
       // compute tiles
       // NOTE: spread out one tile on all sides
-      this.tiles.bottom = this.lat2tile(this.bbox.bottom) + 0;
+      this.tiles.bottom = this.lat2tile(this.bbox.bottom) + 1;
       this.tiles.left = this.lon2tile(this.bbox.left) - 1;
-      this.tiles.right = this.lon2tile(this.bbox.right) + 0;
+      this.tiles.right = this.lon2tile(this.bbox.right) + 1;
       this.tiles.top = this.lat2tile(this.bbox.top) - 1;
       // compute dimension
       this.dims.numYTiles = Math.abs(this.tiles.left - this.tiles.right) + 1;
@@ -86,7 +92,7 @@ export class Params {
       this.bounds.left = this.tile2lon(this.tiles.left);
       this.bounds.right = this.tile2lon(this.tiles.right + 1);
       this.bounds.top = this.tile2lat(this.tiles.top);
-      // compute a clip region cx/cyFeet around the center
+      // compute bounds in feet
       const cyFeet = this.distance(
         this.bounds.bottom,
         this.bounds.left,
@@ -99,13 +105,11 @@ export class Params {
         this.bounds.bottom,
         this.bounds.right
       );
-      const center = this.point2xy({
-        lat: this.bbox.top - (this.bbox.top - this.bbox.bottom) / 2,
-        lon: this.bbox.left + (this.bbox.right - this.bbox.left) / 2
-      });
+      // compute a clip region cx/cyFeet around the center
+      const [x, y] = this.point2xy(this.center);
       this.clip = {
-        x: center[0] - (this.dims.cxFeet / 2) * (this.dims.cxNominal / cxFeet),
-        y: center[1] - (this.dims.cyFeet / 2) * (this.dims.cyNominal / cyFeet),
+        x: x - (this.dims.cxFeet / 2) * (this.dims.cxNominal / cxFeet),
+        y: y - (this.dims.cyFeet / 2) * (this.dims.cyNominal / cyFeet),
         cx: (this.dims.cxFeet / cxFeet) * this.dims.cxNominal,
         cy: (this.dims.cyFeet / cyFeet) * this.dims.cyNominal
       };
@@ -117,10 +121,11 @@ export class Params {
       });
       console.table({ dims: this.dims });
       console.table({ clip: this.clip });
+      console.table({ center: this.center });
       // set CSS variables
       const style = document.body.style;
-      style.setProperty('--map-clip-x', `-${this.clip.x}px`);
-      style.setProperty('--map-clip-y', `-${this.clip.y}px`);
+      style.setProperty('--map-clip-x', `${this.clip.x}px`);
+      style.setProperty('--map-clip-y', `${this.clip.y}px`);
       style.setProperty('--map-clip-cx', `${this.clip.cx}px`);
       style.setProperty('--map-clip-cy', `${this.clip.cy}px`);
       style.setProperty('--map-cxNominal', `${this.dims.cxNominal}px`);

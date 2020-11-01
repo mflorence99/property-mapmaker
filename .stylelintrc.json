@@ -6,6 +6,7 @@
     "block-closing-brace-empty-line-before": null,
     "color-hex-length": "long",
     "custom-property-empty-line-before": null,
+    "declaration-colon-newline-after": null,
     "no-descending-specificity": null,
     "order/order": ["custom-properties", "declarations"],
     "order/properties-alphabetical-order": true,

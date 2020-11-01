@@ -2,11 +2,11 @@ import { BoundaryComponent } from './boundary';
 import { BridgesComponent } from './bridges';
 import { CacheInterceptor } from './cache';
 import { ClipComponent } from './clip';
-import { CompassComponent } from './compass';
 import { ContoursComponent } from './contours';
 import { CulvertsComponent } from './culverts';
 import { DEPComponent } from './dep';
 import { ForestComponent } from './forest';
+import { GridComponent } from './grid';
 import { ImageComponent } from './image';
 import { LabelsComponent } from './labels';
 import { PatternsComponent } from './patterns';
@@ -43,11 +43,11 @@ const COMPONENTS = [
   BoundaryComponent,
   BridgesComponent,
   ClipComponent,
-  CompassComponent,
   ContoursComponent,
   CulvertsComponent,
   DEPComponent,
   ForestComponent,
+  GridComponent,
   ImageComponent,
   LabelsComponent,
   PatternsComponent,
