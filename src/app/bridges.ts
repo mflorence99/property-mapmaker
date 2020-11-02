@@ -10,7 +10,7 @@ const CX_BRIDGE = 12;
 const CY_BRIDGE = 10;
 
 @Component({
-  changeDetection: ChangeDetectionStrategy.Default,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   selector: 'map-bridges',
   template: `<svg
     attr.viewPort="0 0 {{ geometry.dims.cxNominal }} {{

@@ -15,7 +15,7 @@ const LAYERS = [
 ];
 
 @Component({
-  changeDetection: ChangeDetectionStrategy.Default,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   selector: 'map-contours',
   template: ''
 })

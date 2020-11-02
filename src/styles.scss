@@ -40,8 +40,8 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   height: 100%;
-  justify-content: center;
   overflow: hidden;
+  place-content: center;
   user-select: none;
   width: 100%;
 }
@@ -87,6 +87,7 @@ map-root {
       map-forest,
       map-grid,
       map-labels,
+      map-legend,
       map-overlay,
       map-patterns,
       map-routes,
@@ -105,6 +106,7 @@ map-root {
       map-culverts,
       map-grid,
       map-labels,
+      map-legend,
       map-overlay,
       map-routes,
       map-tracks {
@@ -263,6 +265,38 @@ map-root {
         }
       }
 
+      map-legend {
+        svg {
+          g[id='Ditch'] text,
+          g[id='Stream'] text,
+          g[id='Seasonal'] text {
+            fill: var(--mat-blue-300);
+            font-size: 8pt;
+            font-style: italic;
+            font-weight: bold;
+          }
+
+          g[id='Ditch'] path {
+            fill: none;
+            stroke: var(--mat-blue-600);
+            stroke-dasharray: 1;
+            stroke-width: 1;
+          }
+
+          g[id='Seasonal'] path {
+            fill: none;
+            stroke: var(--mat-blue-300);
+            stroke-width: 2;
+          }
+
+          g[id='Stream'] path {
+            fill: none;
+            stroke: var(--mat-blue-300);
+            stroke-width: 3;
+          }
+        }
+      }
+
       map-routes {
         svg {
           text {
@@ -333,7 +367,6 @@ map-root {
             stroke-width: 5;
           }
 
-          g path[id='background'],
           g path[id='colorized'] {
             fill: none;
             stroke: white;
@@ -353,7 +386,6 @@ map-root {
 
       map-tracks[key='trails'] {
         svg {
-          g path[id='background'],
           g path[id='colorized'] {
             fill: none;
             stroke: white;
@@ -371,7 +403,7 @@ map-root {
           g[id='Outer loop'] path[id='colorized'],
           g[id='Park Lane'] path[id='colorized'] {
             fill: none;
-            stroke: rgba(var(--rgb-red-500), 0.75);
+            stroke: var(--mat-red-300);
             stroke-width: 3;
           }
 

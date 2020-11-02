@@ -1,14 +1,15 @@
 import { Geometry } from './geometry';
 
 import { ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectorRef } from '@angular/core';
 import { Component } from '@angular/core';
 import { ElementRef } from '@angular/core';
 
 @Component({
-  changeDetection: ChangeDetectionStrategy.Default,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   selector: 'map-root',
   template: `
-    <main *ngIf="geometry.ready">
+    <main *ngIf="ready">
       <figure
         [ngClass]="{ dragging: dragging, poster: geometry.format === 'poster' }"
         (mousedown)="startDrag($event)"
@@ -36,16 +37,27 @@ import { ElementRef } from '@angular/core';
         <map-contours></map-contours>
         <map-grid></map-grid>
         <map-overlay></map-overlay>
+        <map-legend></map-legend>
       </figure>
     </main>
   `
 })
 export class RootComponent {
   dragging = false;
+  ready = false;
 
   private basis: MouseEvent;
 
-  constructor(private host: ElementRef, public geometry: Geometry) {}
+  constructor(
+    private cdf: ChangeDetectorRef,
+    private host: ElementRef,
+    public geometry: Geometry
+  ) {
+    this.geometry.ready.subscribe(() => {
+      this.ready = true;
+      this.cdf.markForCheck();
+    });
+  }
 
   doDrag(event: MouseEvent): void {
     if (this.dragging) {

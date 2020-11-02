@@ -11,7 +11,7 @@ import { ViewChild } from '@angular/core';
 import { mergeMap } from 'rxjs/operators';
 
 @Component({
-  changeDetection: ChangeDetectionStrategy.Default,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   selector: 'map-tile',
   template: '<canvas #canvas></canvas><img #image>'
 })

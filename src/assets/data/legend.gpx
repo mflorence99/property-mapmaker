@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<gpx version="1.0" creator="Viking -- http://viking.sf.net/"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://www.topografix.com/GPX/1/0"
+xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+  <name>legend.gpx</name>
+  <author></author>
+  <desc></desc>
+  <time>2020-11-02T14:56:02.684217Z</time>
+  <keywords></keywords>
+<trk>
+  <name>Stream</name>
+  <trkseg>
+  <trkpt lat="43.202201053452619" lon="-72.024467114719386">
+  </trkpt>
+  <trkpt lat="43.202240156953842" lon="-72.024335686477656">
+  </trkpt>
+  <trkpt lat="43.202175636163382" lon="-72.02423376253509">
+  </trkpt>
+  <trkpt lat="43.202201000000002" lon="-72.024088923248286">
+  </trkpt>
+  </trkseg>
+</trk>
+</gpx>

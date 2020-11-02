@@ -10,7 +10,7 @@ const CX_CULVERT = 14;
 const CY_CULVERT = 3;
 
 @Component({
-  changeDetection: ChangeDetectionStrategy.Default,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   selector: 'map-culverts',
   template: `<svg
     attr.viewPort="0 0 {{ geometry.dims.cxNominal }} {{

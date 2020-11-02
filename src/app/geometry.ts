@@ -4,9 +4,10 @@ import { GpsData } from './gps-data';
 import { Point } from './gps-data';
 
 import { Injectable } from '@angular/core';
+import { Subject } from 'rxjs';
 
 const FORMAT2SCALE = {
-  poster: 0.9,
+  poster: 1,
   small: 1.5,
   medium: 2,
   large: 4
@@ -54,7 +55,7 @@ export class Geometry {
     numYTiles: 0
   };
   format = 'poster';
-  ready = false;
+  ready = new Subject<void>();
   scale = 1;
   tiles = {
     bottom: 0,
@@ -141,8 +142,8 @@ export class Geometry {
       style.setProperty('--map-numXTiles', `${this.dims.numXTiles}`);
       style.setProperty('--map-numYTiles', `${this.dims.numYTiles}`);
       style.setProperty('--map-scale', `${this.scale}`);
-      // ready to render!
-      this.ready = true;
+      // ready to rock!
+      this.ready.next();
     });
   }
 
@@ -196,39 +197,9 @@ export class Geometry {
     } else return undefined;
   }
 
-  // @see https://medium.com/@francoisromain/smooth-a-svg-path-with-cubic-bezier-curves-e37b49d46c74
-
-  private controlPoint(
-    [cx, cy]: XY,
-    previous: XY,
-    next: XY,
-    reverse = false
-  ): XY {
-    previous = previous ?? [cx, cy];
-    next = next ?? [cx, cy];
-    // properties of opposed line
-    const lineProps = this.lineProps(previous, next);
-    // if is end-control-point, add PI to the angle to go backward
-    const angle = lineProps.angle + (reverse ? Math.PI : 0);
-    const length = lineProps.length * SMOOTHING;
-    // control point position is relative to the current point
-    const x = cx + Math.cos(angle) * length;
-    const y = cy + Math.sin(angle) * length;
-    return [x, y];
-  }
-
-  private lineProps([px, py]: XY, [qx, qy]: XY): LineProps {
-    const lx = qx - px;
-    const ly = qy - py;
-    return {
-      angle: Math.atan2(ly, lx),
-      length: Math.sqrt(Math.pow(lx, 2) + Math.pow(ly, 2))
-    };
-  }
-
   // @see https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames
 
-  private lat2tile(lat: number): number {
+  lat2tile(lat: number): number {
     return Math.floor(
       ((1 -
         Math.log(
@@ -240,40 +211,40 @@ export class Geometry {
     );
   }
 
-  private lon2tile(lon: number): number {
+  lon2tile(lon: number): number {
     return Math.floor(((lon + 180) / 360) * Math.pow(2, this.zoom));
   }
 
-  private tile2lat(y: number): number {
+  tile2lat(y: number): number {
     const n = Math.PI - (2 * Math.PI * y) / Math.pow(2, this.zoom);
     return (180 / Math.PI) * Math.atan(0.5 * (Math.exp(n) - Math.exp(-n)));
   }
 
-  private tile2lon(x: number): number {
+  tile2lon(x: number): number {
     return (x / Math.pow(2, this.zoom)) * 360 - 180;
   }
 
   // @see https://wiki.openstreetmap.org/wiki/Mercator#JavaScript_.28or_ActionScript.29
 
-  private y2lat(y: number): number {
+  y2lat(y: number): number {
     return (Math.atan(Math.exp(y / RAD2DEG)) / PI_4 - 1) * 90;
   }
 
-  private x2lon(x: number): number {
+  x2lon(x: number): number {
     return x;
   }
 
-  private lat2y(lat: number): number {
+  lat2y(lat: number): number {
     return Math.log(Math.tan((lat / 90 + 1) * PI_4)) * RAD2DEG;
   }
 
-  private lon2x(lon: number): number {
+  lon2x(lon: number): number {
     return lon;
   }
 
   // @see https://www.geodatasource.com/developers/javascript
 
-  private distance(
+  distance(
     lat1: number,
     lon1: number,
     lat2: number,
@@ -303,6 +274,36 @@ export class Geometry {
         dist = undefined;
     }
     return Math.abs(dist);
+  }
+
+  // @see https://medium.com/@francoisromain/smooth-a-svg-path-with-cubic-bezier-curves-e37b49d46c74
+
+  private controlPoint(
+    [cx, cy]: XY,
+    previous: XY,
+    next: XY,
+    reverse = false
+  ): XY {
+    previous = previous ?? [cx, cy];
+    next = next ?? [cx, cy];
+    // properties of opposed line
+    const lineProps = this.lineProps(previous, next);
+    // if is end-control-point, add PI to the angle to go backward
+    const angle = lineProps.angle + (reverse ? Math.PI : 0);
+    const length = lineProps.length * SMOOTHING;
+    // control point position is relative to the current point
+    const x = cx + Math.cos(angle) * length;
+    const y = cy + Math.sin(angle) * length;
+    return [x, y];
+  }
+
+  private lineProps([px, py]: XY, [qx, qy]: XY): LineProps {
+    const lx = qx - px;
+    const ly = qy - py;
+    return {
+      angle: Math.atan2(ly, lx),
+      length: Math.sqrt(Math.pow(lx, 2) + Math.pow(ly, 2))
+    };
   }
 
   // other helpers

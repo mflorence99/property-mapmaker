@@ -33,6 +33,7 @@ export class GpsData {
   driveway: Tracks;
   islands: Waypoints;
   landmarks: Waypoints;
+  legend: Tracks;
   mow: Tracks;
   overlay: Waypoints;
   routes: Tracks;
@@ -52,6 +53,7 @@ export class GpsData {
       this.loadImpl('ditches'),
       this.loadImpl('driveway'),
       this.loadImpl('landmarks'),
+      this.loadImpl('legend'),
       this.loadImpl('mow'),
       this.loadImpl('overlay'),
       this.loadImpl('routes'),

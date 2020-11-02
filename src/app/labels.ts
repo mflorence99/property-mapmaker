@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
 import { Input } from '@angular/core';
 
 @Component({
-  changeDetection: ChangeDetectionStrategy.Default,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   selector: 'map-labels',
   template: `<svg
     attr.viewPort="0 0 {{ geometry.dims.cxNominal }} {{

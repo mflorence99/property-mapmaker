@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
 // NOTE: don't know why ArcGIS has x, y backwards!
 
 @Component({
-  changeDetection: ChangeDetectionStrategy.Default,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   selector: 'map-topo',
   template: `
     <ng-container *ngFor="let y of yTiles; let iy = index">

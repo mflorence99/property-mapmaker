@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 import { Input } from '@angular/core';
 
 @Component({
-  changeDetection: ChangeDetectionStrategy.Default,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   selector: 'map-tracks',
   template: `<svg
     attr.viewPort="0 0 {{ geometry.dims.cxNominal }} {{
@@ -17,7 +17,6 @@ import { Input } from '@angular/core';
     <g *ngFor="let track of gpsData[key] | keyvalue" [id]="track.key.trim()">
       <ng-container *ngIf="outlined; else normalPath">
         <path id="outline" [attr.d]="geometry.path(track.value, op)" />
-        <path id="background" [attr.d]="geometry.path(track.value, op)" />
         <path id="colorized" [attr.d]="geometry.path(track.value, op)" />
       </ng-container>
       <ng-template #normalPath>

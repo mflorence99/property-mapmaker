@@ -22,7 +22,7 @@ type RGBA = [r: number, g: number, b: number, a: number];
 type CLUT = Record<number, RGBA>;
 
 @Component({
-  changeDetection: ChangeDetectionStrategy.Default,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   selector: 'map-image',
   template: `<canvas #canvas></canvas>
     <img class="outside" #outside />
