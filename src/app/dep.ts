@@ -1,4 +1,4 @@
-import { Params } from './params';
+import { Geometry } from './geometry';
 import { Ramp } from './image';
 
 import { ChangeDetectionStrategy } from '@angular/core';
@@ -21,12 +21,12 @@ import { Component } from '@angular/core';
 export class DEPComponent {
   alpha = 127;
   query = {
-    bbox: `${this.params.bounds.left},${this.params.bounds.bottom},${this.params.bounds.right},${this.params.bounds.top}`,
+    bbox: `${this.geometry.bounds.left},${this.geometry.bounds.bottom},${this.geometry.bounds.right},${this.geometry.bounds.top}`,
     bboxSR: '4326',
     f: 'image',
     imageSR: '3857',
     renderingRule: JSON.stringify({ rasterFunction: 'Hillshade Gray' }),
-    size: `${this.params.dims.cxNominal},${this.params.dims.cyNominal}`
+    size: `${this.geometry.dims.cxNominal},${this.geometry.dims.cyNominal}`
   };
   ramp: Ramp[] = [
     {
@@ -1056,5 +1056,5 @@ export class DEPComponent {
   ];
   src = '/dep';
 
-  constructor(public params: Params) {}
+  constructor(public geometry: Geometry) {}
 }

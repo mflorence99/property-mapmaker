@@ -1,6 +1,5 @@
+import { Geometry } from './geometry';
 import { GpsData } from './gps-data';
-import { Params } from './params';
-import { Point } from './gps-data';
 
 import { ChangeDetectionStrategy } from '@angular/core';
 import { Component } from '@angular/core';
@@ -9,12 +8,14 @@ import { Component } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.Default,
   selector: 'map-routes',
   template: `<svg
-    attr.viewPort="0 0 {{ params.dims.cxNominal }} {{ params.dims.cyNominal }}"
+    attr.viewPort="0 0 {{ geometry.dims.cxNominal }} {{
+      geometry.dims.cyNominal
+    }}"
   >
     <defs>
       <path
         *ngFor="let route of gpsData.routes | keyvalue"
-        [attr.d]="path(route.value)"
+        [attr.d]="geometry.path(route.value)"
         [id]="'path_' + route.key.replace(' ', '_')"
       />
     </defs>
@@ -31,21 +32,7 @@ import { Component } from '@angular/core';
   </svg>`
 })
 export class RoutesComponent {
-  constructor(public gpsData: GpsData, public params: Params) {}
-
-  linear(point: Point): string {
-    const [x, y] = this.params.point2xy(point);
-    return `L ${x} ${y}`;
-  }
-
-  path(points: Point[]): string {
-    return points.reduce((acc: string, point: Point, ix: number) => {
-      if (ix === 0) {
-        const [x, y] = this.params.point2xy(point);
-        return `M ${x} ${y}`;
-      } else return `${acc} ${this.linear(point)}`;
-    }, '');
-  }
+  constructor(public geometry: Geometry, public gpsData: GpsData) {}
 
   text(key: string): string {
     const matches = /([^\d]+)/.exec(key);

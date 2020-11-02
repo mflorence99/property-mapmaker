@@ -63,6 +63,14 @@ map-root {
     position: relative;
     width: calc(var(--map-clip-cx) * var(--map-scale));
 
+    img.compass {
+      height: 12%;
+      left: 5%;
+      position: absolute;
+      top: 5%;
+      width: 8%;
+    }
+
     figure {
       cursor: grab;
       display: block;
@@ -190,7 +198,7 @@ map-root {
         g[id='gridlines'] path {
           fill: none;
           stroke: var(--mat-gray-600);
-          stroke-width: 0.25;
+          stroke-width: 0.5;
         }
       }
 
@@ -218,7 +226,7 @@ map-root {
         }
 
         img.outside {
-          filter: sepia(1);
+          filter: sepia(0.75);
         }
       }
 
@@ -462,14 +470,6 @@ map-root {
           }
         }
       }
-    }
-
-    img.compass {
-      height: 12%;
-      left: 5%;
-      position: absolute;
-      top: 5%;
-      width: 8%;
     }
   }
 }

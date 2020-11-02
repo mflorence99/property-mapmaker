@@ -1,7 +1,7 @@
+import { Geometry } from './geometry';
 import { GpsData } from './gps-data';
-import { Params } from './params';
 import { Point } from './gps-data';
-import { XY } from './params';
+import { XY } from './geometry';
 
 import { ChangeDetectionStrategy } from '@angular/core';
 import { Component } from '@angular/core';
@@ -13,7 +13,9 @@ const CY_CULVERT = 3;
   changeDetection: ChangeDetectionStrategy.Default,
   selector: 'map-culverts',
   template: `<svg
-    attr.viewPort="0 0 {{ params.dims.cxNominal }} {{ params.dims.cyNominal }}"
+    attr.viewPort="0 0 {{ geometry.dims.cxNominal }} {{
+      geometry.dims.cyNominal
+    }}"
   >
     <g
       *ngFor="let culvert of gpsData.culverts | keyvalue"
@@ -113,10 +115,10 @@ export class CulvertsComponent {
     'xxx': 0
   };
 
-  constructor(public gpsData: GpsData, public params: Params) {}
+  constructor(public geometry: Geometry, public gpsData: GpsData) {}
 
   center(point: Point): XY {
-    const [x, y] = this.params.point2xy(point);
+    const [x, y] = this.geometry.point2xy(point);
     return [x - CX_CULVERT / 2, y - CY_CULVERT / 2];
   }
 
@@ -126,6 +128,6 @@ export class CulvertsComponent {
   }
 
   nominal(point: Point): XY {
-    return this.params.point2xy(point);
+    return this.geometry.point2xy(point);
   }
 }

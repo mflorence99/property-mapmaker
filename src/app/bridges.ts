@@ -1,7 +1,7 @@
+import { Geometry } from './geometry';
 import { GpsData } from './gps-data';
-import { Params } from './params';
 import { Point } from './gps-data';
-import { XY } from './params';
+import { XY } from './geometry';
 
 import { ChangeDetectionStrategy } from '@angular/core';
 import { Component } from '@angular/core';
@@ -13,7 +13,9 @@ const CY_BRIDGE = 10;
   changeDetection: ChangeDetectionStrategy.Default,
   selector: 'map-bridges',
   template: `<svg
-    attr.viewPort="0 0 {{ params.dims.cxNominal }} {{ params.dims.cyNominal }}"
+    attr.viewPort="0 0 {{ geometry.dims.cxNominal }} {{
+      geometry.dims.cyNominal
+    }}"
   >
     <g
       *ngFor="let bridge of gpsData.bridges | keyvalue"
@@ -56,14 +58,14 @@ export class BridgesComponent {
     'Bridge 3': -24
   };
 
-  constructor(public gpsData: GpsData, public params: Params) {}
+  constructor(public geometry: Geometry, public gpsData: GpsData) {}
 
   center(point: Point): XY {
-    const [x, y] = this.params.point2xy(point);
+    const [x, y] = this.geometry.point2xy(point);
     return [x - CX_BRIDGE / 2, y - CY_BRIDGE / 2];
   }
 
   nominal(point: Point): XY {
-    return this.params.point2xy(point);
+    return this.geometry.point2xy(point);
   }
 }

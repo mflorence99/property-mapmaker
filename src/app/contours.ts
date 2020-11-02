@@ -1,4 +1,4 @@
-import { Params } from './params';
+import { Geometry } from './geometry';
 
 import { AfterViewInit } from '@angular/core';
 import { ChangeDetectionStrategy } from '@angular/core';
@@ -21,9 +21,9 @@ const LAYERS = [
 })
 export class ContoursComponent implements AfterViewInit {
   constructor(
+    public geometry: Geometry,
     private host: ElementRef,
-    private http: HttpClient,
-    public params: Params
+    private http: HttpClient
   ) {}
 
   ngAfterViewInit(): void {
@@ -34,16 +34,16 @@ export class ContoursComponent implements AfterViewInit {
         },
         params: {
           /* eslint-disable @typescript-eslint/naming-convention */
-          BBOX: `${this.params.bounds.left},${this.params.bounds.bottom},${this.params.bounds.right},${this.params.bounds.top}`,
-          CRS: this.params.crs,
+          BBOX: `${this.geometry.bounds.left},${this.geometry.bounds.bottom},${this.geometry.bounds.right},${this.geometry.bounds.top}`,
+          CRS: this.geometry.crs,
           FORMAT: 'image/svg',
-          HEIGHT: String(this.params.dims.cyNominal),
+          HEIGHT: String(this.geometry.dims.cyNominal),
           LAYERS: LAYERS.join(','),
           REQUEST: 'GetMap',
           SERVICE: 'WMS',
           STYLES: new Array(LAYERS.length).fill('default').join(','),
           VERSION: '1.3.0',
-          WIDTH: String(this.params.dims.cyNominal)
+          WIDTH: String(this.geometry.dims.cyNominal)
           /* eslint-enable @typescript-eslint/naming-convention */
         },
         responseType: 'text'
@@ -53,7 +53,7 @@ export class ContoursComponent implements AfterViewInit {
         map((svg: string) =>
           svg.replace(
             /<svg [^>]+>/g,
-            `<svg viewBox="0 0 ${this.params.dims.cxNominal} ${this.params.dims.cyNominal}">`
+            `<svg viewBox="0 0 ${this.geometry.dims.cxNominal} ${this.geometry.dims.cyNominal}">`
           )
         )
       )

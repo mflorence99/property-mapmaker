@@ -1,4 +1,4 @@
-import { Params } from './params';
+import { Geometry } from './geometry';
 
 import { ChangeDetectionStrategy } from '@angular/core';
 import { Component } from '@angular/core';
@@ -15,15 +15,19 @@ import { Component } from '@angular/core';
           [alpha]="0"
           [threshold]="16"
           [transparent]="[243, 240, 207]"
-          src="/street/tile/{{ params.zoom }}/{{ y + iy }}/{{ x + ix }}"
+          src="/street/tile/{{ geometry.zoom }}/{{ y + iy }}/{{ x + ix }}"
         ></map-tile>
       </ng-container>
     </ng-container>
   `
 })
 export class StreetComponent {
-  xTiles = new Array(this.params.dims.numXTiles).fill(this.params.tiles.left);
-  yTiles = new Array(this.params.dims.numYTiles).fill(this.params.tiles.top);
+  xTiles = new Array(this.geometry.dims.numXTiles).fill(
+    this.geometry.tiles.left
+  );
+  yTiles = new Array(this.geometry.dims.numYTiles).fill(
+    this.geometry.tiles.top
+  );
 
-  constructor(public params: Params) {}
+  constructor(public geometry: Geometry) {}
 }

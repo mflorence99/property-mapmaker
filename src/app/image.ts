@@ -1,4 +1,4 @@
-import { Params } from './params';
+import { Geometry } from './geometry';
 
 import { AfterViewInit } from '@angular/core';
 import { ChangeDetectionStrategy } from '@angular/core';
@@ -42,7 +42,7 @@ export class ImageComponent implements AfterViewInit, OnInit {
 
   private clut: CLUT;
 
-  constructor(private http: HttpClient, public params: Params) {}
+  constructor(public geometry: Geometry, public http: HttpClient) {}
 
   ngAfterViewInit(): void {
     this.http
@@ -51,16 +51,16 @@ export class ImageComponent implements AfterViewInit, OnInit {
       .subscribe((bitmap: ImageBitmap) => {
         // draw the bitmap on the canvas
         const canvas = this.canvas.nativeElement;
-        canvas.height = this.params.dims.cyNominal;
-        canvas.width = this.params.dims.cxNominal;
+        canvas.height = this.geometry.dims.cyNominal;
+        canvas.width = this.geometry.dims.cxNominal;
         const ctx = canvas.getContext('2d');
         ctx.drawImage(bitmap, 0, 0);
         // grab the image pixels
         const imageData = ctx.getImageData(
           0,
           0,
-          this.params.dims.cxNominal,
-          this.params.dims.cyNominal
+          this.geometry.dims.cxNominal,
+          this.geometry.dims.cyNominal
         );
         const pixels = imageData.data;
         // const histogram = {};

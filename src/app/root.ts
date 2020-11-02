@@ -1,4 +1,4 @@
-import { Params } from './params';
+import { Geometry } from './geometry';
 
 import { ChangeDetectionStrategy } from '@angular/core';
 import { Component } from '@angular/core';
@@ -8,9 +8,9 @@ import { ElementRef } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.Default,
   selector: 'map-root',
   template: `
-    <main *ngIf="params.ready">
+    <main *ngIf="geometry.ready">
       <figure
-        [ngClass]="{ dragging: dragging, poster: params.format === 'poster' }"
+        [ngClass]="{ dragging: dragging, poster: geometry.format === 'poster' }"
         (mousedown)="startDrag($event)"
         (mouseout)="stopDrag()"
         (mousemove)="doDrag($event)"
@@ -46,7 +46,7 @@ export class RootComponent {
 
   private basis: MouseEvent;
 
-  constructor(private host: ElementRef, public params: Params) {}
+  constructor(private host: ElementRef, public geometry: Geometry) {}
 
   doDrag(event: MouseEvent): void {
     if (this.dragging) {

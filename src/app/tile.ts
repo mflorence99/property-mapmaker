@@ -1,4 +1,4 @@
-import { Params } from './params';
+import { Geometry } from './geometry';
 
 import { AfterViewInit } from '@angular/core';
 import { ChangeDetectionStrategy } from '@angular/core';
@@ -25,7 +25,7 @@ export class TileComponent implements AfterViewInit {
   @Input() threshold: number;
   @Input() transparent: number[];
 
-  constructor(private http: HttpClient, public params: Params) {}
+  constructor(public geometry: Geometry, private http: HttpClient) {}
 
   ngAfterViewInit(): void {
     this.http
@@ -34,16 +34,16 @@ export class TileComponent implements AfterViewInit {
       .subscribe((bitmap: ImageBitmap) => {
         // draw the bitmap on the canvas
         const canvas = this.canvas.nativeElement;
-        canvas.height = this.params.dims.cyTile;
-        canvas.width = this.params.dims.cxTile;
+        canvas.height = this.geometry.dims.cyTile;
+        canvas.width = this.geometry.dims.cxTile;
         const ctx = canvas.getContext('2d');
         ctx.drawImage(bitmap, 0, 0);
         // munge the image for transparency
         const imageData = ctx.getImageData(
           0,
           0,
-          this.params.dims.cxTile,
-          this.params.dims.cyTile
+          this.geometry.dims.cxTile,
+          this.geometry.dims.cyTile
         );
         const pixels = imageData.data;
         for (let ix = 0; ix < pixels.length; ix += 4) {

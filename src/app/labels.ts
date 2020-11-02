@@ -1,7 +1,7 @@
+import { Geometry } from './geometry';
 import { GpsData } from './gps-data';
-import { Params } from './params';
 import { Point } from './gps-data';
-import { XY } from './params';
+import { XY } from './geometry';
 
 import { ChangeDetectionStrategy } from '@angular/core';
 import { Component } from '@angular/core';
@@ -11,7 +11,9 @@ import { Input } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.Default,
   selector: 'map-labels',
   template: `<svg
-    attr.viewPort="0 0 {{ params.dims.cxNominal }} {{ params.dims.cyNominal }}"
+    attr.viewPort="0 0 {{ geometry.dims.cxNominal }} {{
+      geometry.dims.cyNominal
+    }}"
   >
     <g
       *ngFor="let waypoint of gpsData[key] | keyvalue"
@@ -34,10 +36,10 @@ import { Input } from '@angular/core';
 export class LabelsComponent {
   @Input() key: string;
 
-  constructor(public gpsData: GpsData, public params: Params) {}
+  constructor(public geometry: Geometry, public gpsData: GpsData) {}
 
   point(point: Point): XY {
-    return this.params.point2xy(point);
+    return this.geometry.point2xy(point);
   }
 
   words(text: string): string[] {
