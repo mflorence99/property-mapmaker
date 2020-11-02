@@ -9,6 +9,58 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
   <time>2020-11-02T14:56:02.684217Z</time>
   <keywords></keywords>
 <trk>
+  <name>Connector</name>
+  <trkseg>
+  <trkpt lat="43.201951999999999" lon="-72.023250000000004">
+  </trkpt>
+  <trkpt lat="43.201987450123518" lon="-72.023134708407412">
+  </trkpt>
+  <trkpt lat="43.20192683943489" lon="-72.022989869120607">
+  </trkpt>
+  <trkpt lat="43.201951999999999" lon="-72.022831999999994">
+  </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>Ditch</name>
+  <trkseg>
+  <trkpt lat="43.201853" lon="-72.024467000000001">
+  </trkpt>
+  <trkpt lat="43.201878000000001" lon="-72.02435982635879">
+  </trkpt>
+  <trkpt lat="43.201804000000003" lon="-72.02423376253509">
+  </trkpt>
+  <trkpt lat="43.201853" lon="-72.024089000000004">
+  </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>Loop</name>
+  <trkseg>
+  <trkpt lat="43.202126267925443" lon="-72.023250000000004">
+  </trkpt>
+  <trkpt lat="43.202161461120809" lon="-72.023110568526278">
+  </trkpt>
+  <trkpt lat="43.202106716141472" lon="-72.023000597956667">
+  </trkpt>
+  <trkpt lat="43.202126" lon="-72.022831999999994">
+  </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>Seasonal</name>
+  <trkseg>
+  <trkpt lat="43.202027042568254" lon="-72.024467000000001">
+  </trkpt>
+  <trkpt lat="43.202077877259939" lon="-72.02435982635879">
+  </trkpt>
+  <trkpt lat="43.20200358038857" lon="-72.02423376253509">
+  </trkpt>
+  <trkpt lat="43.202027000000001" lon="-72.024089000000004">
+  </trkpt>
+  </trkseg>
+</trk>
+<trk>
   <name>Stream</name>
   <trkseg>
   <trkpt lat="43.202201053452619" lon="-72.024467114719386">

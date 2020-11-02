@@ -12,6 +12,16 @@ import { Component } from '@angular/core';
     }}"
   >
     <g>
+      <g id="annotations">
+        <text
+          [attr.x]="this.geometry.clip.cy / (this.numHGrids * 2)"
+          [attr.y]="12"
+          [attr.transform]="translate()"
+          text-anchor="middle"
+        >
+          200ft
+        </text>
+      </g>
       <g id="border">
         <path [attr.d]="border()" [attr.transform]="translate()" />
       </g>
@@ -27,10 +37,23 @@ import { Component } from '@angular/core';
           [attr.transform]="translate()"
         />
       </g>
+      <g id="annotations">
+        <text
+          [attr.x]="(this.geometry.clip.cy / this.numHGrids) * 2 + 8"
+          [attr.y]="8"
+          text-anchor="middle"
+        >
+          200ft
+        </text>
+      </g>
     </g>
   </svg>`
 })
 export class GridComponent {
+  // NOTE: every 200 feet
+  numHGrids = this.geometry.dims.cxFeet / 200;
+  numVGrids = this.geometry.dims.cyFeet / 200;
+
   constructor(public geometry: Geometry) {}
 
   border(): string {
@@ -42,7 +65,7 @@ export class GridComponent {
   }
 
   hlines(): string[] {
-    const gap = this.geometry.clip.cy / 15;
+    const gap = this.geometry.clip.cy / this.numHGrids;
     const lines = [];
     for (let y = gap; y < this.geometry.clip.cy; y += gap)
       lines.push(`M 0,${y} L ${this.geometry.clip.cx - 1},${y}`);
@@ -54,7 +77,7 @@ export class GridComponent {
   }
 
   vlines(): string[] {
-    const gap = this.geometry.clip.cx / 15;
+    const gap = this.geometry.clip.cx / this.numVGrids;
     const lines = [];
     for (let x = gap; x < this.geometry.clip.cx; x += gap)
       lines.push(`M ${x},0 L ${x},${this.geometry.clip.cy - 1}`);
