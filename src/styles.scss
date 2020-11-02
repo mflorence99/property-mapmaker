@@ -63,14 +63,6 @@ map-root {
     position: relative;
     width: calc(var(--map-clip-cx) * var(--map-scale));
 
-    img.compass {
-      height: 12%;
-      left: 5%;
-      position: absolute;
-      top: 5%;
-      width: 8%;
-    }
-
     figure {
       cursor: grab;
       display: block;
@@ -95,6 +87,7 @@ map-root {
       map-forest,
       map-grid,
       map-labels,
+      map-overlay,
       map-patterns,
       map-routes,
       map-street,
@@ -112,6 +105,7 @@ map-root {
       map-culverts,
       map-grid,
       map-labels,
+      map-overlay,
       map-routes,
       map-tracks {
         svg {

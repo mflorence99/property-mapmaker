@@ -3,40 +3,32 @@ import { GpsData } from './gps-data';
 
 import { ChangeDetectionStrategy } from '@angular/core';
 import { Component } from '@angular/core';
-import { Input } from '@angular/core';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.Default,
-  selector: 'map-labels',
+  selector: 'map-overlay',
   template: `<svg
     attr.viewPort="0 0 {{ geometry.dims.cxNominal }} {{
       geometry.dims.cyNominal
     }}"
   >
     <g
-      *ngFor="let waypoint of gpsData[key] | keyvalue"
+      *ngFor="let waypoint of gpsData.overlay | keyvalue"
       [id]="waypoint.key.trim()"
     >
       <ng-container *ngIf="geometry.point2xy(waypoint.value) as xy">
-        <text [attr.x]="xy[0]" [attr.y]="xy[1]" text-anchor="middle">
-          <tspan
-            *ngFor="let word of words(waypoint.key); let ix = index"
-            [attr.dy]="ix > 0 ? '1em' : 0"
-            [attr.x]="xy[0]"
-          >
-            {{ word }}
-          </tspan>
-        </text>
+        <image
+          *ngIf="waypoint.key === 'Compass'"
+          [attr.x]="xy[0]"
+          [attr.y]="xy[1]"
+          width="61"
+          height="97"
+          href="assets/compass.svg"
+        />
       </ng-container>
     </g>
   </svg>`
 })
-export class LabelsComponent {
-  @Input() key: string;
-
+export class OverlayComponent {
   constructor(public geometry: Geometry, public gpsData: GpsData) {}
-
-  words(text: string): string[] {
-    return text.split(' ');
-  }
 }

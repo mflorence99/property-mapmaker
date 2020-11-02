@@ -34,6 +34,7 @@ export class GpsData {
   islands: Waypoints;
   landmarks: Waypoints;
   mow: Tracks;
+  overlay: Waypoints;
   routes: Tracks;
   trails: Tracks;
   water: Tracks;
@@ -52,6 +53,7 @@ export class GpsData {
       this.loadImpl('driveway'),
       this.loadImpl('landmarks'),
       this.loadImpl('mow'),
+      this.loadImpl('overlay'),
       this.loadImpl('routes'),
       this.loadImpl('trails'),
       this.loadImpl('water'),

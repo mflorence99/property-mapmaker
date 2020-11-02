@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<gpx version="1.0" creator="Viking -- http://viking.sf.net/"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://www.topografix.com/GPX/1/0"
+xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+  <name>overlay.gpx</name>
+  <author></author>
+  <desc></desc>
+  <time>2020-11-02T11:26:45.300957Z</time>
+  <keywords></keywords>
+<wpt lat="43.209110157527682" lon="-72.031146066539776">
+  <name>Compass</name>
+  <time>2020-11-02T11:27:13Z</time>
+</wpt>
+</gpx>

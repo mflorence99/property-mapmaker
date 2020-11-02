@@ -35,9 +35,8 @@ import { ElementRef } from '@angular/core';
         <map-routes></map-routes>
         <map-contours></map-contours>
         <map-grid></map-grid>
+        <map-overlay></map-overlay>
       </figure>
-
-      <img class="compass" src="assets/compass.svg" />
     </main>
   `
 })

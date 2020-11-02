@@ -9,6 +9,7 @@ import { ForestComponent } from './forest';
 import { GridComponent } from './grid';
 import { ImageComponent } from './image';
 import { LabelsComponent } from './labels';
+import { OverlayComponent } from './overlay';
 import { PatternsComponent } from './patterns';
 import { RootComponent } from './root';
 import { RoutesComponent } from './routes';
@@ -50,6 +51,7 @@ const COMPONENTS = [
   GridComponent,
   ImageComponent,
   LabelsComponent,
+  OverlayComponent,
   PatternsComponent,
   RootComponent,
   RoutesComponent,
