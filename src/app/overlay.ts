@@ -25,6 +25,15 @@ import { Component } from '@angular/core';
           height="97"
           href="assets/compass.svg"
         />
+
+        <text
+          *ngIf="waypoint.key === 'Date'"
+          [attr.x]="xy[0]"
+          [attr.y]="xy[1]"
+          text-anchor="middle"
+        >
+          November, 2020
+        </text>
       </ng-container>
     </g>
   </svg>`

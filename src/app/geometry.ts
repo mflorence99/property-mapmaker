@@ -7,6 +7,7 @@ import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
 
 const FORMAT2SCALE = {
+  tiny: 0.75,
   poster: 1,
   small: 1.5,
   medium: 2,
@@ -156,10 +157,11 @@ export class Geometry {
   // @see https://medium.com/@francoisromain/smooth-a-svg-path-with-cubic-bezier-curves-e37b49d46c74
 
   bezier(point: Point, ix: number, points: Point[]): string {
+    const ok = (p): boolean => p < points.length - 1 && p >= 0;
     const current = this.point2xy(point);
-    const next = this.point2xy(points[ix + 1]);
-    const previous = this.point2xy(points[ix - 1]);
-    const pprevious = this.point2xy(points[ix - 2]);
+    const next = ok(ix + 1) ? this.point2xy(points[ix + 1]) : undefined;
+    const previous = ok(ix - 1) ? this.point2xy(points[ix - 1]) : undefined;
+    const pprevious = ok(ix - 2) ? this.point2xy(points[ix - 2]) : undefined;
     const [x, y] = current;
     const [cpsX, cpsY] = this.controlPoint(previous, pprevious, current);
     const [cpeX, cpeY] = this.controlPoint(current, previous, next, true);
@@ -184,17 +186,25 @@ export class Geometry {
   }
 
   point2xy(point: Point): XY {
-    if (point) {
-      const x =
-        ((this.lon2x(point.lon) - this.lon2x(this.bounds.left)) *
-          this.dims.cxNominal) /
-        (this.lon2x(this.bounds.right) - this.lon2x(this.bounds.left));
-      const y =
-        ((this.lat2y(point.lat) - this.lat2y(this.bounds.top)) *
-          this.dims.cxNominal) /
-        (this.lat2y(this.bounds.bottom) - this.lat2y(this.bounds.top));
-      return [x, y];
-    } else return undefined;
+    const x =
+      ((this.lon2x(point.lon) - this.lon2x(this.bounds.left)) *
+        this.dims.cxNominal) /
+      (this.lon2x(this.bounds.right) - this.lon2x(this.bounds.left));
+    const y =
+      ((this.lat2y(point.lat) - this.lat2y(this.bounds.top)) *
+        this.dims.cxNominal) /
+      (this.lat2y(this.bounds.bottom) - this.lat2y(this.bounds.top));
+    return [x, y];
+  }
+
+  xy2point([x, y]: [number, number]): Point {
+    const lat =
+      this.bounds.top +
+      (y / this.dims.cyNominal) * (this.bounds.bottom - this.bounds.top);
+    const lon =
+      this.bounds.left +
+      (x / this.dims.cxNominal) * (this.bounds.right - this.bounds.left);
+    return { lat, lon };
   }
 
   // @see https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames

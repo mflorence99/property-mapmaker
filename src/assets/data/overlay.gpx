@@ -12,4 +12,8 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
   <name>Compass</name>
   <time>2020-11-02T11:27:13Z</time>
 </wpt>
+<wpt lat="43.208188345826947" lon="-72.03083154486319">
+  <name>Date</name>
+  <time>2020-11-04T12:33:04Z</time>
+</wpt>
 </gpx>

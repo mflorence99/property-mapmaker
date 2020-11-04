@@ -5,13 +5,19 @@ import { ChangeDetectorRef } from '@angular/core';
 import { Component } from '@angular/core';
 import { ElementRef } from '@angular/core';
 
+type UIEvent = {
+  layerX: number;
+  layerY: number;
+};
+
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
   selector: 'map-root',
   template: `
     <main *ngIf="ready">
       <figure
-        [ngClass]="{ dragging: dragging, poster: geometry.format === 'poster' }"
+        [ngClass]="[geometry.format, dragging ? 'dragging' : '']"
+        (click)="logLocation($event)"
         (mousedown)="startDrag($event)"
         (mouseout)="stopDrag()"
         (mousemove)="doDrag($event)"
@@ -67,6 +73,14 @@ export class RootComponent {
       );
       this.basis = event;
     }
+  }
+
+  // NOTE: we know layerX, layerY is non-standard, but
+  // it works for us and that's good enough for this non-critical API
+  logLocation({ layerX, layerY }: UIEvent): void {
+    const x = layerX + this.geometry.clip.x;
+    const y = layerY + this.geometry.clip.y;
+    console.log(this.geometry.xy2point([x, y]));
   }
 
   startDrag(event: MouseEvent): void {
