@@ -17,14 +17,15 @@ import { Component } from '@angular/core';
       [id]="waypoint.key.trim()"
     >
       <ng-container *ngIf="geometry.point2xy(waypoint.value) as xy">
-        <image
+        <foreignObject
           *ngIf="waypoint.key === 'Compass'"
           [attr.x]="xy[0]"
           [attr.y]="xy[1]"
           width="61"
           height="97"
-          href="assets/compass.svg"
-        />
+        >
+          <img xmlns="http://www.w3.org/1999/xhtml" src="assets/compass.svg" />
+        </foreignObject>
 
         <text
           *ngIf="waypoint.key === 'Date'"

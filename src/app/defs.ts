@@ -3,15 +3,18 @@ import { Component } from '@angular/core';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
-  selector: 'map-patterns',
+  selector: 'map-defs',
   template: `<svg>
     <defs>
+      <!-- PATTERN: HALFTONE -->
       <pattern id="halftone" patternUnits="userSpaceOnUse" width="2" height="2">
-        <g fill="rgba(var(--rgb-gray-900), 0.5)">
+        <g fill="var(--mat-gray-800)">
           <rect x="0" y="0" width="1" height="1" />
           <rect x="1" y="1" width="1" height="1" />
         </g>
       </pattern>
+
+      <!-- TRANSFORMS: for SWAMP -->
       <g transform="matrix(1,0,0,1,-5,-10)" id="gSkgvyou1ptj">
         <g>
           <path
@@ -26,6 +29,8 @@ import { Component } from '@angular/core';
           />
         </g>
       </g>
+
+      <!-- FILTER: SWAMP -->
       <pattern
         id="swamp"
         patternUnits="userSpaceOnUse"
@@ -2538,4 +2543,4 @@ import { Component } from '@angular/core';
     </defs>
   </svg>`
 })
-export class PatternsComponent {}
+export class DefsComponent {}

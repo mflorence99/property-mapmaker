@@ -11,7 +11,7 @@ const FORMAT2SCALE = {
   poster: 1,
   small: 1.5,
   medium: 2,
-  large: 4
+  large: 3
 };
 
 const RAD2DEG = 180 / Math.PI;

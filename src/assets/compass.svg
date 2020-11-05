@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61.06 96.62">
   <g transform="translate(-1.438 30.744)">
-    <g fill="none" stroke="#888">
+    <g fill="none" stroke="#424242">
       <path
         d="m61 35c0 16.02-12.984 29-29 29-16.02 0-29-12.984-29-29 0-16.02 12.984-29 29-29 16.02 0 29 12.984 29 29z"
         stroke-width="3"
@@ -21,7 +21,7 @@
     <path
       d="m32-9.453l29 73.45-29-29-29 29z"
       fill="none"
-      stroke="#888"
+      stroke="#424242"
       stroke-linecap="square"
     />
     <text
@@ -32,8 +32,8 @@
       line-height="125%"
       letter-spacing="0"
       font-size="40"
-      fill="#888"
-      stroke="#888"
+      fill="#424242"
+      stroke="#424242"
     >
       <tspan
         x="22.71"
@@ -48,7 +48,7 @@
   <g
     transform="translate(0-3.829)"
     fill="none"
-    stroke="#888"
+    stroke="#424242"
     stroke-width=".25"
   >
     <path d="m4 92.82l6.74-3.891" />

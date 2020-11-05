@@ -4,6 +4,7 @@ import { CacheInterceptor } from './cache';
 import { ClipComponent } from './clip';
 import { ContoursComponent } from './contours';
 import { CulvertsComponent } from './culverts';
+import { DefsComponent } from './defs';
 import { DEPComponent } from './dep';
 import { ForestComponent } from './forest';
 import { GridComponent } from './grid';
@@ -11,7 +12,6 @@ import { ImageComponent } from './image';
 import { LabelsComponent } from './labels';
 import { LegendComponent } from './legend';
 import { OverlayComponent } from './overlay';
-import { PatternsComponent } from './patterns';
 import { RootComponent } from './root';
 import { RoutesComponent } from './routes';
 import { StreetComponent } from './street';
@@ -47,6 +47,7 @@ const COMPONENTS = [
   ClipComponent,
   ContoursComponent,
   CulvertsComponent,
+  DefsComponent,
   DEPComponent,
   ForestComponent,
   GridComponent,
@@ -54,7 +55,6 @@ const COMPONENTS = [
   LabelsComponent,
   LegendComponent,
   OverlayComponent,
-  PatternsComponent,
   RootComponent,
   RoutesComponent,
   StreetComponent,

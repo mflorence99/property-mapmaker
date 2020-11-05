@@ -1,14 +1,6 @@
 @import 'colors.scss';
 
 :root {
-  --primary-color: var(--mat-blue-500);
-  --accent-color: var(--mat-amber-500);
-  --warn-color: var(--mat-red-500);
-
-  --text-color: var(--mat-gray-900);
-  --disabled-color: var(--mat-gray-500);
-  --background-color: var(--mat-gray-100);
-
   // NOTE: these set in params.ts
   --map-clip-x: 0;
   --map-clip-y: 0;
@@ -40,7 +32,6 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   height: 100%;
-  overflow: hidden;
   place-content: center;
   user-select: none;
   width: 100%;
@@ -55,6 +46,15 @@ html {
 map-root {
   display: grid;
   overflow: hidden;
+
+  &.dragging {
+    cursor: grabbing;
+  }
+
+  &.printing {
+    cursor: wait;
+    overflow: unset;
+  }
 
   main {
     display: block;
@@ -74,22 +74,18 @@ map-root {
       );
       width: calc(var(--map-cxNominal) * var(--map-scale));
 
-      &.dragging {
-        cursor: grabbing;
-      }
-
       map-boundary,
       map-bridges,
       map-clip,
       map-contours,
       map-culverts,
+      map-defs,
       map-dep,
       map-forest,
       map-grid,
       map-labels,
       map-legend,
       map-overlay,
-      map-patterns,
       map-routes,
       map-street,
       map-topo,
@@ -124,7 +120,7 @@ map-root {
         svg {
           g polygon {
             fill: none;
-            stroke: var(--mat-gray-700);
+            stroke: var(--mat-gray-800);
             stroke-dasharray: 4;
             stroke-width: 3;
           }
@@ -172,13 +168,13 @@ map-root {
 
       map-culverts {
         g path {
-          stroke: var(--mat-gray-800);
+          stroke: var(--mat-gray-900);
           stroke-dasharray: 1;
           stroke-width: 1;
         }
 
         g text {
-          fill: var(--mat-gray-800);
+          fill: var(--mat-gray-900);
           font-size: 4pt;
           transform: rotate(-90deg);
         }
@@ -186,20 +182,20 @@ map-root {
 
       map-grid {
         g[id='annotations'] text {
-          fill: var(--mat-gray-600);
+          fill: var(--mat-gray-800);
           font-size: 8pt;
           font-style: italic;
         }
 
         g[id='border'] path {
           fill: none;
-          stroke: var(--mat-gray-600);
+          stroke: var(--mat-gray-800);
           stroke-width: 3;
         }
 
         g[id='gridlines'] path {
           fill: none;
-          stroke: var(--mat-gray-600);
+          stroke: var(--mat-gray-800);
           stroke-width: 0.5;
         }
       }
@@ -228,7 +224,7 @@ map-root {
         }
 
         img.outside {
-          filter: sepia(0.75);
+          filter: sepia(1) grayscale(0.75);
         }
       }
 
@@ -236,6 +232,7 @@ map-root {
         svg {
           g text {
             font-style: italic;
+            text-shadow: -1px -1px 4px white;
           }
         }
       }
@@ -243,8 +240,8 @@ map-root {
       map-labels[key='buildingmarks'] {
         svg {
           g text {
-            fill: var(--mat-gray-800);
-            font-size: 5pt;
+            fill: var(--mat-gray-900);
+            font-size: 9pt;
             font-style: italic;
             font-weight: bold;
           }
@@ -254,8 +251,8 @@ map-root {
       map-labels[key='landmarks'] {
         svg {
           g text {
-            fill: var(--mat-brown-600);
-            font-size: 6pt;
+            fill: var(--mat-brown-800);
+            font-size: 10pt;
             font-weight: bold;
           }
         }
@@ -264,8 +261,8 @@ map-root {
       map-labels[key='watermarks'] {
         svg {
           g text {
-            fill: var(--mat-blue-600);
-            font-size: 5.5pt;
+            fill: var(--mat-blue-800);
+            font-size: 9pt;
             font-weight: bold;
           }
         }
@@ -274,8 +271,8 @@ map-root {
       map-legend {
         svg {
           g[id='bounds'] path {
-            fill: rgba(var(--rgb-green-500), 0.25);
-            stroke: var(--mat-gray-500);
+            fill: rgba(white, 0.33);
+            stroke: var(--mat-gray-800);
             stroke-width: 0;
           }
 
@@ -301,7 +298,7 @@ map-root {
           g[id='Ditch'] text,
           g[id='Stream'] text,
           g[id='Seasonal'] text {
-            fill: var(--mat-blue-600);
+            fill: var(--mat-blue-800);
             font-size: 8pt;
             font-style: italic;
             font-weight: bold;
@@ -315,13 +312,13 @@ map-root {
 
           g[id='Loop'] path[id='colorized'] {
             fill: none;
-            stroke: var(--mat-red-300);
-            stroke-width: 3;
+            stroke: var(--mat-red-600);
+            stroke-width: 5;
           }
 
           g[id='Connector'] path[id='outline'] {
             fill: none;
-            stroke: var(--mat-gray-500);
+            stroke: var(--mat-gray-800);
             stroke-width: 5;
           }
 
@@ -333,7 +330,7 @@ map-root {
 
           g[id='Loop'] text,
           g[id='Connector'] text {
-            fill: var(--mat-gray-600);
+            fill: var(--mat-gray-800);
             font-size: 8pt;
             font-style: italic;
             font-weight: bold;
@@ -343,7 +340,7 @@ map-root {
 
       map-overlay {
         g text {
-          fill: var(--mat-gray-600);
+          fill: var(--mat-gray-800);
           font-size: 8pt;
           font-weight: bold;
         }
@@ -352,8 +349,9 @@ map-root {
       map-routes {
         svg {
           text {
-            font-size: 5pt;
+            font-size: 5.5pt;
             font-style: italic;
+            font-weight: bold;
           }
 
           text[id^='Park Lane'],
@@ -415,7 +413,7 @@ map-root {
         svg {
           g path[id='outline'] {
             fill: none;
-            stroke: var(--mat-gray-500);
+            stroke: var(--mat-gray-800);
             stroke-width: 5;
           }
 
@@ -430,7 +428,7 @@ map-root {
       map-tracks[key='mow'] {
         svg {
           g path {
-            fill: rgba(var(--rgb-yellow-300), 0.5);
+            fill: rgba(var(--rgb-yellow-600), 0.33);
             stroke-width: 0;
           }
         }
@@ -446,7 +444,7 @@ map-root {
 
           g path[id='outline'] {
             fill: none;
-            stroke: var(--mat-gray-500);
+            stroke: var(--mat-gray-800);
             stroke-width: 5;
           }
 
@@ -455,7 +453,7 @@ map-root {
           g[id='Outer loop'] path[id='colorized'],
           g[id='Park Lane'] path[id='colorized'] {
             fill: none;
-            stroke: var(--mat-red-300);
+            stroke: var(--mat-red-600);
             stroke-width: 3;
           }
 
@@ -520,18 +518,10 @@ map-root {
       }
 
       map-culverts,
+      map-labels[key='buildingmarks'],
       map-routes,
-      map-tracks[key='buildings'],
       map-tracks[key='ditches'] {
         visibility: hidden;
-      }
-
-      map-labels[key='buildingmarks'] {
-        svg {
-          g text {
-            font-size: 8pt;
-          }
-        }
       }
 
       map-labels[key='landmarks'] {

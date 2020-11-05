@@ -263,27 +263,6 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
   </trkseg>
 </trk>
 <trk>
-  <name>Park Lane 1</name>
-  <trkseg>
-  <trkpt lat="43.205313132260613" lon="-72.029319645681383">
-  </trkpt>
-  <trkpt lat="43.205342458392828" lon="-72.029296846904757">
-  </trkpt>
-  <trkpt lat="43.205365919288454" lon="-72.029278071441652">
-  </trkpt>
-  <trkpt lat="43.205391335248528" lon="-72.029256613769533">
-  </trkpt>
-  <trkpt lat="43.205421638879393" lon="-72.029225768365862">
-  </trkpt>
-  <trkpt lat="43.205443144672813" lon="-72.029208334007265">
-  </trkpt>
-  <trkpt lat="43.2054851787017" lon="-72.029172124185564">
-  </trkpt>
-  <trkpt lat="43.205522325028689" lon="-72.029154689826967">
-  </trkpt>
-  </trkseg>
-</trk>
-<trk>
   <name>Park Lane 2</name>
   <trkseg>
   <trkpt lat="43.205999360059742" lon="-72.028942795314791">
