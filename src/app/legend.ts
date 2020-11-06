@@ -6,7 +6,8 @@ import { ChangeDetectionStrategy } from '@angular/core';
 import { Component } from '@angular/core';
 
 const PADDING = 16;
-const WIDTH = 84;
+const HEIGHT = 110;
+const WIDTH = 250;
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -16,24 +17,45 @@ const WIDTH = 84;
       geometry.dims.cyNominal
     }}"
   >
-    <g id="bounds"><path [attr.d]="bounds()" /></g>
-    <g *ngFor="let track of gpsData.legend | keyvalue" [id]="track.key.trim()">
-      <path id="outline" [attr.d]="geometry.path(track.value, 'bezier')" />
-      <path id="colorized" [attr.d]="geometry.path(track.value, 'bezier')" />
-      <text
-        *ngIf="geometry.point2xy(track.value[track.value.length - 1]) as xy"
-        [attr.x]="xy[0] + 8"
-        [attr.y]="xy[1] + 4"
+    <g *ngIf="bounds() as rect">
+      <g id="bounds">
+        <rect
+          [attr.x]="rect.x"
+          [attr.y]="rect.y"
+          [attr.width]="rect.width"
+          [attr.height]="rect.height"
+        />
+      </g>
+      <g
+        *ngFor="let track of gpsData.legend | keyvalue"
+        [id]="track.key.trim()"
       >
-        {{ track.key }}
-      </text>
+        <path id="outline" [attr.d]="geometry.path(track.value, 'bezier')" />
+        <path id="colorized" [attr.d]="geometry.path(track.value, 'bezier')" />
+        <text
+          *ngIf="geometry.point2xy(track.value[track.value.length - 1]) as xy"
+          [attr.x]="xy[0] + 8"
+          [attr.y]="xy[1] + 4"
+        >
+          {{ track.key }}
+        </text>
+      </g>
+      <g id="annotation">
+        <text
+          [attr.x]="rect.x + rect.width / 2"
+          [attr.y]="rect.y + rect.height - 16"
+          text-anchor="middle"
+        >
+          Grid interval 200ft, each square ~1ac
+        </text>
+      </g>
     </g>
   </svg>`
 })
 export class LegendComponent {
   constructor(public geometry: Geometry, public gpsData: GpsData) {}
 
-  bounds(): string {
+  bounds(): { height: number; width: number; x: number; y: number } {
     let bottom = Number.MAX_SAFE_INTEGER;
     let left = Number.MAX_SAFE_INTEGER;
     let top = Number.MIN_SAFE_INTEGER;
@@ -47,13 +69,13 @@ export class LegendComponent {
         bottom = Math.min(bottom, point.lat);
       });
     });
-    // convert to path
+    // convert to rect
     const tl = this.geometry.point2xy({ lat: top, lon: left });
-    const br = this.geometry.point2xy({ lat: bottom, lon: right });
-    return `M ${tl[0] - PADDING},${tl[1] - PADDING} 
-    L ${br[0] + WIDTH},${tl[1] - PADDING} 
-    L ${br[0] + WIDTH},${br[1] + PADDING} 
-    L ${tl[0] - PADDING},${br[1] + PADDING} 
-    Z`;
+    return {
+      x: tl[0] - PADDING,
+      y: tl[1] - PADDING,
+      width: WIDTH,
+      height: HEIGHT
+    };
   }
 }

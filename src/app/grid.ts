@@ -12,39 +12,14 @@ import { Component } from '@angular/core';
     }}"
   >
     <g>
-      <g id="annotations">
-        <text
-          [attr.x]="this.geometry.clip.cy / (this.numHGrids * 2)"
-          [attr.y]="12"
-          [attr.transform]="translate()"
-          text-anchor="middle"
-        >
-          200ft
-        </text>
-      </g>
-      <g id="border">
-        <path [attr.d]="border()" [attr.transform]="translate()" />
-      </g>
-      <g id="gridlines">
-        <path
-          *ngFor="let line of hlines()"
-          [attr.d]="line"
-          [attr.transform]="translate()"
-        />
-        <path
-          *ngFor="let line of vlines()"
-          [attr.d]="line"
-          [attr.transform]="translate()"
-        />
-      </g>
-      <g id="annotations">
-        <text
-          [attr.x]="(this.geometry.clip.cy / this.numHGrids) * 2 + 8"
-          [attr.y]="8"
-          text-anchor="middle"
-        >
-          200ft
-        </text>
+      <g [attr.transform]="translate()">
+        <g id="border">
+          <path [attr.d]="border()" />
+        </g>
+        <g id="gridlines">
+          <path *ngFor="let line of hlines()" [attr.d]="line" />
+          <path *ngFor="let line of vlines()" [attr.d]="line" />
+        </g>
       </g>
     </g>
   </svg>`
