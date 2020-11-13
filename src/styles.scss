@@ -10,6 +10,8 @@
   --map-cyNominal: 0;
   --map-cxTile: 0;
   --map-cyTile: 0;
+  --map-numHGrids: 0;
+  --map-numVGrids: 0;
   --map-numXTiles: 0;
   --map-numYTiles: 0;
   --map-scale: 1;
@@ -46,6 +48,8 @@ html {
 map-root {
   display: grid;
   overflow: hidden;
+  padding: calc(var(--map-cyNominal) * var(--map-scale) / 50)
+    calc(var(--map-cxNominal) * var(--map-scale) / 50);
 
   &.dragging {
     cursor: grabbing;
@@ -54,6 +58,23 @@ map-root {
   &.printing {
     cursor: wait;
     overflow: unset;
+  }
+
+  .border-1 {
+    border: 3px solid var(--mat-gray-600);
+  }
+
+  .border-2 {
+    background-color: var(--mat-brown-50);
+    border: calc(var(--map-cyNominal) * var(--map-scale) / 300) dashed
+      var(--mat-gray-600);
+  }
+
+  .border-3 {
+    background-color: white;
+    border: 1px solid var(--mat-gray-600);
+    padding: calc(var(--map-cyNominal) * var(--map-scale) / 200)
+      calc(var(--map-cxNominal) * var(--map-scale) / 200);
   }
 
   main {
@@ -147,17 +168,9 @@ map-root {
             transform: scale(1, 1);
           }
 
-          g path {
-            stroke-width: calc(0.5 / var(--map-scale));
-          }
-
           g#Labels path {
             fill-opacity: 0;
             stroke-opacity: 0;
-          }
-
-          g#Labels text {
-            font-size: 4pt;
           }
 
           g rect {
@@ -181,13 +194,7 @@ map-root {
       }
 
       map-grid {
-        g[id='border'] path {
-          fill: none;
-          stroke: var(--mat-gray-800);
-          stroke-width: 3;
-        }
-
-        g[id='gridlines'] path {
+        g path {
           fill: none;
           stroke: var(--mat-gray-800);
           stroke-width: 0.5;
@@ -510,6 +517,10 @@ map-root {
     figure.poster {
       map-contours {
         svg {
+          g path {
+            stroke-width: calc(0.5 / var(--map-scale));
+          }
+
           g#Labels text {
             font-size: 6pt;
           }
@@ -521,6 +532,22 @@ map-root {
       map-routes,
       map-tracks[key='ditches'] {
         visibility: hidden;
+      }
+    }
+
+    figure.small,
+    figure.medium,
+    figure.large {
+      map-contours {
+        svg {
+          g path {
+            stroke-width: calc(1 / var(--map-scale));
+          }
+
+          g#Labels text {
+            font-size: 4pt;
+          }
+        }
       }
     }
   }

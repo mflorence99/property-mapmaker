@@ -19,39 +19,53 @@ type UIEvent = {
   changeDetection: ChangeDetectionStrategy.OnPush,
   selector: 'map-root',
   template: `
-    <main *ngIf="ready">
-      <figure
-        [ngClass]="geometry.format"
-        (click)="logLocation($event)"
-        (dblclick)="print()"
-        (mousedown)="startDrag($event)"
-        (mouseout)="stopDrag()"
-        (mousemove)="doDrag($event)"
-        (mouseup)="stopDrag()"
-      >
-        <map-defs></map-defs>
-        <map-clip></map-clip>
-        <map-dep></map-dep>
-        <map-street></map-street>
-        <map-boundary></map-boundary>
-        <map-tracks key="mow" op="bezier"></map-tracks>
-        <map-tracks key="water" op="bezier"></map-tracks>
-        <map-tracks key="ditches" op="bezier"></map-tracks>
-        <map-tracks key="buildings" op="linear"></map-tracks>
-        <map-tracks key="driveway" op="bezier" [outlined]="true"></map-tracks>
-        <map-tracks key="trails" op="bezier" [outlined]="true"></map-tracks>
-        <map-culverts></map-culverts>
-        <map-bridges></map-bridges>
-        <map-labels key="buildingmarks"></map-labels>
-        <map-labels key="landmarks"></map-labels>
-        <map-labels key="watermarks"></map-labels>
-        <map-routes></map-routes>
-        <map-contours></map-contours>
-        <map-grid></map-grid>
-        <map-overlay></map-overlay>
-        <map-legend></map-legend>
-      </figure>
-    </main>
+    <div class="border-1">
+      <div class="border-2">
+        <div class="border-3">
+          <main *ngIf="ready">
+            <figure
+              [ngClass]="geometry.format"
+              (click)="logLocation($event)"
+              (dblclick)="print()"
+              (mousedown)="startDrag($event)"
+              (mouseout)="stopDrag()"
+              (mousemove)="doDrag($event)"
+              (mouseup)="stopDrag()"
+            >
+              <map-defs></map-defs>
+              <map-clip></map-clip>
+              <map-dep></map-dep>
+              <map-street></map-street>
+              <map-boundary></map-boundary>
+              <map-tracks key="mow" op="bezier"></map-tracks>
+              <map-tracks key="water" op="bezier"></map-tracks>
+              <map-tracks key="ditches" op="bezier"></map-tracks>
+              <map-tracks key="buildings" op="linear"></map-tracks>
+              <map-tracks
+                key="driveway"
+                op="bezier"
+                [outlined]="true"
+              ></map-tracks>
+              <map-tracks
+                key="trails"
+                op="bezier"
+                [outlined]="true"
+              ></map-tracks>
+              <map-culverts></map-culverts>
+              <map-bridges></map-bridges>
+              <map-labels key="buildingmarks"></map-labels>
+              <map-labels key="landmarks"></map-labels>
+              <map-labels key="watermarks"></map-labels>
+              <map-routes></map-routes>
+              <map-contours></map-contours>
+              <map-grid></map-grid>
+              <map-overlay></map-overlay>
+              <map-legend></map-legend>
+            </figure>
+          </main>
+        </div>
+      </div>
+    </div>
   `
 })
 export class RootComponent {

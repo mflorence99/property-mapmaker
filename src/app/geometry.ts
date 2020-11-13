@@ -52,6 +52,8 @@ export class Geometry {
     cyNominal: 0,
     cxTile: 256,
     cyTile: 256,
+    numHGrids: 0,
+    numVGrids: 0,
     numXTiles: 0,
     numYTiles: 0
   };
@@ -121,6 +123,9 @@ export class Geometry {
         cx: (this.dims.cxFeet / cxFeet) * this.dims.cxNominal,
         cy: (this.dims.cyFeet / cyFeet) * this.dims.cyNominal
       };
+      // grid lines every 200 feet
+      this.dims.numHGrids = this.dims.cxFeet / 200;
+      this.dims.numVGrids = this.dims.cyFeet / 200;
       // useful logging
       console.table({
         bbox: this.bbox,
@@ -140,6 +145,8 @@ export class Geometry {
       style.setProperty('--map-cyNominal', `${this.dims.cyNominal}px`);
       style.setProperty('--map-cxTile', `${this.dims.cxTile}px`);
       style.setProperty('--map-cyTile', `${this.dims.cyTile}px`);
+      style.setProperty('--map-numHGrids', `${this.dims.numHGrids}`);
+      style.setProperty('--map-numVGrids', `${this.dims.numVGrids}`);
       style.setProperty('--map-numXTiles', `${this.dims.numXTiles}`);
       style.setProperty('--map-numYTiles', `${this.dims.numYTiles}`);
       style.setProperty('--map-scale', `${this.scale}`);
