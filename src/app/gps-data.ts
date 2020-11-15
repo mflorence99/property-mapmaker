@@ -8,6 +8,8 @@ import { mergeMap } from 'rxjs/operators';
 import { parseString } from 'xml2js';
 import { tap } from 'rxjs/operators';
 
+const METERS2FEET = 3.28084;
+
 export interface Point {
   ele?: number;
   lat: number;
@@ -75,13 +77,9 @@ export class GpsData {
       );
   }
 
-  private meters2feet(meters: number): number {
-    return meters * 3.28084;
-  }
-
   private obj2point(obj: any): Point {
     // NOTE: GPS collected elevation in meters
-    const ele = this.meters2feet(Number(obj.ele?.[0]));
+    const ele = Number(obj.ele?.[0] ?? 0) * METERS2FEET;
     const lat = Number(obj.$.lat);
     const lon = Number(obj.$.lon);
     return { ele, lat, lon };
