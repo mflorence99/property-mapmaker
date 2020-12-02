@@ -7,6 +7,7 @@ import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
 
 const FORMAT2SCALE = {
+  folded: 0.75,
   tiny: 0.75,
   poster: 1,
   small: 1.5,

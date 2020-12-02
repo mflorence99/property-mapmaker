@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewPort="0 0 3600 2400">
+  <g fill="none" stroke="#424242" stroke-width="1" stroke-dasharray="5,5">
+    <rect x="0" y="0" width="3600" height="2400"/>
+    <path d="M 600,0 L 600,2399" />
+    <path d="M 1200,0 L 1200,2399" />
+    <path d="M 1800,0 L 1800,2399" />
+    <path d="M 2400,0 L 2400,2399" />
+    <path d="M 3000,0 L 3000,2399" />
+    <path d="M 0,1200 L 3599,1200" />
+  </g>
+</svg>

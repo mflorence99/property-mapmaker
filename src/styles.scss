@@ -1,7 +1,8 @@
 @import 'colors.scss';
 
 :root {
-  // NOTE: these set in params.ts
+  --map-aside-cx: 0;
+  // NOTE: these set in geometry.ts
   --map-clip-x: 0;
   --map-clip-y: 0;
   --map-clip-cx: 0;
@@ -28,8 +29,7 @@
 }
 
 body {
-  background-color: var(--background-color);
-  color: var(--text-color);
+  background-color: var(--mat-gray-200);
   display: grid;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -46,10 +46,12 @@ html {
 }
 
 map-root {
+  background-color: white;
   display: grid;
+  grid-template-areas:
+    'back  map blank'
+    'front map blank';
   overflow: hidden;
-  padding: calc(var(--map-cyNominal) * var(--map-scale) / 50)
-    calc(var(--map-cxNominal) * var(--map-scale) / 50);
 
   &.dragging {
     cursor: grabbing;
@@ -60,492 +62,517 @@ map-root {
     overflow: unset;
   }
 
-  .border-1 {
-    border: 3px solid var(--mat-gray-600);
+  aside {
+    width: var(--map-aside-cx);
   }
 
-  .border-2 {
-    background-color: var(--mat-brown-50);
-    border: calc(var(--map-cyNominal) * var(--map-scale) / 300) dashed
-      var(--mat-gray-600);
+  aside.front {
+    background-color: var(--mat-green-100);
+    grid-area: front;
   }
 
-  .border-3 {
-    background-color: white;
-    border: 1px solid var(--mat-gray-600);
-    padding: calc(var(--map-cyNominal) * var(--map-scale) / 200)
-      calc(var(--map-cxNominal) * var(--map-scale) / 200);
+  aside.back {
+    background-color: var(--mat-yellow-100);
+    grid-area: back;
+  }
+
+  aside.blank {
+    background-color: var(--mat-blue-100);
+    grid-area: blank;
   }
 
   main {
-    display: block;
-    height: calc(var(--map-clip-cy) * var(--map-scale));
-    overflow: hidden;
-    position: relative;
-    width: calc(var(--map-clip-cx) * var(--map-scale));
+    grid-area: map;
 
-    figure {
-      cursor: normal;
+    .border-1 {
+      border: 3px solid var(--mat-gray-600);
+      margin: calc(var(--map-cyNominal) * var(--map-scale) / 100)
+        calc(var(--map-cxNominal) * var(--map-scale) / 100);
+    }
+
+    .border-2 {
+      background-color: var(--mat-brown-50);
+      border: calc(var(--map-cyNominal) * var(--map-scale) / 300) dashed
+        var(--mat-gray-600);
+    }
+
+    .border-3 {
+      background-color: white;
+      border: 1px solid var(--mat-gray-600);
+      padding: calc(var(--map-cyNominal) * var(--map-scale) / 200)
+        calc(var(--map-cxNominal) * var(--map-scale) / 200);
+    }
+
+    section {
       display: block;
-      height: calc(var(--map-cyNominal) * var(--map-scale));
-      position: absolute;
-      transform: translate(
-        calc(var(--map-clip-x) * var(--map-scale) * -1),
-        calc(var(--map-clip-y) * var(--map-scale) * -1)
-      );
-      width: calc(var(--map-cxNominal) * var(--map-scale));
+      height: calc(var(--map-clip-cy) * var(--map-scale));
+      overflow: hidden;
+      position: relative;
+      width: calc(var(--map-clip-cx) * var(--map-scale));
 
-      map-boundary,
-      map-bridges,
-      map-clip,
-      map-contours,
-      map-culverts,
-      map-defs,
-      map-dep,
-      map-forest,
-      map-grid,
-      map-labels,
-      map-legend,
-      map-overlay,
-      map-routes,
-      map-street,
-      map-topo,
-      map-tracks {
-        display: block;
-        height: 100%;
-        position: absolute;
-        width: 100%;
-      }
-
-      map-boundary,
-      map-bridges,
-      map-clip,
-      map-culverts,
-      map-grid,
-      map-labels,
-      map-legend,
-      map-overlay,
-      map-routes,
-      map-tracks {
-        svg {
-          height: 100%;
-          width: 100%;
-
-          & > g {
-            transform: scale(var(--map-scale), var(--map-scale));
-          }
-        }
-      }
-
-      map-boundary {
-        svg {
-          g polygon {
-            fill: none;
-            stroke: var(--mat-gray-800);
-            stroke-dasharray: 4;
-            stroke-width: 3;
-          }
-        }
-      }
-
-      map-bridges {
-        svg {
-          g path.edges {
-            fill: none;
-            stroke: var(--mat-gray-800);
-            stroke-width: 1;
-          }
-
-          g path.roadway {
-            fill: white;
-          }
-        }
-      }
-
-      map-contours {
-        svg {
-          & > g {
-            transform: scale(1, 1);
-          }
-
-          g#Labels path {
-            fill-opacity: 0;
-            stroke-opacity: 0;
-          }
-
-          g rect {
-            fill-opacity: 0;
-          }
-        }
-      }
-
-      map-culverts {
-        g path {
-          stroke: var(--mat-gray-900);
-          stroke-dasharray: 1;
-          stroke-width: 1;
-        }
-
-        g text {
-          fill: var(--mat-gray-900);
-          font-size: 4pt;
-          transform: rotate(-90deg);
-        }
-      }
-
-      map-grid {
-        g path {
-          fill: none;
-          stroke: var(--mat-gray-800);
-          stroke-width: 0.5;
-        }
-      }
-
-      map-image {
+      figure {
+        cursor: normal;
         display: block;
         height: calc(var(--map-cyNominal) * var(--map-scale));
-        position: relative;
+        position: absolute;
+        transform: translate(
+          calc(var(--map-clip-x) * var(--map-scale) * -1),
+          calc(var(--map-clip-y) * var(--map-scale) * -1)
+        );
         width: calc(var(--map-cxNominal) * var(--map-scale));
 
-        canvas {
-          height: var(--map-cyNominal);
-          position: absolute;
-          visibility: hidden;
-          width: var(--map-cxNominal);
-        }
-
-        img {
+        map-boundary,
+        map-bridges,
+        map-clip,
+        map-contours,
+        map-culverts,
+        map-defs,
+        map-dep,
+        map-forest,
+        map-grid,
+        map-labels,
+        map-legend,
+        map-overlay,
+        map-routes,
+        map-street,
+        map-topo,
+        map-tracks {
+          display: block;
           height: 100%;
           position: absolute;
           width: 100%;
         }
 
-        img.inside {
-          clip-path: url(#boundary);
-        }
+        map-boundary,
+        map-bridges,
+        map-clip,
+        map-culverts,
+        map-grid,
+        map-labels,
+        map-legend,
+        map-overlay,
+        map-routes,
+        map-tracks {
+          svg {
+            height: 100%;
+            width: 100%;
 
-        img.outside {
-          filter: sepia(1) grayscale(0.75);
-        }
-      }
-
-      map-labels {
-        svg {
-          g text {
-            font-style: italic;
-            text-shadow: -1px -1px 4px white;
+            & > g {
+              transform: scale(var(--map-scale), var(--map-scale));
+            }
           }
         }
-      }
 
-      map-labels[key='buildingmarks'] {
-        svg {
+        map-boundary {
+          svg {
+            g polygon {
+              fill: none;
+              stroke: var(--mat-gray-800);
+              stroke-dasharray: 4;
+              stroke-width: 3;
+            }
+          }
+        }
+
+        map-bridges {
+          svg {
+            g path.edges {
+              fill: none;
+              stroke: var(--mat-gray-800);
+              stroke-width: 1;
+            }
+
+            g path.roadway {
+              fill: white;
+            }
+          }
+        }
+
+        map-contours {
+          svg {
+            & > g {
+              transform: scale(1, 1);
+            }
+
+            g#Labels path {
+              fill-opacity: 0;
+              stroke-opacity: 0;
+            }
+
+            g rect {
+              fill-opacity: 0;
+            }
+          }
+        }
+
+        map-culverts {
+          g path {
+            stroke: var(--mat-gray-900);
+            stroke-dasharray: 1;
+            stroke-width: 1;
+          }
+
           g text {
             fill: var(--mat-gray-900);
-            font-size: 6pt;
-            font-style: italic;
-            font-weight: bold;
-          }
-        }
-      }
-
-      map-labels[key='landmarks'] {
-        svg {
-          g text {
-            fill: var(--mat-brown-600);
-            font-size: 10pt;
-            font-weight: bold;
-          }
-        }
-      }
-
-      map-labels[key='watermarks'] {
-        svg {
-          g text {
-            fill: var(--mat-blue-600);
-            font-size: 9pt;
-            font-weight: bold;
-          }
-        }
-      }
-
-      map-legend {
-        svg {
-          g[id='annotation'] text {
-            fill: var(--mat-gray-800);
-            font-size: 8pt;
-          }
-
-          g[id='bounds'] rect {
-            fill: rgba(white, 0.33);
-            stroke: var(--mat-gray-800);
-            stroke-width: 0;
-          }
-
-          g[id='Ditch'] path {
-            fill: none;
-            stroke: var(--mat-blue-600);
-            stroke-dasharray: 1;
-            stroke-width: 1;
-          }
-
-          g[id='Seasonal'] path {
-            fill: none;
-            stroke: var(--mat-blue-300);
-            stroke-width: 2;
-          }
-
-          g[id='Stream'] path {
-            fill: none;
-            stroke: var(--mat-blue-300);
-            stroke-width: 4;
-          }
-
-          g[id='Ditch'] text,
-          g[id='Stream'] text,
-          g[id='Seasonal'] text {
-            fill: var(--mat-blue-800);
-            font-size: 8pt;
-            font-style: italic;
-            font-weight: bold;
-          }
-
-          g[id='Loop'] path[id='outline'] {
-            fill: none;
-            stroke: white;
-            stroke-width: 5;
-          }
-
-          g[id='Loop'] path[id='colorized'] {
-            fill: none;
-            stroke: var(--mat-red-600);
-            stroke-width: 5;
-          }
-
-          g[id='Connector'] path[id='outline'] {
-            fill: none;
-            stroke: var(--mat-gray-800);
-            stroke-width: 5;
-          }
-
-          g[id='Connector'] path[id='colorized'] {
-            fill: none;
-            stroke: white;
-            stroke-width: 3;
-          }
-
-          g[id='Loop'] text,
-          g[id='Connector'] text {
-            fill: var(--mat-gray-800);
-            font-size: 8pt;
-            font-style: italic;
-            font-weight: bold;
-          }
-        }
-      }
-
-      map-overlay {
-        g text {
-          fill: var(--mat-gray-800);
-          font-size: 8pt;
-          font-weight: bold;
-        }
-      }
-
-      map-routes {
-        svg {
-          text {
-            font-size: 5.5pt;
-            font-style: italic;
-            font-weight: bold;
-          }
-
-          text[id^='Park Lane'],
-          text[id^='Central Loop'],
-          text[id^='Inner Loop'],
-          text[id^='Outer Loop'] {
-            fill: var(--mat-gray-800);
-          }
-
-          text[id^='River Flo'],
-          text[id^='Swamp Creek'] {
-            fill: var(--mat-blue-600);
-          }
-        }
-      }
-
-      map-tile {
-        display: inline-block;
-        height: calc(var(--map-cyTile) * var(--map-scale));
-        position: relative;
-        vertical-align: top;
-        width: calc(var(--map-cxTile) * var(--map-scale));
-
-        canvas {
-          height: var(--map-cyTile);
-          position: absolute;
-          visibility: hidden;
-          width: var(--map-cxTile);
-        }
-
-        img {
-          height: 100%;
-          position: absolute;
-          width: 100%;
-        }
-      }
-
-      map-tracks[key='buildings'] {
-        svg {
-          g path {
-            fill: url(#halftone);
-            stroke-width: 0;
-          }
-        }
-      }
-
-      map-tracks[key='ditches'] {
-        svg {
-          g path {
-            fill: none;
-            stroke: var(--mat-blue-600);
-            stroke-dasharray: 1;
-            stroke-width: 1;
-          }
-        }
-      }
-
-      map-tracks[key='driveway'] {
-        svg {
-          g path[id='outline'] {
-            fill: none;
-            stroke: var(--mat-gray-800);
-            stroke-width: 5;
-          }
-
-          g path[id='colorized'] {
-            fill: none;
-            stroke: white;
-            stroke-width: 3;
-          }
-        }
-      }
-
-      map-tracks[key='mow'] {
-        svg {
-          g path {
-            fill: rgba(var(--rgb-yellow-600), 0.33);
-            stroke-width: 0;
-          }
-        }
-      }
-
-      map-tracks[key='trails'] {
-        svg {
-          g path[id='colorized'] {
-            fill: none;
-            stroke: white;
-            stroke-width: 3;
-          }
-
-          g path[id='outline'] {
-            fill: none;
-            stroke: var(--mat-gray-800);
-            stroke-width: 5;
-          }
-
-          g[id='Central loop'] path[id='colorized'],
-          g[id='Inner loop'] path[id='colorized'],
-          g[id='Outer loop'] path[id='colorized'],
-          g[id='Park Lane'] path[id='colorized'] {
-            fill: none;
-            stroke: var(--mat-red-600);
-            stroke-width: 3;
-          }
-
-          g[id='Central loop'] path[id='outline'],
-          g[id='Inner loop'] path[id='outline'],
-          g[id='Outer loop'] path[id='outline'],
-          g[id='Park Lane'] path[id='outline'] {
-            fill: none;
-            stroke: white;
-            stroke-width: 5;
-          }
-        }
-      }
-
-      map-tracks[key='water'] {
-        svg {
-          g path {
-            fill: none;
-            stroke: var(--mat-blue-200);
-            stroke-width: 2;
-          }
-
-          g[id='Frog Pond'] path,
-          g[id='Pond'] path,
-          g[id='Sacrificial Pool'] path,
-          g[id='Trench 1'] path,
-          g[id='Trench 2'] path {
-            fill: var(--mat-blue-200);
-            stroke-width: 0;
-          }
-
-          g[id='Swamp'] path {
-            fill: url(#swamp);
-            stroke-width: 0;
-          }
-
-          g[id='Underground'] path {
-            fill: none;
-            stroke: var(--mat-blue-200);
-            stroke-dasharray: 2;
-            stroke-width: 2;
-          }
-
-          g[id='Lower Flo'] path,
-          g[id='River Flo'] path {
-            fill: none;
-            stroke: var(--mat-blue-200);
-            stroke-width: 4;
-          }
-        }
-      }
-    }
-
-    figure.tiny,
-    figure.poster {
-      map-contours {
-        svg {
-          g path {
-            stroke-width: calc(0.5 / var(--map-scale));
-          }
-
-          g#Labels text {
-            font-size: 6pt;
-          }
-        }
-      }
-
-      map-culverts,
-      map-labels[key='buildingmarks'],
-      map-routes,
-      map-tracks[key='ditches'] {
-        visibility: hidden;
-      }
-    }
-
-    figure.small,
-    figure.medium,
-    figure.large {
-      map-contours {
-        svg {
-          g path {
-            stroke-width: calc(1 / var(--map-scale));
-          }
-
-          g#Labels text {
             font-size: 4pt;
+            transform: rotate(-90deg);
+          }
+        }
+
+        map-grid {
+          g path {
+            fill: none;
+            stroke: var(--mat-gray-800);
+            stroke-width: 0.5;
+          }
+        }
+
+        map-image {
+          display: block;
+          height: calc(var(--map-cyNominal) * var(--map-scale));
+          position: relative;
+          width: calc(var(--map-cxNominal) * var(--map-scale));
+
+          canvas {
+            height: var(--map-cyNominal);
+            position: absolute;
+            visibility: hidden;
+            width: var(--map-cxNominal);
+          }
+
+          img {
+            height: 100%;
+            position: absolute;
+            width: 100%;
+          }
+
+          img.inside {
+            clip-path: url(#boundary);
+          }
+
+          img.outside {
+            filter: sepia(1) grayscale(0.75);
+          }
+        }
+
+        map-labels {
+          svg {
+            g text {
+              font-style: italic;
+              text-shadow: -1px -1px 4px white;
+            }
+          }
+        }
+
+        map-labels[key='buildingmarks'] {
+          svg {
+            g text {
+              fill: var(--mat-gray-900);
+              font-size: 6pt;
+              font-style: italic;
+              font-weight: bold;
+            }
+          }
+        }
+
+        map-labels[key='landmarks'] {
+          svg {
+            g text {
+              fill: var(--mat-brown-600);
+              font-size: 10pt;
+              font-weight: bold;
+            }
+          }
+        }
+
+        map-labels[key='watermarks'] {
+          svg {
+            g text {
+              fill: var(--mat-blue-600);
+              font-size: 9pt;
+              font-weight: bold;
+            }
+          }
+        }
+
+        map-legend {
+          svg {
+            g[id='annotation'] text {
+              fill: var(--mat-gray-800);
+              font-size: 8pt;
+            }
+
+            g[id='bounds'] rect {
+              fill: rgba(white, 0.33);
+              stroke: var(--mat-gray-800);
+              stroke-width: 0;
+            }
+
+            g[id='Ditch'] path {
+              fill: none;
+              stroke: var(--mat-blue-600);
+              stroke-dasharray: 1;
+              stroke-width: 1;
+            }
+
+            g[id='Seasonal'] path {
+              fill: none;
+              stroke: var(--mat-blue-300);
+              stroke-width: 2;
+            }
+
+            g[id='Stream'] path {
+              fill: none;
+              stroke: var(--mat-blue-300);
+              stroke-width: 4;
+            }
+
+            g[id='Ditch'] text,
+            g[id='Stream'] text,
+            g[id='Seasonal'] text {
+              fill: var(--mat-blue-800);
+              font-size: 8pt;
+              font-style: italic;
+              font-weight: bold;
+            }
+
+            g[id='Loop'] path[id='outline'] {
+              fill: none;
+              stroke: white;
+              stroke-width: 5;
+            }
+
+            g[id='Loop'] path[id='colorized'] {
+              fill: none;
+              stroke: var(--mat-red-600);
+              stroke-width: 5;
+            }
+
+            g[id='Connector'] path[id='outline'] {
+              fill: none;
+              stroke: var(--mat-gray-800);
+              stroke-width: 5;
+            }
+
+            g[id='Connector'] path[id='colorized'] {
+              fill: none;
+              stroke: white;
+              stroke-width: 3;
+            }
+
+            g[id='Loop'] text,
+            g[id='Connector'] text {
+              fill: var(--mat-gray-800);
+              font-size: 8pt;
+              font-style: italic;
+              font-weight: bold;
+            }
+          }
+        }
+
+        map-overlay {
+          g text {
+            fill: var(--mat-gray-800);
+            font-size: 8pt;
+            font-weight: bold;
+          }
+        }
+
+        map-routes {
+          svg {
+            text {
+              font-size: 5.5pt;
+              font-style: italic;
+              font-weight: bold;
+            }
+
+            text[id^='Park Lane'],
+            text[id^='Central Loop'],
+            text[id^='Inner Loop'],
+            text[id^='Outer Loop'] {
+              fill: var(--mat-gray-800);
+            }
+
+            text[id^='River Flo'],
+            text[id^='Swamp Creek'] {
+              fill: var(--mat-blue-600);
+            }
+          }
+        }
+
+        map-tile {
+          display: inline-block;
+          height: calc(var(--map-cyTile) * var(--map-scale));
+          position: relative;
+          vertical-align: top;
+          width: calc(var(--map-cxTile) * var(--map-scale));
+
+          canvas {
+            height: var(--map-cyTile);
+            position: absolute;
+            visibility: hidden;
+            width: var(--map-cxTile);
+          }
+
+          img {
+            height: 100%;
+            position: absolute;
+            width: 100%;
+          }
+        }
+
+        map-tracks[key='buildings'] {
+          svg {
+            g path {
+              fill: url(#halftone);
+              stroke-width: 0;
+            }
+          }
+        }
+
+        map-tracks[key='ditches'] {
+          svg {
+            g path {
+              fill: none;
+              stroke: var(--mat-blue-600);
+              stroke-dasharray: 1;
+              stroke-width: 1;
+            }
+          }
+        }
+
+        map-tracks[key='driveway'] {
+          svg {
+            g path[id='outline'] {
+              fill: none;
+              stroke: var(--mat-gray-800);
+              stroke-width: 5;
+            }
+
+            g path[id='colorized'] {
+              fill: none;
+              stroke: white;
+              stroke-width: 3;
+            }
+          }
+        }
+
+        map-tracks[key='mow'] {
+          svg {
+            g path {
+              fill: rgba(var(--rgb-yellow-600), 0.33);
+              stroke-width: 0;
+            }
+          }
+        }
+
+        map-tracks[key='trails'] {
+          svg {
+            g path[id='colorized'] {
+              fill: none;
+              stroke: white;
+              stroke-width: 3;
+            }
+
+            g path[id='outline'] {
+              fill: none;
+              stroke: var(--mat-gray-800);
+              stroke-width: 5;
+            }
+
+            g[id='Central loop'] path[id='colorized'],
+            g[id='Inner loop'] path[id='colorized'],
+            g[id='Outer loop'] path[id='colorized'],
+            g[id='Park Lane'] path[id='colorized'] {
+              fill: none;
+              stroke: var(--mat-red-600);
+              stroke-width: 3;
+            }
+
+            g[id='Central loop'] path[id='outline'],
+            g[id='Inner loop'] path[id='outline'],
+            g[id='Outer loop'] path[id='outline'],
+            g[id='Park Lane'] path[id='outline'] {
+              fill: none;
+              stroke: white;
+              stroke-width: 5;
+            }
+          }
+        }
+
+        map-tracks[key='water'] {
+          svg {
+            g path {
+              fill: none;
+              stroke: var(--mat-blue-200);
+              stroke-width: 2;
+            }
+
+            g[id='Frog Pond'] path,
+            g[id='Pond'] path,
+            g[id='Sacrificial Pool'] path,
+            g[id='Trench 1'] path,
+            g[id='Trench 2'] path {
+              fill: var(--mat-blue-200);
+              stroke-width: 0;
+            }
+
+            g[id='Swamp'] path {
+              fill: url(#swamp);
+              stroke-width: 0;
+            }
+
+            g[id='Underground'] path {
+              fill: none;
+              stroke: var(--mat-blue-200);
+              stroke-dasharray: 2;
+              stroke-width: 2;
+            }
+
+            g[id='Lower Flo'] path,
+            g[id='River Flo'] path {
+              fill: none;
+              stroke: var(--mat-blue-200);
+              stroke-width: 4;
+            }
+          }
+        }
+      }
+
+      figure.tiny,
+      figure.poster {
+        map-contours {
+          svg {
+            g path {
+              stroke-width: calc(0.5 / var(--map-scale));
+            }
+
+            g#Labels text {
+              font-size: 6pt;
+            }
+          }
+        }
+
+        map-culverts,
+        map-labels[key='buildingmarks'],
+        map-routes,
+        map-tracks[key='ditches'] {
+          visibility: hidden;
+        }
+      }
+
+      figure.small,
+      figure.medium,
+      figure.large {
+        map-contours {
+          svg {
+            g path {
+              stroke-width: calc(1 / var(--map-scale));
+            }
+
+            g#Labels text {
+              font-size: 4pt;
+            }
           }
         }
       }

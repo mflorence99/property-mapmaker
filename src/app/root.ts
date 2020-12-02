@@ -5,6 +5,7 @@ import { ChangeDetectorRef } from '@angular/core';
 import { Component } from '@angular/core';
 import { ElementRef } from '@angular/core';
 import { HostBinding } from '@angular/core';
+import { ViewChild } from '@angular/core';
 
 import { saveAs } from 'file-saver';
 
@@ -19,59 +20,67 @@ type UIEvent = {
   changeDetection: ChangeDetectionStrategy.OnPush,
   selector: 'map-root',
   template: `
-    <div class="border-1">
-      <div class="border-2">
-        <div class="border-3">
-          <main *ngIf="ready">
-            <figure
-              [ngClass]="geometry.format"
-              (click)="logLocation($event)"
-              (dblclick)="print()"
-              (mousedown)="startDrag($event)"
-              (mouseout)="stopDrag()"
-              (mousemove)="doDrag($event)"
-              (mouseup)="stopDrag()"
-            >
-              <map-defs></map-defs>
-              <map-clip></map-clip>
-              <map-dep></map-dep>
-              <map-street></map-street>
-              <map-boundary></map-boundary>
-              <map-tracks key="mow" op="bezier"></map-tracks>
-              <map-tracks key="water" op="bezier"></map-tracks>
-              <map-tracks key="ditches" op="bezier"></map-tracks>
-              <map-tracks key="buildings" op="linear"></map-tracks>
-              <map-tracks
-                key="driveway"
-                op="bezier"
-                [outlined]="true"
-              ></map-tracks>
-              <map-tracks
-                key="trails"
-                op="bezier"
-                [outlined]="true"
-              ></map-tracks>
-              <map-culverts></map-culverts>
-              <map-bridges></map-bridges>
-              <map-labels key="buildingmarks"></map-labels>
-              <map-labels key="landmarks"></map-labels>
-              <map-labels key="watermarks"></map-labels>
-              <map-routes></map-routes>
-              <map-contours></map-contours>
-              <map-grid></map-grid>
-              <map-overlay></map-overlay>
-              <map-legend></map-legend>
-            </figure>
-          </main>
+    <aside class="front"></aside>
+    <aside class="back"></aside>
+    <main *ngIf="ready" #theMap>
+      <div class="border-1">
+        <div class="border-2">
+          <div class="border-3">
+            <section>
+              <figure
+                [ngClass]="geometry.format"
+                (click)="logLocation($event)"
+                (dblclick)="print()"
+                (mousedown)="startDrag($event)"
+                (mouseout)="stopDrag()"
+                (mousemove)="doDrag($event)"
+                (mouseup)="stopDrag()"
+              >
+                <map-defs></map-defs>
+                <map-clip></map-clip>
+                <map-dep></map-dep>
+                <map-street></map-street>
+                <map-boundary></map-boundary>
+                <map-tracks key="mow" op="bezier"></map-tracks>
+                <map-tracks key="water" op="bezier"></map-tracks>
+                <map-tracks key="ditches" op="bezier"></map-tracks>
+                <map-tracks key="buildings" op="linear"></map-tracks>
+                <map-tracks
+                  key="driveway"
+                  op="bezier"
+                  [outlined]="true"
+                ></map-tracks>
+                <map-tracks
+                  key="trails"
+                  op="bezier"
+                  [outlined]="true"
+                ></map-tracks>
+                <map-culverts></map-culverts>
+                <map-bridges></map-bridges>
+                <map-labels key="buildingmarks"></map-labels>
+                <map-labels key="landmarks"></map-labels>
+                <map-labels key="watermarks"></map-labels>
+                <map-routes></map-routes>
+                <map-contours></map-contours>
+                <map-grid></map-grid>
+                <map-overlay></map-overlay>
+                <map-legend></map-legend>
+              </figure>
+            </section>
+          </div>
         </div>
       </div>
-    </div>
+    </main>
+    <aside class="blank"></aside>
   `
 })
 export class RootComponent {
   @HostBinding('class.dragging') dragging = false;
   @HostBinding('class.printing') printing = false;
+
   ready = false;
+
+  @ViewChild('theMap', { static: false }) theMap: ElementRef;
 
   private basis: MouseEvent;
 
@@ -85,7 +94,13 @@ export class RootComponent {
   ) {
     this.geometry.ready.subscribe(() => {
       this.ready = true;
-      this.cdf.markForCheck();
+      this.cdf.detectChanges();
+      // add the "wings" if this is a folded map
+      if (this.geometry.format === 'folded') {
+        const foldWidth = this.theMap.nativeElement.offsetWidth / 4;
+        const style = document.body.style;
+        style.setProperty('--map-aside-cx', `${foldWidth}px`);
+      }
     });
   }
 
