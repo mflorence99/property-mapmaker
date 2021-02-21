@@ -1,311 +1,313 @@
 <?xml version="1.0"?>
-<gpx version="1.0" creator="Viking -- http://viking.sf.net/"
+<gpx version="1.0"
+creator="Viking 1.7 -- http://viking.sf.net/"
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xmlns="http://www.topografix.com/GPX/1/0"
 xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
   <name>culverts.gpx</name>
-  <author></author>
-  <desc></desc>
   <time>2020-10-08T18:36:10Z</time>
-  <keywords></keywords>
-<wpt lat="43.203315945006231" lon="-72.030170032835954">
-  <name>Culvert 12-1</name>
+<wpt lat="43.20331594500623" lon="-72.03017003283595">
   <ele>323</ele>
   <time>2020-10-08T18:36:10Z</time>
+  <name>Culvert 12-1</name>
 </wpt>
-<wpt lat="43.204071999999996" lon="-72.028795000000002">
-  <name>Culvert 12-10</name>
+<wpt lat="43.204072" lon="-72.028795">
   <ele>323</ele>
   <time>2020-10-08T18:50:42Z</time>
+  <name>Culvert 12-10</name>
 </wpt>
-<wpt lat="43.204153716725898" lon="-72.028993884182924">
-  <name>Culvert 12-11</name>
+<wpt lat="43.2041537167259" lon="-72.02899388418292">
   <ele>327</ele>
   <time>2020-10-08T18:51:34Z</time>
+  <name>Culvert 12-11</name>
 </wpt>
-<wpt lat="43.204259" lon="-72.029166000000004">
-  <name>Culvert 12-12</name>
+<wpt lat="43.204259" lon="-72.029166">
   <ele>329</ele>
   <time>2020-10-08T18:52:08Z</time>
+  <name>Culvert 12-12</name>
 </wpt>
-<wpt lat="43.204094085747059" lon="-72.029974231577867">
-  <name>Culvert 12-13</name>
+<wpt lat="43.20409408574706" lon="-72.02997423157787">
   <ele>330</ele>
   <time>2020-10-08T18:53:45Z</time>
+  <name>Culvert 12-13</name>
 </wpt>
-<wpt lat="43.203720642976805" lon="-72.029721231577867">
-  <name>Culvert 12-14</name>
+<wpt lat="43.203720642976805" lon="-72.02972123157787">
   <ele>329</ele>
   <time>2020-10-08T18:54:57Z</time>
+  <name>Culvert 12-14</name>
 </wpt>
-<wpt lat="43.205207024820368" lon="-72.02935330019092">
-  <name>Culvert 12-15</name>
+<wpt lat="43.20520702482037" lon="-72.02935330019092">
   <ele>341</ele>
   <time>2020-10-08T18:57:52Z</time>
+  <name>Culvert 12-15</name>
 </wpt>
-<wpt lat="43.205633767448397" lon="-72.028972727508545">
-  <name>Culvert 12-16</name>
+<wpt lat="43.2056337674484" lon="-72.02897272750855">
   <ele>341</ele>
   <time>2020-10-08T18:59:04Z</time>
+  <name>Culvert 12-16</name>
 </wpt>
-<wpt lat="43.206416703517043" lon="-72.028813974378579">
-  <name>Culvert 12-17</name>
+<wpt lat="43.20641670351704" lon="-72.02881397437858">
   <ele>346</ele>
   <time>2020-10-08T19:00:52Z</time>
+  <name>Culvert 12-17</name>
 </wpt>
-<wpt lat="43.20507163542495" lon="-72.029036799527162">
-  <name>Culvert 12-18</name>
+<wpt lat="43.20507163542495" lon="-72.02903679952716">
   <ele>344</ele>
   <time>2020-10-08T19:03:47Z</time>
+  <name>Culvert 12-18</name>
 </wpt>
-<wpt lat="43.204964105727171" lon="-72.028710911131853">
-  <name>Culvert 12-19</name>
+<wpt lat="43.20496410572717" lon="-72.02871091113185">
   <ele>339</ele>
   <time>2020-10-08T19:04:23Z</time>
+  <name>Culvert 12-19</name>
 </wpt>
-<wpt lat="43.203097946511406" lon="-72.029983619309419">
-  <name>Culvert 12-2</name>
+<wpt lat="43.203097946511406" lon="-72.02998361930942">
   <ele>320</ele>
   <time>2020-10-08T18:38:03Z</time>
+  <name>Culvert 12-2</name>
 </wpt>
-<wpt lat="43.206838013307603" lon="-72.028882370708459">
-  <name>Culvert 12-20</name>
+<wpt lat="43.2068380133076" lon="-72.02888237070846">
   <ele>341</ele>
   <time>2020-10-09T13:43:58Z</time>
+  <name>Culvert 12-20</name>
 </wpt>
 <wpt lat="43.20780183404321" lon="-72.02842505407142">
-  <name>Culvert 12-21</name>
   <ele>337</ele>
   <time>2020-10-09T13:48:21Z</time>
+  <name>Culvert 12-21</name>
 </wpt>
-<wpt lat="43.20784973143104" lon="-72.028596715448373">
-  <name>Culvert 12-22</name>
+<wpt lat="43.20784973143104" lon="-72.02859671544837">
   <ele>338</ele>
   <time>2020-10-09T13:48:46Z</time>
+  <name>Culvert 12-22</name>
 </wpt>
-<wpt lat="43.207796277394849" lon="-72.028718088464743">
-  <name>Culvert 12-23</name>
+<wpt lat="43.20779627739485" lon="-72.02871808846474">
   <ele>338</ele>
   <time>2020-10-09T13:49:08Z</time>
+  <name>Culvert 12-23</name>
 </wpt>
-<wpt lat="43.207895000000001" lon="-72.028751">
-  <name>Culvert 12-24</name>
+<wpt lat="43.207895" lon="-72.028751">
   <ele>338</ele>
   <time>2020-10-09T13:50:25Z</time>
+  <name>Culvert 12-24</name>
 </wpt>
-<wpt lat="43.208550972017015" lon="-72.027007423452375">
-  <name>Culvert 12-25</name>
+<wpt lat="43.208550972017015" lon="-72.02700742345237">
   <ele>345</ele>
   <time>2020-10-09T13:53:33Z</time>
+  <name>Culvert 12-25</name>
 </wpt>
-<wpt lat="43.208679022560268" lon="-72.026729814819333">
-  <name>Culvert 12-26</name>
+<wpt lat="43.20867902256027" lon="-72.02672981481933">
   <ele>344</ele>
   <time>2020-10-09T13:54:29Z</time>
+  <name>Culvert 12-26</name>
 </wpt>
-<wpt lat="43.208704437139936" lon="-72.026484392694471">
-  <name>Culvert 12-27</name>
+<wpt lat="43.208704437139936" lon="-72.02648439269447">
   <ele>345</ele>
   <time>2020-10-09T13:55:00Z</time>
+  <name>Culvert 12-27</name>
 </wpt>
-<wpt lat="43.207735743170232" lon="-72.022823177389142">
-  <name>Culvert 12-28</name>
+<wpt lat="43.20773574317023" lon="-72.02282317738914">
   <ele>366</ele>
   <time>2020-10-09T14:06:05Z</time>
+  <name>Culvert 12-28</name>
 </wpt>
 <wpt lat="43.206562416576666" lon="-72.0234353069973">
-  <name>Culvert 12-29</name>
   <ele>360</ele>
   <time>2020-10-09T14:08:05Z</time>
+  <name>Culvert 12-29</name>
 </wpt>
-<wpt lat="43.202937624251298" lon="-72.030096272088045">
-  <name>Culvert 12-3</name>
+<wpt lat="43.2029376242513" lon="-72.03009627208804">
   <ele>321</ele>
   <time>2020-10-08T18:38:32Z</time>
+  <name>Culvert 12-3</name>
 </wpt>
-<wpt lat="43.203610557260859" lon="-72.024711452535627">
-  <name>Culvert 12-30</name>
+<wpt lat="43.20361055726086" lon="-72.02471145253563">
   <ele>331</ele>
   <time>2020-10-09T14:15:05Z</time>
+  <name>Culvert 12-30</name>
 </wpt>
-<wpt lat="43.203643999999997" lon="-72.025122999999994">
-  <name>Culvert 12-31</name>
+<wpt lat="43.203644" lon="-72.025123">
   <ele>329</ele>
   <time>2020-10-09T14:15:56Z</time>
+  <name>Culvert 12-31</name>
 </wpt>
-<wpt lat="43.203724369317904" lon="-72.025404252956392">
-  <name>Culvert 12-32</name>
+<wpt lat="43.203724369317904" lon="-72.02540425295639">
   <ele>332</ele>
   <time>2020-10-09T14:16:29Z</time>
+  <name>Culvert 12-32</name>
 </wpt>
-<wpt lat="43.205190452461643" lon="-72.025517576287271">
-  <name>Culvert 12-33</name>
+<wpt lat="43.20519045246164" lon="-72.02551757628727">
   <ele>338</ele>
   <time>2020-10-09T14:27:06Z</time>
+  <name>Culvert 12-33</name>
 </wpt>
-<wpt lat="43.206538999999999" lon="-72.025981000000002">
-  <name>Culvert 12-34</name>
+<wpt lat="43.206539" lon="-72.025981">
   <ele>350</ele>
   <time>2020-10-09T14:32:03Z</time>
+  <name>Culvert 12-34</name>
 </wpt>
-<wpt lat="43.206380914297426" lon="-72.027605556062696">
-  <name>Culvert 12-35</name>
+<wpt lat="43.206380914297426" lon="-72.0276055560627">
   <ele>348</ele>
   <time>2020-10-09T14:35:30Z</time>
+  <name>Culvert 12-35</name>
 </wpt>
-<wpt lat="43.205489408754353" lon="-72.027514360956189">
-  <name>Culvert 12-36</name>
+<wpt lat="43.20548940875435" lon="-72.02751436095619">
   <ele>345</ele>
   <time>2020-10-09T14:37:43Z</time>
+  <name>Culvert 12-36</name>
 </wpt>
-<wpt lat="43.202461" lon="-72.029470000000003">
-  <name>Culvert 12-4</name>
+<wpt lat="43.203178" lon="-72.029941">
+  <time>2021-02-20T12:02:50Z</time>
+  <name>Culvert 12-37</name>
+</wpt>
+<wpt lat="43.202461" lon="-72.02947">
   <ele>312</ele>
   <time>2020-10-08T18:41:48Z</time>
+  <name>Culvert 12-4</name>
 </wpt>
-<wpt lat="43.202930781218569" lon="-72.029256740666384">
-  <name>Culvert 12-5</name>
+<wpt lat="43.20293078121857" lon="-72.02925674066638">
   <ele>311</ele>
   <time>2020-10-08T18:42:59Z</time>
+  <name>Culvert 12-5</name>
 </wpt>
-<wpt lat="43.202781211884137" lon="-72.029369393445009">
-  <name>Culvert 12-6</name>
+<wpt lat="43.20278121188414" lon="-72.02936939344501">
   <ele>312</ele>
   <time>2020-10-08T18:43:44Z</time>
+  <name>Culvert 12-6</name>
 </wpt>
-<wpt lat="43.202626495224386" lon="-72.028922603843682">
-  <name>Culvert 12-7</name>
+<wpt lat="43.202626495224386" lon="-72.02892260384368">
   <ele>312</ele>
   <time>2020-10-08T18:44:41Z</time>
+  <name>Culvert 12-7</name>
 </wpt>
-<wpt lat="43.20265582264814" lon="-72.028997705696099">
-  <name>Culvert 12-8</name>
+<wpt lat="43.20265582264814" lon="-72.0289977056961">
   <ele>312</ele>
   <time>2020-10-08T18:45:02Z</time>
+  <name>Culvert 12-8</name>
 </wpt>
 <wpt lat="43.20346354323609" lon="-72.02952006590175">
-  <name>Culvert 12-9</name>
   <ele>322</ele>
   <time>2020-10-08T18:48:04Z</time>
+  <name>Culvert 12-9</name>
 </wpt>
-<wpt lat="43.202720342930768" lon="-72.028687910554879">
-  <name>Culvert 24-1</name>
+<wpt lat="43.20272034293077" lon="-72.02868791055488">
   <ele>311</ele>
   <time>2020-10-08T18:45:38Z</time>
+  <name>Culvert 24-1</name>
 </wpt>
-<wpt lat="43.206802822810019" lon="-72.028539047954553">
-  <name>Culvert 24-2</name>
+<wpt lat="43.20680282281002" lon="-72.02853904795455">
   <ele>345</ele>
   <time>2020-10-09T13:44:49Z</time>
+  <name>Culvert 24-2</name>
 </wpt>
-<wpt lat="43.206706048836999" lon="-72.028835432050698">
-  <name>Culvert 4-1</name>
+<wpt lat="43.206706048837" lon="-72.0288354320507">
   <ele>341</ele>
   <time>2020-10-09T13:41:56Z</time>
+  <name>Culvert 4-1</name>
 </wpt>
-<wpt lat="43.203743505991113" lon="-72.027559958509443">
-  <name>Culvert 4-2</name>
+<wpt lat="43.20374350599111" lon="-72.02755995850944">
   <ele>334</ele>
   <time>2020-10-09T14:19:44Z</time>
+  <name>Culvert 4-2</name>
 </wpt>
-<wpt lat="43.204922119393423" lon="-72.027277571411133">
-  <name>Culvert 4-3</name>
+<wpt lat="43.20492211939342" lon="-72.02727757141113">
   <ele>343</ele>
   <time>2020-10-09T14:23:32Z</time>
+  <name>Culvert 4-3</name>
 </wpt>
-<wpt lat="43.206621982433127" lon="-72.027770595071786">
-  <name>Culvert 4-4</name>
+<wpt lat="43.20662198243313" lon="-72.02777059507179">
   <ele>345</ele>
   <time>2020-10-09T14:34:38Z</time>
+  <name>Culvert 4-4</name>
 </wpt>
-<wpt lat="43.205335619205819" lon="-72.027400953025818">
-  <name>Culvert 4-5</name>
+<wpt lat="43.20533561920582" lon="-72.02740095302582">
   <ele>345</ele>
   <time>2020-10-09T14:38:19Z</time>
+  <name>Culvert 4-5</name>
 </wpt>
-<wpt lat="43.203209000000001" lon="-72.030012999999997">
-  <name>Culvert 6-1</name>
+<wpt lat="43.203209" lon="-72.030013">
   <ele>322</ele>
   <time>2020-10-08T18:37:03Z</time>
+  <name>Culvert 6-1</name>
 </wpt>
-<wpt lat="43.204130619761493" lon="-72.024207197240827">
-  <name>Culvert 6-10</name>
+<wpt lat="43.20413061976149" lon="-72.02420719724083">
   <ele>343</ele>
   <time>2020-10-09T14:13:53Z</time>
+  <name>Culvert 6-10</name>
 </wpt>
-<wpt lat="43.203665999999998" lon="-72.024573000000004">
-  <name>Culvert 6-11</name>
+<wpt lat="43.203666" lon="-72.024573">
   <ele>332</ele>
   <time>2020-10-09T14:14:41Z</time>
+  <name>Culvert 6-11</name>
 </wpt>
-<wpt lat="43.203560337012178" lon="-72.024803603149408">
-  <name>Culvert 6-12</name>
+<wpt lat="43.20356033701218" lon="-72.02480360314941">
   <ele>331</ele>
   <time>2020-10-09T14:15:23Z</time>
+  <name>Culvert 6-12</name>
 </wpt>
-<wpt lat="43.203714303472687" lon="-72.026486018753999">
-  <name>Culvert 6-13</name>
+<wpt lat="43.20371430347269" lon="-72.026486018754">
   <ele>333</ele>
   <time>2020-10-09T14:18:15Z</time>
+  <name>Culvert 6-13</name>
 </wpt>
-<wpt lat="43.204337545136667" lon="-72.027540427894593">
-  <name>Culvert 6-14</name>
+<wpt lat="43.20433754513667" lon="-72.02754042789459">
   <ele>338</ele>
   <time>2020-10-09T14:21:36Z</time>
+  <name>Culvert 6-14</name>
 </wpt>
-<wpt lat="43.204508616778348" lon="-72.027422410697937">
-  <name>Culvert 6-15</name>
+<wpt lat="43.20450861677835" lon="-72.02742241069794">
   <ele>340</ele>
   <time>2020-10-09T14:22:10Z</time>
+  <name>Culvert 6-15</name>
 </wpt>
 <wpt lat="43.204885289039396" lon="-72.02725686889076">
-  <name>Culvert 6-16</name>
   <ele>343</ele>
   <time>2020-10-09T14:23:12Z</time>
+  <name>Culvert 6-16</name>
 </wpt>
-<wpt lat="43.205031920587906" lon="-72.026816986612317">
-  <name>Culvert 6-17</name>
+<wpt lat="43.205031920587906" lon="-72.02681698661232">
   <ele>343</ele>
   <time>2020-10-09T14:24:42Z</time>
+  <name>Culvert 6-17</name>
 </wpt>
-<wpt lat="43.202989435759477" lon="-72.02984682664966">
-  <name>Culvert 6-2</name>
+<wpt lat="43.20298943575948" lon="-72.02984682664966">
   <ele>320</ele>
   <time>2020-10-08T18:39:04Z</time>
+  <name>Culvert 6-2</name>
 </wpt>
-<wpt lat="43.203503638153506" lon="-72.02898047313785">
-  <name>Culvert 6-3</name>
+<wpt lat="43.20350363815351" lon="-72.02898047313785">
   <ele>319</ele>
   <time>2020-10-08T18:48:54Z</time>
+  <name>Culvert 6-3</name>
 </wpt>
-<wpt lat="43.2036199685122" lon="-72.029093125916475">
-  <name>Culvert 6-4</name>
+<wpt lat="43.2036199685122" lon="-72.02909312591648">
   <ele>322</ele>
   <time>2020-10-08T18:49:30Z</time>
+  <name>Culvert 6-4</name>
 </wpt>
-<wpt lat="43.203707999999999" lon="-72.029101999999995">
-  <name>Culvert 6-5</name>
+<wpt lat="43.203708" lon="-72.029102">
   <ele>324</ele>
   <time>2020-10-08T18:49:50Z</time>
+  <name>Culvert 6-5</name>
 </wpt>
-<wpt lat="43.205531567129498" lon="-72.029077032662386">
-  <name>Culvert 6-6</name>
+<wpt lat="43.2055315671295" lon="-72.02907703266239">
   <ele>340</ele>
   <time>2020-10-08T18:58:35Z</time>
+  <name>Culvert 6-6</name>
 </wpt>
-<wpt lat="43.205923557194609" lon="-72.028908053494447">
-  <name>Culvert 6-7</name>
+<wpt lat="43.20592355719461" lon="-72.02890805349445">
   <ele>341</ele>
   <time>2020-10-08T18:59:42Z</time>
+  <name>Culvert 6-7</name>
 </wpt>
-<wpt lat="43.205764219890924" lon="-72.028765896416658">
-  <name>Culvert 6-8</name>
+<wpt lat="43.20576421989092" lon="-72.02876589641666">
   <ele>347</ele>
   <time>2020-10-08T19:02:12Z</time>
+  <name>Culvert 6-8</name>
 </wpt>
-<wpt lat="43.205416217952354" lon="-72.028885254717821">
-  <name>Culvert 6-9</name>
+<wpt lat="43.205416217952354" lon="-72.02888525471782">
   <ele>345</ele>
   <time>2020-10-08T19:02:55Z</time>
+  <name>Culvert 6-9</name>
 </wpt>
 </gpx>

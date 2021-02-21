@@ -16,7 +16,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@angular-devkit/build-angular": "^0.1100.2",
+    "@angular-devkit/build-angular": "^0.1102.1",
     "@angular/cli": "^11",
     "@angular/common": "^11",
     "@angular/compiler": "^11",
@@ -25,18 +25,18 @@
     "@angular/language-service": "^11",
     "@angular/platform-browser": "^11",
     "@angular/platform-browser-dynamic": "^11",
-    "@fortawesome/angular-fontawesome": "^0.8.0",
+    "@fortawesome/angular-fontawesome": "^0.8.2",
     "@fortawesome/fontawesome-svg-core": "^1",
     "@fortawesome/free-brands-svg-icons": "^5",
     "@fortawesome/free-regular-svg-icons": "^5",
     "@fortawesome/free-solid-svg-icons": "^5",
-    "@types/xml2js": "^0.4.7",
+    "@types/xml2js": "^0.4.8",
     "@typescript-eslint/eslint-plugin": "^4",
     "@typescript-eslint/parser": "^4",
     "dom-to-image": "^2.6.0",
     "eslint": "^7",
     "eslint-config-mflorence99": "^1.1.1",
-    "eslint-config-prettier": "^6",
+    "eslint-config-prettier": "^7",
     "eslint-plugin-import-splitnsort": "^0.1.4",
     "file-saver": "^2",
     "prettier": "^2",
@@ -52,7 +52,7 @@
     "tslib": "^2",
     "typescript": "^4",
     "xml2js": "^0.4.23",
-    "zone.js": "^0.11.3"
+    "zone.js": "^0.11.4"
   },
   "build": {
     "appId": "map"
