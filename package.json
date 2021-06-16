@@ -14,7 +14,6 @@
     "prettier": "prettier --write .",
     "serve": "ng serve --proxy-config proxy.conf.js"
   },
-  "dependencies": {},
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.1102.1",
     "@angular/cli": "^11",
@@ -36,7 +35,7 @@
     "dom-to-image": "^2.6.0",
     "eslint": "^7",
     "eslint-config-mflorence99": "^1.1.1",
-    "eslint-config-prettier": "^7",
+    "eslint-config-prettier": "^8",
     "eslint-plugin-import-splitnsort": "^0.1.4",
     "file-saver": "^2",
     "prettier": "^2",
