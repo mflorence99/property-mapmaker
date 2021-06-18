@@ -35,15 +35,21 @@
           },
           "options": {
             "allowedCommonJsDependencies": ["file-saver", "xml2js"],
-            "aot": true,
             "assets": ["src/assets"],
             "index": "src/index.html",
             "main": "src/main.ts",
             "outputPath": "dist",
             "polyfills": "src/polyfills.ts",
             "styles": ["src/styles.scss"],
-            "tsConfig": "src/tsconfig.json"
-          }
+            "tsConfig": "src/tsconfig.json",
+            "vendorChunk": true,
+            "extractLicenses": false,
+            "buildOptimizer": false,
+            "sourceMap": true,
+            "optimization": false,
+            "namedChunks": true
+          },
+          "defaultConfiguration": ""
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",

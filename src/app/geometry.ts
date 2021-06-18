@@ -94,8 +94,8 @@ export class Geometry {
       this.tiles.right = this.lon2tile(this.bbox.right) + 1;
       this.tiles.top = this.lat2tile(this.bbox.top) - 1;
       // compute dimension
-      this.dims.numYTiles = Math.abs(this.tiles.left - this.tiles.right) + 1;
-      this.dims.numXTiles = Math.abs(this.tiles.top - this.tiles.bottom) + 1;
+      this.dims.numXTiles = Math.abs(this.tiles.left - this.tiles.right) + 1;
+      this.dims.numYTiles = Math.abs(this.tiles.top - this.tiles.bottom) + 1;
       this.dims.cxNominal = this.dims.cxTile * this.dims.numXTiles;
       this.dims.cyNominal = this.dims.cyTile * this.dims.numYTiles;
       // compute origin for lat/lon conversion
@@ -200,18 +200,18 @@ export class Geometry {
       (this.lon2x(this.bounds.right) - this.lon2x(this.bounds.left));
     const y =
       ((this.lat2y(point.lat) - this.lat2y(this.bounds.top)) *
-        this.dims.cxNominal) /
+        this.dims.cyNominal) /
       (this.lat2y(this.bounds.bottom) - this.lat2y(this.bounds.top));
     return [x, y];
   }
 
   xy2point([x, y]: [number, number]): Point {
-    const lat =
-      this.bounds.top +
-      (y / this.dims.cyNominal) * (this.bounds.bottom - this.bounds.top);
     const lon =
       this.bounds.left +
       (x / this.dims.cxNominal) * (this.bounds.right - this.bounds.left);
+    const lat =
+      this.bounds.top +
+      (y / this.dims.cyNominal) * (this.bounds.bottom - this.bounds.top);
     return { lat, lon };
   }
 
